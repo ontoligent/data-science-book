@@ -1,0 +1,96 @@
+# Ethical Models
+
+```{python}
+import pandas as pd
+```
+
+```{python}
+models = {
+    'Critical': None, 
+    'HCAI': None, 
+    'Citizen': None
+}
+dimensions = {
+    'intent': ('negative', 'positive'),
+    'orientation': ('theoretical', 'practical'),
+    'application': ('instrinsic', 'extrinsic')
+}
+evaluation = ('pro', 'con')
+```
+
+```{python}
+csv = []
+print("|model|dimension|pole|eval| |")
+print("|---|---|---|---|---|")
+for model in models:
+    for dim in dimensions:
+        for pole in dimensions[dim]:
+            for ev in evaluation:
+                
+                print("| ", end="")
+                print(model, dim, pole, ev, sep=" | ", end="")
+                print(" | |")
+
+                csv.append(",".join((model, dim, pole, ev)))
+```
+
+```{python}
+df = pd.DataFrame(index=pd.MultiIndex.from_product([models, dimensions, evaluation]))
+```
+
+```{python}
+df.iloc[0] = ""
+```
+
+```{dot}
+digraph G {
+    node [shape="rectangle"]
+
+    A [label="I\nCritical"]
+    B [label="III\nCommunity"]
+    C [label="II\nHCAI"]
+
+    A -> B [label=""]
+    B -> C
+    C -> A
+}
+```
+
+|model|dimension|pole|eval| |
+|---|---|---|---|---|
+| Critical | intent | negative | pro | |
+| Critical | intent | negative | con | |
+| Critical | intent | positive | pro | |
+| Critical | intent | positive | con | |
+| Critical | orientation | theoretical | pro | |
+| Critical | orientation | theoretical | con | |
+| Critical | orientation | practical | pro | |
+| Critical | orientation | practical | con | |
+| Critical | application | instrinsic | pro | |
+| Critical | application | instrinsic | con | |
+| Critical | application | extrinsic | pro | |
+| Critical | application | extrinsic | con | |
+| HCAI | intent | negative | pro | |
+| HCAI | intent | negative | con | |
+| HCAI | intent | positive | pro | |
+| HCAI | intent | positive | con | |
+| HCAI | orientation | theoretical | pro | |
+| HCAI | orientation | theoretical | con | |
+| HCAI | orientation | practical | pro | |
+| HCAI | orientation | practical | con | |
+| HCAI | application | instrinsic | pro | |
+| HCAI | application | instrinsic | con | |
+| HCAI | application | extrinsic | pro | |
+| HCAI | application | extrinsic | con | |
+| Citizen | intent | negative | pro | |
+| Citizen | intent | negative | con | |
+| Citizen | intent | positive | pro | |
+| Citizen | intent | positive | con | |
+| Citizen | orientation | theoretical | pro | |
+| Citizen | orientation | theoretical | con | |
+| Citizen | orientation | practical | pro | |
+| Citizen | orientation | practical | con | |
+| Citizen | application | instrinsic | pro | |
+| Citizen | application | instrinsic | con | |
+| Citizen | application | extrinsic | pro | |
+| Citizen | application | extrinsic | con | |

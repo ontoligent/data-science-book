@@ -1,0 +1,102 @@
+# A Note on Method
+
+It is recognized that to trace the history of a term is insufficient to
+represent the full history of what that term indexes. In this case, the
+term indexes a complex assemblage of concepts, tools, and practices that
+characterize data science today, many of which clearly precede or
+parallel the use of the term. Nevertheless, the exercise serves as a
+valuable starting point from which to develop a complete historical
+account, since finding textual examples for a phrase's string is
+relatively easy using textual databases, and because any related fields,
+such as operations research or data analysis or computational
+statistics, will be found to intersect with the term and may be pursed
+separately.
+
+More important, although phrases like "data science" are, like all
+linguistic signs, arbitrary, they acquire motivation when they function
+as banners or brands under which allegiances are formed, catalyzing
+potential affiliations into actual ones. Such phrases are socially
+embedded speech acts with perlocutionary effects---they do not merely
+describe things in the world, they also instantiate them through their
+usage by agents, who influence the formation of their referents. This
+helps to explain why, once the phrase began to trend after 2008, many
+who previously would not affiliate themselves with the term began doing
+so, initiating a preferential attachment process to the term and thereby
+complexifying its definition. It also explains the purpose of efforts to
+define the field of data science, or to explain it away: each definition
+has a prescriptive dimension, since by proposing a "correct" definition,
+it attempts to influence usage and the field it denotes. The present
+essay is no exception.
+
+::: bourdieu
+Another reason for beginning with a history of words, via their traces
+as character strings, is that in historical research it is much easier
+to study words than the things they stand for, although we often
+(conveniently) forget this relationship and conflate the two, believing
+we can easily move from language to the world. In our perceptions of the
+world beyond the ken of our immediate experience---and even there---we
+are enmeshed in language to a greater degree than we may like to admit.
+Words in the form of written documents (texts) constitute the primary
+source of data on which the construction of historical understanding
+depends. So, even though one may wish to get past words and study things
+as they are, the fact that these things are in the past, and mainly
+represented to us through documents and other material traces, means
+that one must begin with these. Ultimately, however, the purpose of
+working with written records is to get at the things they stand for and
+index, much as quantitative data $\mathcal{D}$ are used to construct an
+hypothesis $\theta$ to explain their existence. We may regard this phase
+of work as similar to the Bayesian task of establishing likelihoods and
+priors on the way to estimating posteriors.[^ds-from-1963-to-2012-3]
+:::
+
+[^ds-from-1963-to-2012-3]: This is more than an analogy. If we think of
+    the work of textual interpretation on which historical research
+    depends in a probabilistic framework, we may express the hermeneutic
+    relationship between words $Sr$ and meanings $Sd$ as follows:
+
+    $$P\left( Sd \middle| Sr \right) = \frac{P(Sd)P\left( Sr \middle| Sd \right)}{P(Sr)}$$
+
+    Inasmuch as $Sr$ and $Sd$---Saussure's *signifier* and
+    *signifed*---represent what Schleiermacher called the "linguistic"
+    and "psychological" aspects of interpretation, the formula also
+    expresses the logic of the hermeneutic circle as a matter of
+    updating the prior and recomputing the posterior (Palmer 1969). The
+    analogy between the Bayesian approach to causality and the
+    hermeneutic approach to meaning has been noted by others (Groves
+    2018; Friston and Frith 2015; Ma 2015; Reason and Rutten 2018; Frank
+    and Goodman 2012).
+
+It is helpful to understand the larger theoretical lens through which
+these methods are applied and this history is presented and interpreted.
+The primary assumption is that science and all forms of knowledge
+production are cultural systems, in the sense proposed by Clifford
+Geertz and others [@geertz2017; @martin1998]. To locate science within
+culture is not to affirm or deny the objectivity of science, or its
+effectiveness relative to other ways of knowing, but simply to assert
+that science, like all human endeavors, is made possible in and through
+social interaction over time and space through the media forms that make
+such interaction possible. Among these media forms the most significant
+is language. Given this, I adopt a discourse-centered approach to
+understanding culture [@urban1993]. Further, as a means to theorize the
+causal relationship between language and world, I adopt the view that
+discourse---spoken and written language, as opposed to generative
+grammar---is best understood as situated action [@mills1940;
+@suchman1987; @norman1993]. In this view, language does not simply refer
+to the world, but participates in it, as a resource that enables
+distributed cognition and produces effects through its use in concrete
+situations. From an interpretive perspective, the meanings of words
+index the work they perform. This essentially causal conception of
+language use allows us to make sense of the relationship between phrases
+like "data science" and the human endeavors with which they are
+associated, the posterior relationship encoded in the Bayesian framework
+described above.
+
+Finally, no claims are made for having discovered the first actual
+usages of the term in question, neither at its origin nor during any of
+its transformations. Instead, the documentary record that comprises the
+sum of databases and documents, both digital and material, available to
+the author is regarded as a kind of film, or an archaeological
+settlement pattern, on which collective verbal behavior impinges and
+leaves its marks. It is likely to be incomplete, but also comprehensive
+enough to capture patterns to a degree of resolution high enough to
+support the claims being made.

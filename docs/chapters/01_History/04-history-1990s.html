@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.262">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>The History and Structure of Data Science - 4&nbsp; The 1990s: Statistical Data Science</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../chapters/01_History/05-history-2000s.html" rel="next">
+<link href="../../chapters/01_History/03-history-1970s-and-80s.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The 1990s: Statistical Data Science</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">The History and Structure of Data Science</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-reader-toggle sidebar-tool" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">History</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/01_History/00-history-abstract.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Abstract</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/01_History/02-history-1960s.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The 1960s</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/01_History/03-history-1970s-and-80s.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The 1970s and 80s</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/01_History/04-history-1990s.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The 1990s: Statistical Data Science</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/01_History/05-history-2000s.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The 2000s</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/01_History/06-history-2008-2012.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">2008: The Sexy Science</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/01_History/07-history-disconnect.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The 2010s</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/01_History/08-history-interpretation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Interpration</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Structure</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/02_Structure/01-structure-the-model.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">The Image of the Pipeline</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/02_Structure/02-structure-ds-and-ai.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Relation to AI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/02_Structure/03-structure-remarks.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Concluding Remarks</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">Back Matter</span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-tokyo-school" id="toc-the-tokyo-school" class="nav-link active" data-scroll-target="#the-tokyo-school"><span class="toc-section-number">4.1</span>  1994: The Tokyo School</a></li>
+  <li><a href="#data-mining-and-knowledge-discovery" id="toc-data-mining-and-knowledge-discovery" class="nav-link" data-scroll-target="#data-mining-and-knowledge-discovery"><span class="toc-section-number">4.2</span>  Data Mining and Knowledge Discovery</a></li>
+  <li><a href="#the-us" id="toc-the-us" class="nav-link" data-scroll-target="#the-us"><span class="toc-section-number">4.3</span>  1997: The US</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The 1990s: Statistical Data Science</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Interestingly, in 1977 a prefixed variant of the term appeared in the title of the technical report, “Non-Parametric Statistical Data Science: A Unified Approach Based on Density Estimation and Testing for ‘White Noise’” <span class="citation" data-cites="parzen1977">(<a href="../02_Structure/01-structure-the-model.html#ref-parzen1977" role="doc-biblioref">Parzen 1977</a>)</span>. However, Parzen later published a version of this work as “Nonparametric Statistical Data Modeling” <span class="citation" data-cites="parzen1979">(<a href="../02_Structure/01-structure-the-model.html#ref-parzen1979" role="doc-biblioref">Parzen 1979</a>)</span>, which indicates that his original word choice was mistaken. Yet the original choice may not have been entirely unmotivated: Parzen’s work attempted to unify parametric and non-parametric methods under one umbrella. Given the natural inclination of mathematical statistics for the former and data analysis for the latter, his choice of the term data science may have signaled an attempt to encompass both approaches to data. It is also worth noting that he later used to the term to introduce a “new culture of statistical science called LP MIXED DATA SCIENCE” <span class="citation" data-cites="parzen2013">(<a href="../02_Structure/01-structure-the-model.html#ref-parzen2013" role="doc-biblioref">Parzen and Mukhopadhyay 2013</a>)</span>, after the term became popular.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Whether or not this unifying goal was his motivation, statisticians later became quite interested in the term for precisely this reason.</p>
+<section id="the-tokyo-school" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="the-tokyo-school"><span class="header-section-number">4.1</span> 1994: The Tokyo School</h2>
+<p>In the early 1990s, the term resurfaced in the context of statistics. It appeared in the title of a 1994 essay by the Japanese statistician Noburu Ohsumi on the application of hypermedia to the problem of organizing data, “New Data and New Tools: A Hypermedia Environment for Navigating Statistical Knowledge in Data Science,” an elaboration of an essay published two years earlier <span class="citation" data-cites="ohsumi1992 ohsumi1994">(<a href="../02_Structure/01-structure-the-model.html#ref-ohsumi1992" role="doc-biblioref">Ohsumi 1992</a>, <a href="../02_Structure/01-structure-the-model.html#ref-ohsumi1994" role="doc-biblioref">1994</a>)</span>.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> In these essays, Ohsumi described the by now familiar litany of problems associated with data impedance, although this time the focus was on the production of data resulting from its analysis and storage, not its consumption in so-called raw form:</p>
+<blockquote class="blockquote">
+<p>In research organizations handling statistical information, the volume of stored information resources, including research results, materials, and software, is increasing to the point that conventional separate databases and information management systems have become insufficient to deal with the amount. Increasing diversification in the media used these days interferes with the rapid retrieval and use of the information needed by users. A new system that realizes a presentation environment based on new concepts is needed to inform potential users of the value and effectiveness of using the vast amount of diverse data <span class="citation" data-cites="ohsumi1992">(<a href="../02_Structure/01-structure-the-model.html#ref-ohsumi1992" role="doc-biblioref">Ohsumi 1992</a>: 375)</span>.</p>
+</blockquote>
+<p>For research facilities around the world, the products of classical data science—the database and data processing software—had become a sorcerer’s apprentice, creating new problems with each solution. Organizations were drowning in the data sets they produced or acquired, the software used to process them, the print and digital libraries of reports and articles resulting from their analyses, and a host of other materials. The requirements, approach, and design goals of Ohsumi’s proposed system, the Meta-Stat Navigator, are strikingly similar to those of a contemporary system designed to solve the information problems of another scientific organization: Berners-Lee’s World Wide Web, famously developed at CERN in 1989 <span class="citation" data-cites="berners-lee2008">(<a href="../02_Structure/01-structure-the-model.html#ref-berners-lee2008" role="doc-biblioref">Berners-Lee and Fischetti 2008</a>)</span>. Of course, the latter quickly obviated Ohsumi’s proposal and become synonymous with the Internet, invented decades earlier.</p>
+<p>The significance of Meta-Stat for our purposes is that this kind of work was understood clearly as data science at this point in history. Data science continued to be connected with the processing and representation of data, and was distinct from data analysis, but with this important development: statisticians had become embedded in these technologies, and their work had changed significantly as a result. And, as a result of this change in working conditions, the connection between data analysis and data science became closer.</p>
+<p>Here we may locate with some precision a crucial transformation in the meaning of the term, associated with its adoption by a new set of users. One clue to this change is the opportunity Ohsumi observed amid the challenges posed by data deluge:</p>
+<blockquote class="blockquote">
+<p>… the information handled by the statistical sciences lies on the boundaries of various other sciences and clarifies the relationships and nature of information that joins these sciences. Development of a system that fully organizes and integrates strategic information is essential <span class="citation" data-cites="ohsumi1992">(<a href="../02_Structure/01-structure-the-model.html#ref-ohsumi1992" role="doc-biblioref">Ohsumi 1992</a>: 375)</span>.</p>
+</blockquote>
+<p>The Meta-Stat “system” was designed to realize the opportunity opened up by the central position statisticians had come to occupy among the prolifically data-generating sciences and the computational environment in which these data were made available. Data science, in this view, is <em>meta-statistics</em>, an encompassing concern for understanding data, understood as a universal medium, and its relationship to knowledge. This perspective would be adopted by Ohsumi’s senior compatriot and fellow statistician, Chikio Hayashi, whom Ohsumi described as “the pioneer and founder of data science” <span class="citation" data-cites="ohsumi2004">(<a href="../02_Structure/01-structure-the-model.html#ref-ohsumi2004" role="doc-biblioref">Ohsumi 2004</a>: 1)</span>.</p>
+<p>In 1993, at a roundtable discussion during the fourth conference of the International Federation of Classification Societies held in Paris (IFCS-93), Hayashi uttered the phrase “Data Science” and was then asked to explain it. At the next conference (IFCS-96), he presented an answer, in addition to having the conference named to emphasize the importance of the term—“Data Science, Classification, and Related Methods.” His definition is as follows:</p>
+<blockquote class="blockquote">
+<p>Data science is not only a synthetic concept to unify [mathematical] statistics, data analysis and their related methods but also comprises their results. It includes three phases, design for data, collection of data, and analysis on data. Data science intends to analyze and understand actual phenomena with “data.” In other words, the aim of data science is to reveal the features of the hidden structure of complicated natural, human and social phenomena with data from a different point of view from the established or traditional theory and method. This point of view implies multidimensional, dynamic and flexible ways of thinking <span class="citation" data-cites="hayashi1998">(<a href="../02_Structure/01-structure-the-model.html#ref-hayashi1998" role="doc-biblioref">Hayashi 1998a</a>: 41)</span>.</p>
+</blockquote>
+<p>Hayashi went on to describe the sequence of design, collection, and analysis as a primary and iterative “structure finding” process in which data are transformed from a state of “diversification,” given the inherent “multifariousness” of the phenomena they represent, to one of “conceptualization or simplification” (41). The discovery of structure is accomplished with what we would recognize today as the methods of exploratory data analysis and unsupervised learning. In effect, Hayashi’s definition abstracted the design goals of Ohsumi’s Meta-Stat system and presented them as “a new paradigm” of science, one that would encompass statistics, data analysis, and their vast output of data within in a unified, process-oriented framework—data science (40).</p>
+<p>In addition to Hayashi’s own definition, it helpful also to see how the field was defined by the editors (who included Hayashi) of the proceedings of IFCS-96:</p>
+<blockquote class="blockquote">
+<p>The volume covers a wide range of topics and perspectives in <em>the growing field of data science</em>, including theoretical and methodological advances in domains relating to data gathering, classification and clustering, exploratory and multivariate data analysis, and knowledge discovery and seeking.</p>
+<p>It gives a broad view of the state of the art and is intended for those in the scientific community who either develop new data analysis methods or gather data and use search tools for analyzing and interpreting large and complex data sets. Presenting a wide field of applications, this book is of interest not only to data analysts, mathematicians, and statisticians but also to scientists from many areas and disciplines concerned with complex data: medicine, biology, space science, geoscience, environmental science, information science, image and pattern analysis, economics, statistics, social sciences, psychology, cognitive science, behavioral science, marketing and survey research, data mining, and knowledge organization [<span class="citation" data-cites="hayashi1998a">Hayashi (<a href="../02_Structure/01-structure-the-model.html#ref-hayashi1998a" role="doc-biblioref">1998b</a>)</span>: v; emphasis added].</p>
+</blockquote>
+<p>Of interest here is use of “data science” as a big tent, an inclusive rubric under which to group a series of domains (which match roughly to a process) as well as a broad range of disciplines and levels, from tool builders to scientists and practice to theory. This passage is also significant for including within the scope of data science the methods of machine learning as well as data mining among the list of sciences concerned with “complex data,” suggesting the prominence of these approaches at that time. We will see that not all definitions proceeding from this community were as inclusive.</p>
+<div class="bourdieu">
+<p>Hayashi assigned a revolutionary and almost messianic role to data science. In his vision, the statistical sciences had lost their way. Mathematical statisticians had come to overvalue abstract inference and precision, and by choosing to work with the artificial data required to pursue these goals were “prone to be removed from reality” (40). Data analysts, although working with real data, had “come to manipulate or handle only existing data without taking into consideration both the quality of data and the meaning of data … to make efforts only for the refinement of convenient and serviceable computer software and to imitate popular ideas of mathematical statistics without considering the essential meaning” (40). As a result of these divergent attitudes toward data, and the disregard of both for the scientist’s engagement with the primary, existential relationship between data and phenomena, the field had become stagnant and lacking in innovation. Data science emerged as a savior, unifying a divided people, showing their way out of the wilderness, and restoring prosperity and prestige to their community.</p>
+<p>If Hayashi’s criticisms of data analysis sound familiar to those leveled today against data scientists, it is because the issues data science was meant to resolve are recurring and systemic. So too is the separation between data analysis and mathematical statistics, which was recognized by Box, and later Tukey, in the 1970s. In his response to Parzen—who, we noted, sought to overcome a methodological split between the two subfields—Tukey wrote:</p>
+<blockquote class="blockquote">
+<p>I concur with the general sentiments expressed by George Box in his Presidential Address … that we have great need for the whole statistician in one body—for the analyst of data as well as for the probability model maker—and the inferential theorist/practitioner. One cannot, however, make a whole man by claiming that one can subsume one important class of mental activity under another class whose style and purposes are not only different but incompatible. To be “whole statisticians” as Box might put it, or to be “whole statistician-data analysts” as I might, means to be single persons who can take quite different views and adopt quite different styles as the needs change. As the title of my paper of yesterday put it, “we need both exploratory and confirmatory”! The twain can—and should—meet, but they need to remain a pair (or two distinct parts of a larger team) if they are to do what they should and can <span class="citation" data-cites="tukey1979">(<a href="../02_Structure/01-structure-the-model.html#ref-tukey1979" role="doc-biblioref">Tukey 1979</a>: 122)</span>.</p>
+</blockquote>
+<p>Tukey implies a solution to the schism, later observed by Hayashi, in better organization, not in a utopian “new man” or in a synthetic science <em>per se</em>, recalling the division of labor proposed by Naur, but here focusing on different roles within that division. Implicit in this approach is the view that the problem with statistics was not epistemic but organizational.</p>
+<p>Here it is helpful to recall a property of Kuhn’s concept of paradigm—an obvious lens through which to observe our topic—which is often overlooked by those who use the term: it refers no to an abstract body of ideas that succeed on the basis of their intrinsic rationality or truth value, but to the successful practical application of ideas by means of novel methods and tools in a way that they may be imitated. The concept has both epistemic and social dimensions. Viewed in this light, the question of whether data science is in fact a science—our main question—becomes a matter of determining whether it solves important problems in new ways, by means of an assemblage of ideas, methods, and tools that may be grasped and imitated by others. Hence, although Tukey and Hayashi may appear to be divergent in their approaches to overcoming the problems, they represent the two aspects of a scientific paradigm, the one conceptual, the other practical. This should not be viewed as contradictory.</p>
+</div>
+<p>Following the IFCS meetings, as well as two meetings of the Japan Statistical Society that held “special sessions on data science,’’ Ohsumi developed Hayashi’s definition as well as its rationale <span class="citation" data-cites="ohsumi2000">(<a href="../02_Structure/01-structure-the-model.html#ref-ohsumi2000" role="doc-biblioref">Ohsumi 2000</a>: 331)</span>. At this point, we shall call this the Tokyo school of data science, given the association of both Hayashi and Ohsumi with the Institute of Statistical Mathematics in Tokyo, Japan. In a paper that explicitly addressed the relationship between data analysis and data science, and which is perhaps the first of several to claim the flag of data science for statistics, Ohsumi declared that because of its privileging of”mathematical methodologies” over an engagement with data acquisition, data analysis had become “a canary that has forgotten to sing,” referring to a Japanese children’s song that contemplates a silent bird’s fate (332).<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> Amplifying Hayashi, he asserted that “[h]ow data are gathered is the key to defining the relevant information and making it easy to understand and analyze” (331). In making this point, Ohsumi referred to a new figure on the scene, one that contradicted the principles he proposed:</p>
+<blockquote class="blockquote">
+<p>In my opinion, this viewpoint on the meaning of data science is fundamentally different from data mining (DM) and knowledge discovery (KD). These concepts are not of practical use because they neglect the problems of “data acquisition” and its practice (332).</p>
+</blockquote>
+<p>It is significant that Ohsumi excludes these new fields—or field, since the two so frequently co-occur, along with the variant KDD, “knowledge discovery in databases”—from his definition of data science, since many today would consider the two synonymous.</p>
+</section>
+<section id="data-mining-and-knowledge-discovery" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="data-mining-and-knowledge-discovery"><span class="header-section-number">4.2</span> Data Mining and Knowledge Discovery</h2>
+<p>The paradox is instructive: the name “data mining,” as used here, makes its appearance in the late 1980s and early 1990s as a rubric that included a set of practices motivated by precisely the same conditions that led the Tokyo school to propose the field of data science in the first place. Among these conditions was the relatively sudden appearance of vast amounts of data stored in databases—one of the fruits of classical data science—owing to the rise of relational databases and personal computing in the 1980s, and a suite of tools to work with data, from spreadsheets to programming languages to statistical software packages. Whereas many statisticians viewed these developments with alarm, being acutely aware of the epistemic disruptions they produced for the received workflow of data analysis, the data mining community embraced them as an opportunity to convert data into value. Coming mainly from the field of computer science, data miners developed a set of methods that included the application of machine learning algorithms to the data found in databases in various contexts, from science to industry (such as point-of-sale records generated as by-product of computerized cash registers and credit card use). The relationship between machine learning and data mining was also mutually beneficial—data miners supplied machine learning with the large sets of data required for this class of algorithms to perform well. This relationship was greatly reinforced with the rise and development of the Web and social media platforms, which generated enormous amounts of behavioral data.</p>
+<p>Although the two fields—for simplicity, let’s call them data analysis and data mining—were responding to the same conditions of data surplus and impedance, their philosophical orientations could not have been more opposed. This difference is clearest in their respective evaluations of data <em>provenance</em>, the source and conditions under which data are produced. For the data miner, data provenance is largely irrelevant to the possibility of converting data into value. Data are data, regardless of how they are generated, and the same methods may be applied to them regardless of source, so long as their structure is understood (e.g. time series). (Indeed, for the data miner data exists much as natural resources do, as a given part of the environment, which helps explain the success of the metaphor of <em>mining</em> over competing variants, such as <em>harvesting</em>, which implies intentional creation.) For the data analyst, as Hayashi and Ohsumi took such pains to emphasize, provenance is, or should be, everything, echoing the statistician’s orthodox preference for experimental over observational data.</p>
+<p>In defining data science in opposition to data mining, Ohsumi explains:</p>
+<blockquote class="blockquote">
+<p>Owing to the qualitative and quantitative changes in data [produced by the conditions described above], it is, indeed, becoming increasingly difficulty to grasp all aspects of a dataset in explaining various phenomena. Therefore, new techniques, such as DM, KD, complexity, and neural networks, are being proposed. However, the potential of these methods to solve any of these problems is questionable (332).</p>
+</blockquote>
+<p>Ohsumi goes on to characterize the way data has changed by listing the new kinds of data with which the statistician is confronted. These include prominently data sets found in databases as by-products of various processes, such as passive accumulation (e.g.&nbsp;from point-of-sale devices), unstructured data (included in text fields), and aggregated data generated “spontaneously and accumulating automatically in the electronic data collection environment” (332-333). He explained his concern with data mining:</p>
+<blockquote class="blockquote">
+<p>When it comes to analyzing these datasets, people discuss DM and related techniques. However, the important questions to answer are: what dataset is necessary to explicate a certain phenomenon, why is it necessary, how to design its acquisition, and how difficult the whole process is. <em>This is more important than the dataset itself</em>. Books on DM do contain terms such as “data preparation”, “getting the data”, “sampling procedures”, and “data auditing”, but there is an assumption that the dataset is given and the procedure may start with analysis. Fiddling with a dataset once it is collected is merely a self-contained play of data handling [<span class="citation" data-cites="ohsumi2000">Ohsumi (<a href="../02_Structure/01-structure-the-model.html#ref-ohsumi2000" role="doc-biblioref">2000</a>)</span>: 333; emphasis added].</p>
+</blockquote>
+<p>Although his evaluation of data mining seems to be woefully off base—a great deal of Google’s success, to take one example, was founded on their embrace of data mining at the time of Ohsumi’s essay—in fact his concern is not with the success of predictive analytics <em>per se</em>, but with solving what he considered to be the central problem of data science, that of understanding how data are generated in the first place. Given some of the issues that classifiers have encountered with respect to racial bias, for example, he cannot be said to have been wrong.</p>
+</section>
+<section id="the-us" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="the-us"><span class="header-section-number">4.3</span> 1997: The US</h2>
+<p>In the late 1990s and early 2000s, a series of papers and presentations by academic statisticians in the US echoed the theme of malaise expressed by the Tokyo school: the field of statistics was suffering from an image problem and needed to redefine itself in order to meet the challenges of a variety of existential threats. These threats included the rise of computational methods and large amounts of data, the emergence of non-traditional predictive methods and areas of research, such as data mining, that were taking the limelight from statistics, and an unflattering public image. Interestingly, given the lack of reference to the Tokyo school in these sources, many of the proposed responses included expanding the scope of statistics to encompass these new methods and to rebrand the field as “data science.” Frequently associated with this suggestion was a concern for updating university curricula for teaching statistics and, apparently for the first time, the creation of a new kind of statistician, the “data scientist”—recalling the mythical figure of the “whole statistician” discussed by Tukey in the 1970s. In these exhortations to the community of statisticians, the data scientist emerged as the “new man” of a reborn statistical science, one that who would overcome the field’s crisis of recognition.</p>
+<p>The first of these exhortations appears to have come from Jon R. Kettenring in his Presidential Address to the American Statistical Association on 12 August 1997, where he expressed concern for image of statistics:</p>
+<blockquote class="blockquote">
+<p>Looking ahead, image reconstruction must be one of our top priorities. It must be understood that <em>statistics is the data science of the 21st century</em>—essential for the proper running of government, central to decision making in industry, and a core component of modern curricula at all levels of education. I would like to see ASA make image reconstruction a part of its strategic plan. And I suspect we may need some professional help if we are to succeed <span class="citation" data-cites="89618ac5-1e4e-3cce-a5de-eb7b926f27c9">(<a href="../02_Structure/01-structure-the-model.html#ref-89618ac5-1e4e-3cce-a5de-eb7b926f27c9" role="doc-biblioref">Kettenring 1997</a>: 1230, emphasis added)</span>.</p>
+</blockquote>
+<p>In this talk, Kettenring clearly expressed the ambivalence of the statistics community toward the rise of computational methods that we saw in the Tokyo school. On one hand, computer science was welcomed and it’s contributions were viewed as opportunities:</p>
+<blockquote class="blockquote">
+<p>I believe the time has come for us to acknowledge that computer science needs to take its place alongside mathematics (and probability) as fundamental linch pins of statistics and as disciplines that undergird our research and instruction. Examples of relevant topics in computer (and computing) science include databases and database management, algorithm design, computational statistics, artificial intelligence and machine learning <span class="citation" data-cites="89618ac5-1e4e-3cce-a5de-eb7b926f27c9">(<a href="../02_Structure/01-structure-the-model.html#ref-89618ac5-1e4e-3cce-a5de-eb7b926f27c9" role="doc-biblioref">Kettenring 1997</a>: 1232)</span>.</p>
+</blockquote>
+<p>On the other hand, data mining—the most notable development coming from the computational field—was excluded from this vision. Not only was it absent from the list of relevant topics above, it was singled out for criticism, echoing the stance of the Tokyo school. In highlighting software development and data mining as “two opportunities that sit at the intersection of computer science and statistics,” Kettenring wrote:</p>
+<blockquote class="blockquote">
+<p>The second area is the current hot topic of data mining, which statisticians might reasonably think of as data analysis of very large databases. In fact, if you dig down and look at what is involved in data mining, you will find a variety of statistical components, such as statistical graphics and cluster analysis. Moreover, there is a great opportunity to bring a variety of statistical concepts to bear—modeling, sampling, robust estimation, outlier detection, dimensionality reduction, etc. Nevertheless, there are new opportunities as well, and we would be wise to pay very close attention and to become seriously involved with these developments.</p>
+<p>In fact, if we don’t, there is risk that we will be blown away by the momentum that is flowing in this direction. As Jerry Friedman pointed out in his keynote address at Interface ’97, we are no longer the only game in town. Many other data oriented sciences are competing with us for customers and students.</p>
+<p>Also it should not go unnoticed-speaking of image reconstruction!-that the very term, data mining, has captured the fancy of many people, especially in the business community. It is grabbing headlines that statisticians would kill for. The image of data mining is that something powerful is going on there. The reality? Well that may be rather different. It may even turn out that the phrase of the day in the 21st century is</p>
+<blockquote class="blockquote">
+<p>lies, damned lies, and data mining.</p>
+</blockquote>
+<p>But for now I believe we should take advantage of the momentum before it fades into another missed opportunity for statistics <span class="citation" data-cites="89618ac5-1e4e-3cce-a5de-eb7b926f27c9">(<a href="../02_Structure/01-structure-the-model.html#ref-89618ac5-1e4e-3cce-a5de-eb7b926f27c9" role="doc-biblioref">Kettenring 1997</a>: 1232)</span>.</p>
+</blockquote>
+<p>As an aside, it is worth noting that Friedman in the keynote referenced above, expressed the same ambivalence toward data mining. It is at once lauded as “having a major impact in business, industry, and science” affording “enormous research opportunities for new methodological developments” and derided as a “device to sell computer hardware and software” <span class="citation" data-cites="friedman1997">(<a href="../02_Structure/01-structure-the-model.html#ref-friedman1997" role="doc-biblioref">Friedman 1997</a>)</span>.</p>
+<p>Kettenring’s message was echoed three months later by the academic statistician C. F. Jeff Wu in a lecture delivered at the University of Michigan entitled “Statistics = Data Science?” <span class="citation" data-cites="wu1997">(<a href="../02_Structure/01-structure-the-model.html#ref-wu1997" role="doc-biblioref">D. Wu 1997</a>)</span>. Note that although Wu was not the first to suggest that statistics be renamed to, and redefined as, data science, he is often regarded as the first in the US to do so <span class="citation" data-cites="donoho2017">(<a href="../02_Structure/01-structure-the-model.html#ref-donoho2017" role="doc-biblioref">Donoho 2017</a>)</span>. Regarding image, Wu pointed out that statisticians were perceived as either accountants or involved with simple descriptive statistics—and prone to lying with these statistics, as the saying goes—when in fact their work comprised everything from data collection to modeling and analysis to solving problems and making decisions. As a remedy, he implored his colleagues to “think big” and embrace the changes and challenges that we have seen already—the rise of large and complex data sets, the use of neural networks and data mining methods, and the emergence of new fields such as computer vision. In addition to suggesting a name change for the field, he appears to have been the first to suggest a name change of the role of statistician to data scientist, along with a college curriculum to that would embrace all phases of data science and be profoundly interdisciplinary.</p>
+<p>Wu’s proposal is stronger than Kettenring’s. Kettenring, whose language suggests that he was aware of the prior existence of data science as a field, believed that statistics should embrace and encompass data science as the rightful heir to its fruits and labors. In contrast, Wu asserted that statistics should expand its scope and rename itself “data science,” because it “is likely the remaining good name reserved for us” <span class="citation" data-cites="wu1997a">(<a href="../02_Structure/01-structure-the-model.html#ref-wu1997a" role="doc-biblioref">C. F. J. Wu 1997</a>: slide 12)</span>. In both cases, however, the usage of the term data science included much of computer science, which is consistent with the classical definition that developed in the 1960s and ’70s.</p>
+<p>Practical plans for revamped curricula to train this new kind of statistician—the data scientist—appear after these appeals. The most well-known is found in Cleveland’s essay, “Data Science: An Action Plan for Expanding the Technical Areas of the Field of Statistics” <span class="citation" data-cites="cleveland2001">(<a href="../02_Structure/01-structure-the-model.html#ref-cleveland2001" role="doc-biblioref">Cleveland 2001</a>)</span>, even though he used the term “data analyst” as his target student. Consistent with previous definitions of data science as statistics augmented by computational methods and tools, he proposed a curriculum comprising six areas, along with percentages denoting the amount of time and resources that should be devoted to each: Multidisciplinary Investigations (25%), Models and Method for Data (20%), Computing with Data (15%), Pedagogy (15%), Tool Evaluation (5%), and Theory (20%). This distribution is more or less consistent with the definitions we have seen proposed by other statisticians, including the Tokyo school. As a measure of how radical this suggestion was, consider Donoho’s remarks, made over a decade and a half later:</p>
+<blockquote class="blockquote">
+<p>Several academic statistics departments that I know well could, at the time of Cleveland’s publication, fit 100% of their activity into the 20% Cleveland allowed for theory. Cleveland’s article was republished in 2014. I cannot think of an academic department that devotes today 15% of its effort on pedagogy, or 15% on computing with data. I can think of several academic statistics departments that continue to fit essentially all their activity into the last category, theory <span class="citation" data-cites="donoho2017">(<a href="../02_Structure/01-structure-the-model.html#ref-donoho2017" role="doc-biblioref">Donoho 2017</a>: 750)</span>.</p>
+</blockquote>
+<p>Radical as it may have appeared, the curriculum was fairly conservative. The area of “models and methods,” for example, focused exclusively on statistical data models, as opposed to algorithmic ones (to use Breiman’s terms, discussed below), while the “computing with data” area focused narrowly on the infrastructure to support these models. Cleveland’s bias toward traditional statistical modeling is made clear in his explanation of it:</p>
+<blockquote class="blockquote">
+<p>The data analyst faces two critical tasks that employ statistical models and methods: (1) specification—the building of a model for the data; (2) estimation and distribution—formal, mathematical-probabilistic inferences, conditional on the model, in which quantities of a model are estimated, and uncertainty is characterized by probability distributions <span class="citation" data-cites="cleveland2001">(<a href="../02_Structure/01-structure-the-model.html#ref-cleveland2001" role="doc-biblioref">Cleveland 2001</a>: 22)</span>.</p>
+</blockquote>
+<p>That the one is subordinate to the other is evident in Cleveland’s remark: “A collection of models and methods for data analysis will be used only if the collection is implemented in a computing environment that makes the models and methods sufficiently efficient to use” (23). He did make a passing reference to algorithmic models, but his example came from their use to support stochastic modeling:</p>
+<blockquote class="blockquote">
+<p>Historically, the field of data science has concerned itself only with one corner of this large domain [i.e.&nbsp;computing with data]—computational algorithms. Here, even though effort has been small compared with that for other areas, the impact has been large. One example is Bayesian methods, where breakthroughs in computational methods took a promising intellectual current and turned it into a highly practical, widely used general approach to statistical inference (23).</p>
+</blockquote>
+<p>If it is not made clear from this passage that he did not have the wider field of data mining and knowledge discovery in mind, the following passage does:</p>
+<blockquote class="blockquote">
+<p>Computer scientists, waking up to the value of the information stored, processed, and transmitted by today’s computing environments, have attempted to fill the void. Once current of work is data mining. <em>But the benefit to the data analyst has been limited, because knowledge among computer scientists about how to think of and approach the analysis of data is limited</em>, just as the knowledge of computing environments by statisticians is limited (23; emphasis added).</p>
+</blockquote>
+<p>So, Cleveland continued the practice of the Tokyo school to put at arms length the contributions of data miners, for their lack of training in traditional statistics or their lack of attention to data design, and to confine the role of computational expertise to knowledge of “environments.”</p>
+<div class="bourdieu">
+<p>Regarding the argument being made here, that the term “data science” has been in continuous circulation since the 1960s, and not independently coined in various contexts, Cleveland’s remarks, similar to those of Kettenring, indicate that the term was already known to statisticians, even as they sought to appropriate it for their own purposes. The sentence—“Historically, the field of data science has concerned itself only with one corner of this large domain …”—indicates awareness of prior usage, as well as a definition that aligns with what we have called classical data science. In any case, as we have seen, CODATA, representing classical data science, began publishing the <em>Data Science Journal</em> in 2001, the time of Cleveland’s proposal.</p>
+</div>
+<p>The task of educating data scientists was also addressed at this time at a workshop sponsored by the American Statistical Association in 2000 on the topic of undergraduate education in statistics. In a report of the proceedings published in the <em>American Statistician</em>, the following understanding of data science was expressed:</p>
+<blockquote class="blockquote">
+<p>… what is needed is a broader conception of statistics, a conception that includes data management and computer skills that assist in managing, exploring, and describing data. The terms “data scientist” or “data specialist” were suggested as perhaps more accurate descriptions of what should be desired in an undergraduate statistics degree. Data specialists would be concerned with the “front end” of a data analysis project: designing and managing data collection, designing and managing databases, manipulating and transforming data, performing exploratory and “basic” analysis <span class="citation" data-cites="higgins1999">(<a href="../02_Structure/01-structure-the-model.html#ref-higgins1999" role="doc-biblioref">Higgins 1999</a>)</span>. Data scientists (or specialists) a might share some course work with computer science majors, but where a computer scientist studies compilers and assembly language, a data scientist studies data analysis and statistics [<span class="citation" data-cites="bryce2001">Bryce et al. (<a href="../02_Structure/01-structure-the-model.html#ref-bryce2001" role="doc-biblioref">2001</a>)</span>: 12; citation in original].</p>
+</blockquote>
+<p>The reference to Higgins is from a paper where he asserted the need for statisticians to pay more attention to “the non-mathematical part of statistics,” so that undergraduate programs may respond to the “explosion in the amount of data available to society” <span class="citation" data-cites="higgins1999">(<a href="../02_Structure/01-structure-the-model.html#ref-higgins1999" role="doc-biblioref">Higgins 1999</a>: 1)</span>. In this area he included “designing scientific studies in a team-oriented environment, ensuring protocol compliance, ensuring data quality, managing the storage/transmission/retrieval of data, and providing descriptive and graphical analyses of data” (1). Here, again, we see a definition of data science as an improved version of statistics, in response to the persistent condition of data impedance, that would include data management and computing skills (and data design)—but not the methods of data mining. Consistent with the implied structural relationship between statistics and data science, data science was sometimes described as a part of statistics. Tellingly, both Bryce, et al., and Higgins equivocated on the use of data scientist, and suggested “data specialist” as an alternate name, perhaps so as not to overshadow the role of the data analyst. In any case, the choice of term was motivated by marketing; as Higgins wrote:</p>
+<blockquote class="blockquote">
+<p>Guttman expressed the opinion that the term statistics carries such a negative connotation that it might be wise to rename our departments something like “Department of Data Science” or “Department of Information and Data Science.” In this vein, I have suggested the term “data specialist” <span class="citation" data-cites="higgins1999">(<a href="../02_Structure/01-structure-the-model.html#ref-higgins1999" role="doc-biblioref">Higgins 1999</a>)</span>.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+</blockquote>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-berners-lee2008" class="csl-entry" role="doc-biblioentry">
+Berners-Lee, Tim, and Mark Fischetti. 2008. <em>Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web by Its Inventor</em>. Paw Prints.
+</div>
+<div id="ref-bryce2001" class="csl-entry" role="doc-biblioentry">
+Bryce, G. Rex, Robert Gould, William I. Notz, and Roxy L. Peck. 2001. <span>“Curriculum Guidelines for Bachelor of Science Degrees in Statistical Science.”</span> <em>The American Statistician</em> 55 (1): 7–13. <a href="https://www.jstor.org/stable/2685523">https://www.jstor.org/stable/2685523</a>.
+</div>
+<div id="ref-cleveland2001" class="csl-entry" role="doc-biblioentry">
+Cleveland, William S. 2001. <span>“Data Science: An Action Plan for Expanding the Technical Areas of the Field of Statistics.”</span> <em>International Statistical Review / Revue Internationale de Statistique</em> 69 (1): 21–26. <a href="https://doi.org/10.2307/1403527">https://doi.org/10.2307/1403527</a>.
+</div>
+<div id="ref-davis" class="csl-entry" role="doc-biblioentry">
+Davis, Miriam. n.d. <span>“The Canary That Forgot Its Song.”</span>
+</div>
+<div id="ref-donoho2017" class="csl-entry" role="doc-biblioentry">
+Donoho, David. 2017. <span>“50 Years of Data Science.”</span> <em>Journal of Computational and Graphical Statistics</em> 26 (4): 745–66. <a href="https://doi.org/10.1080/10618600.2017.1384734">https://doi.org/10.1080/10618600.2017.1384734</a>.
+</div>
+<div id="ref-friedman1997" class="csl-entry" role="doc-biblioentry">
+Friedman, Jerome H. 1997. <span>“Data Mining and Statistics: What’s the Connection?”</span> <a href="https://www.academia.edu/28735089/Data_Mining_and_Statistics_Whats_the_Connection">https://www.academia.edu/28735089/Data_Mining_and_Statistics_Whats_the_Connection</a>.
+</div>
+<div id="ref-hayashi1998" class="csl-entry" role="doc-biblioentry">
+Hayashi, Chikio. 1998a. <em>Data Science, Classification, and Related Methods: Proceedings of the Fifth Conference of the International Federation of Classification Societies (IFCS-96), Kobe, Japan, March 27-30, 1996</em>. Kobe, Japan: Springer.
+</div>
+<div id="ref-hayashi1998a" class="csl-entry" role="doc-biblioentry">
+———. 1998b. <em>Data Science, Classification, and Related Methods: Proceedings of the Fifth Conference of the International Federation of Classification Societies (IFCS-96), Kobe, Japan, March 27-30, 1996</em>. Kobe, Japan: Springer.
+</div>
+<div id="ref-higgins1999" class="csl-entry" role="doc-biblioentry">
+Higgins, James J. 1999. <span>“Nonmathematical Statistics: A New Direction for the Undergraduate Discipline.”</span> <em>The American Statistician</em> 53 (1): 1–6. <a href="https://doi.org/10.1080/00031305.1999.10474418">https://doi.org/10.1080/00031305.1999.10474418</a>.
+</div>
+<div id="ref-89618ac5-1e4e-3cce-a5de-eb7b926f27c9" class="csl-entry" role="doc-biblioentry">
+Kettenring, Jon R. 1997. <span>“Shaping Statistics for Success in the 21st Century.”</span> <em>Journal of the American Statistical Association</em> 92 (440): 12291234. <a href="http://www.jstor.org/stable/2965390">http://www.jstor.org/stable/2965390</a>.
+</div>
+<div id="ref-ohsumi1992" class="csl-entry" role="doc-biblioentry">
+Ohsumi, Noboru. 1992. <span>“An Experimental System for Navigating Statistical Meta-Information <span></span> The Meta-Stat Navigator.”</span> In, edited by Yadolah Dodge and Joe Whittaker, 375–80. Heidelberg: Physica-Verlag HD. <a href="https://doi.org/10.1007/978-3-642-48678-4_48">https://doi.org/10.1007/978-3-642-48678-4_48</a>.
+</div>
+<div id="ref-ohsumi1994" class="csl-entry" role="doc-biblioentry">
+———. 1994. <span>“New Data and New Tools: A Hypermedia Environment for Navigating Statistical Knowledge in Data Science.”</span> In, 45–54. Berlin: Springer-Verlag.
+</div>
+<div id="ref-ohsumi2000" class="csl-entry" role="doc-biblioentry">
+———. 2000. <span>“From Data Analysis to Data Science.”</span> In, 329334. Springer.
+</div>
+<div id="ref-ohsumi2004" class="csl-entry" role="doc-biblioentry">
+———. 2004. <span>“IFCS-2004 in Chicago.”</span> In. <a href="https://www.researchgate.net/publication/268719699_Memories_of_Chikio_Hayashi_and_his_great_achievement_2004">https://www.researchgate.net/publication/268719699_Memories_of_Chikio_Hayashi_and_his_great_achievement_2004</a>.
+</div>
+<div id="ref-parzen1977" class="csl-entry" role="doc-biblioentry">
+Parzen, Emanuel. 1977. <span>“Nonparametric Statistical Data Science: A Unified Approach Based on Density Estimation and Testing for’white Noise’.”</span>
+</div>
+<div id="ref-parzen1979" class="csl-entry" role="doc-biblioentry">
+———. 1979. <span>“Nonparametric Statistical Data Modeling.”</span> <em>Journal of the American Statistical Association</em> 74 (365): 105–21. <a href="https://doi.org/10.2307/2286734">https://doi.org/10.2307/2286734</a>.
+</div>
+<div id="ref-parzen2013" class="csl-entry" role="doc-biblioentry">
+Parzen, Emanuel, and Subhadeep Mukhopadhyay. 2013. <span>“LP Mixed Data Science : Outline of Theory.”</span> <em>arXiv:1311.0562 [Math, Stat]</em>, November. <a href="http://arxiv.org/abs/1311.0562">http://arxiv.org/abs/1311.0562</a>.
+</div>
+<div id="ref-tukey1979" class="csl-entry" role="doc-biblioentry">
+Tukey, John W. 1979. <span>“Nonparametric Statistical Data Modeling: Comment.”</span> <em>Journal of the American Statistical Association</em> 74 (365): 121–22. <a href="https://doi.org/10.2307/2286735">https://doi.org/10.2307/2286735</a>.
+</div>
+<div id="ref-wu1997a" class="csl-entry" role="doc-biblioentry">
+Wu, C. F. Jeff. 1997. <span>“Statistics = Data Science?”</span>
+</div>
+<div id="ref-wu1997" class="csl-entry" role="doc-biblioentry">
+Wu, Dekai. 1997. <em>Stochastic Inversion Transduction Grammars and Bilingual Parsing of Parallel Corpora</em>.
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Parzen’s use of the term “culture” here echoes his comments on Breiman’s famous essay on two cultures of statistical models, where he suggested that there are in fact several cultures, including his own, to which he devoted the majority of his response (Breiman 2001: 224–226).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>According to Ohsumi, “the term ‘data science’ appeared for the first time” in 1992, at a research exchange meeting between French and Japanese data analysts (so-called) at Montpelier University II in France <span class="citation" data-cites="ohsumi2000">(<a href="../02_Structure/01-structure-the-model.html#ref-ohsumi2000" role="doc-biblioref">Ohsumi 2000</a>: 331)</span>. He also claims to have “argued the urgency of the need to grasp the concept ‘data science’” in 1992 (329).<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>The specific reference is to a poem, later set to music, written by the Japanese poet Saijoo Yaso (西条八十), who lived from 1892 to 1970. According to Miriam Davis, “The moral of the song is that if the canary loses its song it is not worth its existence so it should make the most of the gift of song it has been given.” <span class="citation" data-cites="davis">(<a href="../02_Structure/01-structure-the-model.html#ref-davis" role="doc-biblioref">Davis, n.d.</a>)</span><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Higgins here referred to a quote from Guttman found in a paper by Kettenring (Kettenring 1997a).<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../chapters/01_History/03-history-1970s-and-80s.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The 1970s and 80s</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../chapters/01_History/05-history-2000s.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The 2000s</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

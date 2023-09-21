@@ -1,0 +1,29 @@
+# Abstract
+
+Consensus on the definition of data science remains low despite the
+widespread establishment of academic programs in the field and continued
+demand for data scientists in industry. Definitions range from rebranded
+statistics to data-driven science to the science of data to simply the
+application of machine learning to so-called big data to solve real
+world problems. Current efforts to trace the history of the field in
+order to clarify its definition, such as Donoho's "50 Years of Data
+Science" [@donoho2017], tend to focus on a short period when a small
+group of statisticians adopted the term in an unsuccessful attempt to
+rebrand their field in the face of the overshadowing effects of
+computational statistics and data mining. Using textual evidence from
+primary sources, this essay traces the history of the term to the early
+1960s, when it was first used by the US Air Force in a surprisingly
+similar way to its current usage, to 2012, the year that *Harvard
+Business Review* published the enormously influential article "Data
+Scientist: The Sexiest Job of the 21^st^ Century" [@davenport2012], even
+as the American Statistical Association acknowledged a profound
+"disconnect" between statistics and data science. Among the themes that
+emerge from this review are (1) a continuous and consistent meaning of
+data science as the practice of managing and processing scientific data
+from the 1960s to the present, (2) a long-standing opposition between
+data analysts and data miners that has animated the field since the
+1980s, and (3) the phenomenon of "data impedance"---the disproportion
+between surplus data, indexed by phrases like "data deluge" and "big
+data," and the limitations of computational machinery and methods to
+process them. This persistent condition appears to have motivated the
+use of the term and the field itself since its beginnings.

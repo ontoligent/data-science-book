@@ -1,0 +1,131 @@
+# The 1970s and 80s
+
+## The 1970s
+
+It is clear that by the early 1970s the term data science had been in
+circulation in several contexts and referred to ideas and tools relating
+to computational data processing. Importantly, these usages were not
+obscure---the AFCRL was one of the premier research laboratories in the
+world and closely connected with Harvard and MIT [@altshuler2013], an
+international cross-roads of intellectual life where many would have
+come into contact with the term. Similarly, IBM and UNIVAC, the sources
+of the founders of two self-proclaimed data science companies, were the
+two largest computer manufacturers at the time.[^ds-from-1963-to-2012-9]
+
+[^ds-from-1963-to-2012-9]: a" have they been displaced by a more
+    positive term.
+
+    This is the very same General Doolittle of Doolittle's Raid.
+
+    peared in a 1964 issue of the British weekly *Nature*:
+
+    A SYMPOSIUM on "Models for the Perception of Speech and Visual
+    Form", sponsored by the Data Sciences Laboratory of the Air Force
+    Cambridge Research Laboratory, will be held in Boston during
+    November 11-14. Further information can be obtained from Mr. G. A.
+    Cushman, Wentworth Institute, 550 Huntington Avenue, Boston,
+    Massachusetts 02115 ("Announcements" 1964) ("Announcements" 1964).
+
+Although the AFCRL closed the Data Sciences Lab by
+1970,[^ds-from-1963-to-2012-10] the term continued to be used, most
+notably by the Danish computer scientist Peter Naur, who suggested that
+computer science, a relatively new field, be renamed to data science.
+His argument, consistent with previous usage, was that computer science
+is fundamentally concerned with data processing and not mere
+computation, i.e. what the AFCRL derided as numerical calculation.
+Earlier, in the 1960s, Naur had coined the term "datalogy" (Danish:
+*datalogi*) for this purpose, but later found the term data science to
+be a suitable synonym, perhaps due to its currency or to his familiarity
+with the DSL, which shared his research interest in developing
+programming languages [@naur1966; @naur1968]. In contrast to the AFCRL,
+Naur provided an explicit definition of data science:
+
+[^ds-from-1963-to-2012-10]: Altshuler writes that the lab was
+    "abolished" in June 1972 "in response to a large reduction in
+    manpower authorizations" (Altshuler 2013: 27). However, the unit is
+    not mentioned in the July 1970 to June 1972 research report (AFCRL
+    1973). The lab's closure may have been a consequence of the passing
+    of the Mansfield Amendment in 1969, which prohibited the military
+    from carrying out "any research project or study unless such project
+    or study has a direct and apparent relationship to a specific
+    military function" (U. S. C. H. C. on Appropriations 1970: 348).
+
+> The starting point is the concept of *data*, as defined in \[0.7\]:
+> DATA: *A representation of facts or ideas in a formalized manner
+> capable of being communicated or manipulated by some process.* Data
+> science is the science of dealing with data, once they have been
+> established, while the relation of data to what they represent is
+> delegated to other fields and sciences.
+>
+> The usefulness of data and data processes derives from their
+> application in building and handling models of reality.
+>
+> ...
+>
+> A basic principle of data science is this: The data representation
+> must be chosen with due regard to the transformation to be achieved
+> and the data processing tools available. This stresses the importance
+> of concern for the characteristics of the data processing tools.
+>
+> Limits on what may be achieved by data processing may arise both from
+> the difficulty of establishing data that represent a field of interest
+> in a relevant manner, and from the difficulty of formulating the data
+> processing needed. Some of the difficulty of understanding these
+> limits is caused by the ease with which certain data processing tasks
+> are performed by humans [@naur1974: 30-31; emphasis and citation in
+> original; the reference "0.7" refers to @ifipgui1971].
+
+Clearly, Naur's definition inherits the classical definition described
+above; it locates the meaning of the term in the series of practices
+associated with the larger activity of data processing. These practices
+include establishment, choice of representation, conversion and
+transformation, the modeling of reality, and the guiding of human
+actions. One difference is that Naur is keen to locate data science
+within a division of labor implied by this general process, separating
+data science *per se* from the work of data acquisition (establishment)
+and the domain knowledge required to acquire data effectively. In this
+view, data science is more specifically concerned with the formal
+representation of data (i.e. with data structures and models), a
+practice that must be done in light of how data are to be transformed
+downstream, and with which tools (i.e. algorithms and programming
+languages). As we shall see, the weighting that Naur assigns to this
+kind of work is not inherited by later theorists. However, the general
+image of a sequential process with distinct phases in the life cycle of
+data is. Here we see the appearance of the image of a pipeline, unnamed
+but implied by the concept of *process*, which dominates the mental
+representation of the field from its origins in the 1960s.
+
+Far from being a fluke, Naur's usage developed the classical definition
+of data science initiated by NASA and the Air Force, intentionally or
+not. The fact that his attempt to rename computer science failed outside
+of his native country (and Sweden) is not important; his understanding
+of computer science sheds light on how closely the concept of data was
+(and is) related to computation and process.
+
+It is worth noting that Naur's definition implies a familiarity with the
+real-world provenance of data processing in industry and government.
+Indeed, by this time computational data processing had penetrated all
+sectors of society, and the pressure to improve tools and methods to
+represent and process data had increased as well. As a result of this
+pressure, two important data standards were developed in this period:
+Codd's relational model, which laid the foundation for SQL and
+commercially viable relational databases in the 1980s, and Goldfarb's
+SGML, which would become a standard for encoding so-called unstructured
+textual data (such as legal documents) and later the basis for HTML and
+XML [@codd1970 @goldfarb1970]. This focus on the human context of data
+processing is reflected in his later work; a volume of selections of his
+writing from 1951 to 1990, which includes his essay on data science, is
+entitled "Computing: A Human Activity" [@naur1992].
+
+## The 1980s
+
+::: comment
+Data Scientist becomes commonplace.
+
+Topics:
+
+-   New Scientist jobs
+-   NASA, NOAA
+
+Discuss rise of data mining?
+:::

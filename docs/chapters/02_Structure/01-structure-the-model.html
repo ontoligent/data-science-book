@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.262">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>The History and Structure of Data Science - 9&nbsp; The Image of the Pipeline</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../chapters/02_Structure/02-structure-ds-and-ai.html" rel="next">
+<link href="../../chapters/01_History/08-history-interpretation.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">The Image of the Pipeline</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">The History and Structure of Data Science</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-reader-toggle sidebar-tool" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">History</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/01_History/00-history-abstract.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Abstract</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/01_History/02-history-1960s.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The 1960s</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/01_History/03-history-1970s-and-80s.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The 1970s and 80s</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/01_History/04-history-1990s.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The 1990s: Statistical Data Science</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/01_History/05-history-2000s.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The 2000s</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/01_History/06-history-2008-2012.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">2008: The Sexy Science</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/01_History/07-history-disconnect.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The 2010s</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/01_History/08-history-interpretation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Interpration</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Structure</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/02_Structure/01-structure-the-model.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">The Image of the Pipeline</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/02_Structure/02-structure-ds-and-ai.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Relation to AI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/02_Structure/03-structure-remarks.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Concluding Remarks</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">Back Matter</span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#a-common-theme" id="toc-a-common-theme" class="nav-link active" data-scroll-target="#a-common-theme"><span class="toc-section-number">9.1</span>  A Common Theme</a></li>
+  <li><a href="#the-primary-standard-sequence" id="toc-the-primary-standard-sequence" class="nav-link" data-scroll-target="#the-primary-standard-sequence"><span class="toc-section-number">9.2</span>  The Primary Standard Sequence</a></li>
+  <li><a href="#seven-chapters" id="toc-seven-chapters" class="nav-link" data-scroll-target="#seven-chapters"><span class="toc-section-number">9.3</span>  Seven Chapters</a></li>
+  <li><a href="#an-arc-with-four-zones" id="toc-an-arc-with-four-zones" class="nav-link" data-scroll-target="#an-arc-with-four-zones"><span class="toc-section-number">9.4</span>  An Arc with Four Zones</a></li>
+  <li><a href="#interpreting-the-themes" id="toc-interpreting-the-themes" class="nav-link" data-scroll-target="#interpreting-the-themes"><span class="toc-section-number">9.5</span>  Interpreting the Themes</a></li>
+  <li><a href="#the-four-areas-plus-one" id="toc-the-four-areas-plus-one" class="nav-link" data-scroll-target="#the-four-areas-plus-one"><span class="toc-section-number">9.6</span>  The Four Areas, Plus One</a></li>
+  <li><a href="#two-principal-components" id="toc-two-principal-components" class="nav-link" data-scroll-target="#two-principal-components"><span class="toc-section-number">9.7</span>  Two Principal Components</a></li>
+  <li><a href="#final-representation" id="toc-final-representation" class="nav-link" data-scroll-target="#final-representation"><span class="toc-section-number">9.8</span>  Final Representation</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="toc-section-number">9.9</span>  References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">The Image of the Pipeline</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="a-common-theme" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="a-common-theme"><span class="header-section-number">9.1</span> A Common Theme</h2>
+<p>A review of the literature on data science definitions, including sources from the adjacent fields data analysis and data mining, reveals that most invoke the image of a data processing <em>pipeline</em> — a sequence of events through which data flows as it moves from the consumption of so-called raw data to production of useful results. In this view, consumed data may come from a variety of sources, such as databases or intentional experiments or sensors, and results may be equally various, from the visual communication of analytical results to stake-holders to the development of an interactive data product for use on the web.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>For analytic purposes, it is helpful to view the pipeline image as a kind of story, a micronarrative that encodes and socializes an understanding about the practice of data science. All forms of work involve the sharing of stories in one form or another, both formally in the context of education and informally through the countless acts of training, mentorship, and imitation that go on everyday in the academy and the workplace. When we want to explain to a trainee, a peer, or a supervisor how something is done, we often resort to a story that is general enough to apply to a variety of contexts yet specific enough to be translatable into action. The data processing pipeline is like that, and the essays in which it appears are part of the ongoing discourse by which a community of practice grows and learns.</p>
+<p>By thinking of the pipeline as a story we can analyze it with techniques developed by sociolinguists, folklorists, and students of literature to study how stories are structured and how they function socially and cognitively. One idea from this field is that stories can be broken down into elementary units, or “event functions,” and that these functions tend to have an invariant order within specific traditions <span class="citation" data-cites="propp1977">(<a href="01-structure-the-model.html#ref-propp1977" role="doc-biblioref">Propp and Dundes 1977</a>)</span>. In addition, a given sequence of functions may exhibit overall patterns, such as a chiasmus structure, in which the functions at the beginning of a story mirror those a the end <span class="citation" data-cites="lévi-strauss1955">(<a href="01-structure-the-model.html#ref-lévi-strauss1955" role="doc-biblioref">Lévi-Strauss 1955</a>)</span>. The following analysis applies these ideas.</p>
+</section>
+<section id="the-primary-standard-sequence" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="the-primary-standard-sequence"><span class="header-section-number">9.2</span> The Primary Standard Sequence</h2>
+<p>An analysis of a representative sample of essays that define a data processing pipeline shows that the various pipeline stories consist of elements drawn from a primary standard sequence of about twelve elements, give or take a few depending on how one might expand or contract terms. These are listed and defined below by a core set of event types, with the understanding that many synonyms are employed in the examples.</p>
+<ol type="1">
+<li><u>Understand</u>. The work of developing a question that the acquisition and analysis of data can answer. Questions may range from the status of a scientific hypothesis the merit of a business value proposition. More broadly, this is the stage of framing and scoping the work that follows.</li>
+<li><u>Plan</u>. The work of designing an experiment to produce data or of devising a strategy to acquire existing data relevant to the goals specified by the Understand phase.</li>
+<li><u>Collect</u>. The work of producing or acquiring data. This covers a broad range of activities from taking surveys to generating signal data to harvesting data from databases to scraping websites.</li>
+<li><u>Store</u>. The work of moving data from its collected state to a persistent store to house the data. This may be a file system or a database.</li>
+<li><u>Clean</u>. The work of fixing problems with data as collected and stored. This covers a wide range of activities, including the normalizing the data formats (such as dates) to the handling of missing data to the transformation of tables into some level of normal form.</li>
+<li><u>Explore</u>. The work of investigating cleaned data for general patterns, distributions, simple clusters, outliers, sanity, etc. Exploratory data analysis provides a useful set of tools and perspectives for this work. In some models, this activity is expanded into more sophisticated forms of pattern discovery and becomes associated more directly with the Model phase. Visualization using tools such as box plots, scatter plots, histograms, etc. play a large role here.</li>
+<li><u>Prepare</u>. The work of transforming data into a form suitable for the particular methods planned in the Model phase. This may mean generating tidy tables for statistical analysis, wide-format data for matrix operations, one-hot encoded feature spaces for input into deep learning systems, or graph structured data for network analysis. Also included here is feature engineering and dimensionality reduction.</li>
+<li><u>Model</u>. The work of using data to train models or estimate parameters for the tasks of prediction, inference, etc. Internally, this phase comprises a sub-pipeline that operates closely with the previous and following steps and involves model selection, parameter tuning, validation, and testing. Additionally, this area is characterized by general approach, which may be based in classification (predictive modeling), inference, or simulation.</li>
+<li><u>Interpret</u>. The work of making sense of the results of modeling the data, in terms of the terms set out by the Understand phase. This may mean making claims about causality, assigning real-world correlates to discovered patterns, or assessing the generalizability of a classifier.</li>
+<li><u>Communicate</u>. The work of representing data, model, and results to stakeholders as defined or implied by the Understand phase. The includes the work of visualization broadly conceived, from the creation on interactive visualizations to static infographics. It also includes story-telling and essay writing for both specialized and generalized audiences.</li>
+<li><u>Deploy</u>. If the work results in a data product, such as real-time classifier to support a business process, this means standing up and maintaining the software product in a performant and scalable hardware environment.</li>
+<li><u>Reflect</u>. Between iterations of the pipeline, this is the work of reflecting on the strategic or philosophical significance of the work conducted. It also includes the ethical dimension of the work conducted.</li>
+</ol>
+<p>Note that the descriptions are not meant to be prescriptive; they are attempts at summarizing the descriptions found in the literature. With this composite view in place, it will be easier to address limitations and fill gaps in our effort to create an authentic definition of data science.</p>
+<p>No one definition includes them all, but some are more comprehensive than others, and different disciplines emphasize different parts.</p>
+<p>For example, Hayashi’s statistically-oriented definition of data science includes just three phases — design <span class="math inline">\([1]\)</span>, collect <span class="math inline">\([3]\)</span>, and analyze <span class="math inline">\([8, 9]\)</span> — with an emphasis on the experimental design phase in which data are actually produced through thoughtfully designed experiments <span class="citation" data-cites="hayashi1998">(<a href="01-structure-the-model.html#ref-hayashi1998" role="doc-biblioref">Hayashi 1998</a>)</span>.</p>
+<p>Mason and Wiggins propose five — obtain <span class="math inline">\([3, 4]\)</span>, scrub <span class="math inline">\([5]\)</span>, explore <span class="math inline">\([6]\)</span>, model <span class="math inline">\([8]\)</span>, and interpret <span class="math inline">\([9]\)</span> — which highlights two conditions that define industrial data science, the simultaneous availability of data (one obtains it, say through web scraping) and their poor condition relative to analysis, i.e.&nbsp;the need to scrub and wrangle them into usable form <span class="citation" data-cites="mason2010">(<a href="01-structure-the-model.html#ref-mason2010" role="doc-biblioref">Mason and Wiggins 2010</a>)</span>.</p>
+<p>The CRISP-DM model is the most comprehensive, with seven phases defined (if we include the unnamed but visually depicted function of storage), emphasizing the importance of understanding both the business proposition and data before anything is done with it <span class="citation" data-cites="wirth1999">(<a href="01-structure-the-model.html#ref-wirth1999" role="doc-biblioref">Wirth and Hipp 1999</a>)</span>. It also modifies the metaphor of the pipeline, representing it as a circular and iterative process. However, unlike Donoho’s similarly comprehensive sequence (implied by the ordering of his six divisions of “greater data science”), it does not include a “meta” phase devoted to reflecting on the process as a whole <span class="citation" data-cites="donoho2017">(<a href="01-structure-the-model.html#ref-donoho2017" role="doc-biblioref">Donoho 2017</a>)</span>.</p>
+<p>As the CRISP-DM model shows, in some cases the pipeline is described as a circular process, where the output of one cycle serves as input to the next. Nevertheless, in these cases the sequential order of processing stages is maintained. Moreover, the image of the circle makes explicit what is implicit in the non-circular models, namely that the pipeline is never a one-off operation but repeated many times in the life-cycle of a project. What the circular models uniquely introduce is the idea that data processing is often a cybernetic process, a feedback loop where the results of one cycle inform the next. However, it should be noted that the idea of feedback foregrounded by circular models is not well developed. We shall see that the relationship between the endpoints is an area deserving of further research and theoretical development.</p>
+</section>
+<section id="seven-chapters" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="seven-chapters"><span class="header-section-number">9.3</span> Seven Chapters</h2>
+<p>A close look at the twelve phases listed above shows that a given phase may be more closely related to some phases than to others — in other words, the phases can be grouped thematically. For example, it seems clear that the Understand and Plan phases go together, just as Clean, Explore, and Prepare do. They belong together because we can imagine performing their associated activities together, and separately from the other phases. Also, in some cases the order of the phases within the group may change — for example, explore might precede cleaning in the event, as the two are often performed simultaneously — while the sequential order of the groups is less likely to vary. Finally, we can imagine assigning different teams to perform the labor in each thematic grouping, by virtue of the expertise required to carry them out.</p>
+<p>Given this, the twelve-part composite pipeline can be reduced to seven groups:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="math inline">\(A\)</span> understand and plan<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="math inline">\(B\)</span> collect and store<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="math inline">\(C\)</span> clean, explore, and prepare<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="math inline">\(D\)</span> model and interpret<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="math inline">\(E\)</span> communicate<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="math inline">\(F\)</span> deploy<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="math inline">\(G\)</span> reflect</p>
+<p>Each of these thematic groups may be considered a “chapter” in the story. Note that the number of verbs in each chapter title does not necessarily predict the length of its content. For example, the chapter on “model and interpret” covers a wide range of activities from a variety of perspectives, including classical statistics, machine learning, and computational simulation. It’s a big and complicated chapter with its own pipeline, but it is just one chapter among seven.</p>
+</section>
+<section id="an-arc-with-four-zones" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="an-arc-with-four-zones"><span class="header-section-number">9.4</span> An Arc with Four Zones</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image1.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">The Standard Sequence as a Narrative Arc</figcaption><p></p>
+</figure>
+</div>
+<p>To be sure, the middle chapter plays a central role in our story. If we think of the story as following a classical “there and back again” structure — a chiasmus pattern like <span class="math inline">\(X_1, Y_1, Z, Y_2, X_2\)</span> — then chapter <span class="math inline">\(D\)</span> is the pivot, while chapters <span class="math inline">\(A,\)</span> <span class="math inline">\(B,\)</span> and <span class="math inline">\(C\)</span> mirror <span class="math inline">\(E,\)</span> <span class="math inline">\(F,\)</span> and <span class="math inline">\(G\)</span>. Thinking of the story in this way allows us to identify a parallel structure in the pipeline, connecting phases that are usually seen as separate. Specifically, we may visualize the pipeline as an arc, a <strong>U</strong>-shaped process in which chapters in the first half of the pipeline mirror the those of the second half. We may then group chapters by the pairs formed in this way, yielding four zones — <span class="math inline">\(A\)</span> and <span class="math inline">\(G\)</span> belong to zone <span class="math inline">\(I\)</span>, <span class="math inline">\(B\)</span> and <span class="math inline">\(F\)</span> to <span class="math inline">\(II\)</span>, <span class="math inline">\(C\)</span> and <span class="math inline">\(E\)</span> to <span class="math inline">\(III\)</span>, and <span class="math inline">\(D\)</span> to <span class="math inline">\(IV\)</span> — as in the following diagram:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image2.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">The Arc Transposed</figcaption><p></p>
+</figure>
+</div>
+<p>With this visualization, we can discern some interesting properties about the data science pipeline that are not obvious in the original sequential image. For one, the arc structure suggests that the two ends of the pipe are not separate; both make direct contact with the external world (relative to the internal world of the pipeline considered as a system). The external world — natural or social — from which data are pulled is the same world into which data products are inserted. This insight echoes the CRISP-DM model, which connects <span class="math inline">\(A\)</span> and <span class="math inline">\(G\)</span> (actually <span class="math inline">\(F\)</span>), except that the two ends of the arc model are not directly connected. Instead, they come into contact with — and are separated by — the world in all of its complexity and unpredictability. The relationship between the effects caused by our data products <span class="math inline">\(G\)</span> and the data we pull from the world <span class="math inline">\(A\)</span> is not given but a matter of discovery — and often surprise. This is an important distinction between the model being proposed here and the simple idea that the pipeline forms a closed circle.</p>
+</section>
+<section id="interpreting-the-themes" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="interpreting-the-themes"><span class="header-section-number">9.5</span> Interpreting the Themes</h2>
+<p>At this point, we can explore the unifying themes associated with the four zones in our arc model by transposing the preceding visualization, which draws attention to what is common to each pairing. This generates four candidate areas of data science expertise — activities that, although they appear on opposite ends of the pipeline, nevertheless share basic knowledge, know-how, and areas of concern.</p>
+<p>Zone <span class="math inline">\(IV\)</span> is the easiest to interpret in this way because as the pivot of the arc it is not paired. It represents the work of modeling a problem mathematically, as well as evaluating and interpreting the results of mathematical modeling. This work requires data to be available in a particular form — clean and organized, usually as “tidy” analytical tables — and it produces results that need to be prepared for consumption by non-specialists. As stated above, it is the pivot of the arc, the core process, where the prior phases constitute pre-processing and following phases post-processing.</p>
+<p>Zone <span class="math inline">\(I\)</span> is also relatively easy to interpret: the functions in this group each involve understanding the relationship between the pipeline and the external world, the messy interface between the enterprise of data science and the variety of real world situations in which it operates and impacts. Again, this relationship has a dual character, based on the difference between input and output, reading from and writing to the world. Note also that there is an open-ended quality to the this relationship that is elided by circular representations — there is always a knowledge gap between one’s understanding of a data product and its real effects on the world, effects which may in turn influence source data.</p>
+<p>We may note in passing that <span class="math inline">\(I\)</span> and <span class="math inline">\(IV\)</span> can be contrasted in several ways — external vs internal, messy vs clean, exoteric vs esoteric, qualitative vs quantitative, existential vs essential, concrete vs abstract, periphery vs center, etc.</p>
+<p>When it comes to zones <span class="math inline">\(II\)</span> and <span class="math inline">\(III\)</span>, the interpretation of results is less straightforward. This is because the reality of the kind of work performed in these areas is not as clear-cut as it is for <span class="math inline">\(I\)</span> and <span class="math inline">\(IV\)</span>. Both <span class="math inline">\(II\)</span> and <span class="math inline">\(III\)</span> exhibit an internal complexity not found in the others, and the two are less clearly separable from each other than they are from the other two. One reason for this complexity is that here pure and applied forms of knowledge intermingle in ways that defy easy description from an academic perspective.</p>
+<p>For example, the work of “data wrangling,” often considered essential to data science, spans the two domains and involves a complex mixture of specific technological know-how and general scientific principles. It turns out that the relationship between these kinds of knowledge is highly contested, as evidenced by the reception of Donoho’s “50 Years of Data Science,” which has been criticized for separating science from engineering and demoting the importance of the latter <span class="citation" data-cites="donoho2017">(<a href="01-structure-the-model.html#ref-donoho2017" role="doc-biblioref">Donoho 2017</a>)</span>. Regardless of the validity of this criticism, there is without doubt a long-standing conflict between computational data mining and statistical data analysis over what counts as valid forms of knowledge, and this conflict emerges in the representation of zones <span class="math inline">\(II\)</span> and <span class="math inline">\(III\)</span> we find in our corpus.</p>
+<p>We can take the conflict of interpretations over the status of technical knowledge in data science as a clue and use it to identify two broad dimensions that cross-cut the functions in zones <span class="math inline">\(II\)</span> and $III$: technical know-how and abstract representation. We can reassign our labels to these dimensions, using the prime notation of <span class="math inline">\(II'\)</span> and <span class="math inline">\(III'\)</span> to indicate that they are transformation of our original themes.</p>
+<p>Technical know-how <span class="math inline">\(II´\)</span> involves expertise in developing and deploying software and hardware designed to handle data at scale, including high-performance computing, big data architectures (such as Hadoop and its descendants), and data-oriented programming languages and libraries. The topics associated with <span class="math inline">\(II'\)</span> are highly specific and change rapidly relative to other forms of knowledge, and so are often omitted from, or under-represented in, academic curricula, even though to many they are the <em>sine qua non</em> of data science.</p>
+<p>Abstract representation <span class="math inline">\(III´\)</span>, on the other hand, involves expertise in areas ranging from how data are to be modeled for capture and analysis to how the results of analyses are to be presented to non-expert decision-makers. These areas of knowledge strive for formal generality over the long run; they are often expressed as grammars or design languages, frequently with visual modes (such as entity-relationship models and unified modeling language UML). They also include other forms of visualization, such as the plots developed for exploratory data analysis, such as box plots, and those used to represent statistical facts and analytical results in dashboards and infographics.</p>
+</section>
+<section id="the-four-areas-plus-one" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="the-four-areas-plus-one"><span class="header-section-number">9.6</span> The Four Areas, Plus One</h2>
+<p>We are now ready to define and name the areas of data science expertise that emerge from an analysis of the pipeline considered as an arc. In each case, we want to identify the common context shared by the paired activities in each zone as well as the tension that exists between them by virtue of their occupying opposite sides of the pipeline. In many cases, although we can identify a shared theme in each zone’s work, the reality is that practitioners do not always interact or share disciplinary homes. One of the benefits of this model will be to identify these points of synergy and to identify new disciplinary boundaries.</p>
+<p><strong>Area I: Value</strong></p>
+<p>The area of value is defined by the relationship of data science to the world from which it draws data and into which it inserts data products. More broadly, it concerns the primary motivations of data science — why do we practice data science in the first place? It combines the traditional discipline of ethics with the professional activities of business planning, policy making, developing motivations for scientific research, and other activities that have a direct impact on people and the planet. This is the area where we determine what we do versus what we do not do, in order to maximize societal and environmental benefit and minimize harm. It is also the area that looks inward to the other data science areas and provides guidance on such issues as algorithmic bias or open science. Common activities include the forming of value propositions that initiate data science projects, research into how data is created and used “in the wild,” understanding the ethics of data acquisition, manipulation, communication, and sharing, and the application of data products in the world.</p>
+<p><strong>Area II´: Design</strong></p>
+<p>The area of design is defined by the relationship between human and machine forms of representation. This relationship is bidirectional: human-generated data flowing into the pipeline must be represented for machine consumption (H2M, or <span class="math inline">\(H \rightarrow M\)</span>), while analytically transformed data going out must be represented for human consumption (M2H, or <span class="math inline">\(M \rightarrow H\)</span>). This area therefore includes expertise in human-machine interaction as it appears at the points of both consuming data and producing data products. Activities here include the representation and communication of captured data for the work of analytics, e.g.&nbsp;in database modeling, the curation of data, and of complex data and analytical results to humans to drive decision-making and influence behavior. It also includes the making of things, with purpose (i.e.&nbsp;to solve problems) and intent (meaning, concision, focus). A key part of the area is the broad practice of what is often called visualization, the translation of complex quantitative information into visual (and other sensory) forms that non-experts can understand. In slightly more technical terms, the area of design focuses on what Zuboff called “informating,” the process by which the world is represented for computation and analytics, and also by which analytical models and results are represented to the world <span class="citation" data-cites="zuboff1995">(<a href="01-structure-the-model.html#ref-zuboff1995" role="doc-biblioref">Zuboff 1995</a>)</span>. These two processes often produce competing representations — a private one <em>of</em> the world for the data scientist, and a public one <em>for</em> the world of the results of analytics. One task of this area is to reconcile these two representations.</p>
+<p><strong>Area III´: Systems</strong></p>
+<p>The area of systems is defined by the technological infrastructure that is common to the pipeline but concentrated in the activities of wrangling data, deploying data products, and building out systems to support these activities at scale. This area includes expertise in infrastructure systems and architectures to support working with big data — big in terms of volume, velocity, and variety — and building high performance systems in both development and production environments. It includes the broad areas of hardware and software as such — computer technology as opposed to computer science. Key activities include developing cloud resources, building performant pipelines to ingest and aggregate data, developing networks of resilient distributed data, and writing and using software to accomplish tasks. This area is often referred to as “data engineering” or “machine learning engineering,” which, according to Owen, “is most of what Data Science is and Statistics is not” <span class="citation" data-cites="owen2015">(<a href="01-structure-the-model.html#ref-owen2015" role="doc-biblioref">Owen 2015</a>)</span>.</p>
+<p><strong>Area IV: Analytics</strong></p>
+<p>The area of analytics is defined by the practice of mathematical modeling based on data. This area includes what many consider to be the essence of data science, the combination of statistical methods with machine learning, along with information theory, optimization, network analysis, complexity theory, simulations, and other rigorous quantitative methods from a variety of fields. Although unified by a broad commitment to advanced mathematical models and computational algorithms, in reality this is a heterogeneous collection of competing schools and methods. Tensions include inference vs prediction, parametric vs non-parametric (kernel-based) methods, frequentist vs Bayesian statistics, analytic vs algorithmic solutions (including simulations), etc. Key activities include clustering, pattern recognition, regression, rule mining, feature engineering, model selection, performance evaluation, and a host of other activities. Although currently dominated by statistical methods, this area also includes the rule-based methods that dominated the field of artificial intelligence before the more recent successes of statistical learning and deep learning.</p>
+<p><strong>Area V: Practice</strong></p>
+<p>The preceding four areas each represent areas of foundational knowledge, forms of expertise that can be taught as more or less separate subjects. In practice, however, these areas represent the interlocking parts of a division of labor that are integrated in the pipeline. This area consists of actual activities that brings people together to combine expertise from each of the four areas. It is characterized by data science teams working together and with external parties to develop solutions and projects that are responsible, authentic, efficient, and effective. Practice is also where the core areas of data science come into contact with a broad spectrum of domain knowledge and real world problems. The following diagram shows the central, integrative role played by practice:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image3.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">The Integrative Role of Practice</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="two-principal-components" class="level2" data-number="9.7">
+<h2 data-number="9.7" class="anchored" data-anchor-id="two-principal-components"><span class="header-section-number">9.7</span> Two Principal Components</h2>
+<p>Is there a way to understand how the four primary areas are related to each other, beyond their being composed of functions from the same pipeline? Put another way, does the pipeline-as-arc model exhibit any structural features that will help us conceptualize the broader space of data science? Two such features stand out: (1) the opposition between concrete and abstract forms of representation, and (2) between human and machine processing.</p>
+<p>Regarding the concrete and the abstract, it’s clear that the arc model has a metric quality to it: as one moves toward the pivot point of analysis, one moves away from the concrete messiness of reality as experienced to the “tidy” and abstract world of mathematics; similarly, as one moves from the pivot back to the world, there is a requirement to convert esoteric results into more humanly intelligible forms, often through a process of concretization; visualizations succeed by employing concrete metaphors that flesh out mathematical ideas that are notoriously detached from the imagination — no one can imagine, for example, n-dimensional spaces beyond a handful of dimensions. The arc describes a dialectic of abstraction and concretization that defines the ebb and flow and data science work.</p>
+<div class=".table">
+<table class="table">
+<thead>
+<tr class="header">
+<th>&nbsp;</th>
+<th>Concrete</th>
+<th>Abstract</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><b>Human</b></td>
+<td>I<br>VALUE</td>
+<td>II’<br>DESIGN</td>
+</tr>
+<tr class="even">
+<td><b>Machine</b></td>
+<td>III’<br>SYSTEMS</td>
+<td>IV<br>ANALYTICS</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The Four Areas in Two Dimensions</p>
+<!--
+![The Four Areas in Two Dimensions](images/image4.png){fig-align="center"}
+-->
+<p>The dimension of human and machine processing exhibits a similar duality, that between the conversion of information from humanly accessible forms, such as given by data acquired by instruments, into machine readable and processible forms, and the reverse. The process of moving from human to machine representations is a large part of what data capture, modeling, and wrangling is all about, while the process of converting the results of machine learning, broadly conceived, into humanly actionable form is what visualization and productization are all about. The reality of this dualism is captured by the concept of human-computer interaction (HCI), an established field that is applicable to both sides of the arc.</p>
+<p>How do the four fundamental areas map onto these two dimensions? We can define each area as a combination of one pole from each duality; the four areas result from all possible permutations of the two dimensions. This produces the following high level characterizations of each area: (1) Value is concerned with concrete humanity, (2) Design with abstract humanity, (3) Analytics with abstract machinery, and (4) Systems is concerned with concrete machinery. All of these make intuitive sense, with the exception of Design. This is consistent, however, with the fact that the area of Design emerges from this analysis as an undervalued and not well understood area of expertise, even though Yau emphasized it early on (Yau 2009b). Indeed, one of the consequences of this analysis is to train our attention on this area of knowledge and to develop it further.</p>
+<p>One exciting interpretation of the two dimensions defined here is that they correspond to two principal components that undergird the general field of data science. As components, these axes define two orthogonal dimensions within which all the specific topics of data science may, in principle, be plotted. The reality behind these axes may be that they represent cognitive styles associated with the division of labor implied by the data science pipeline.</p>
+<p><strong>PC1: Human versus Machine</strong></p>
+<p>The human-machine axis accounts for the most variance in the field. This seems evident from the fact that Conway’s Venn diagram model of data science represents only the machine side of our model, with practice replaced by “substantive expertise” <span class="citation" data-cites="conway2010">(<a href="01-structure-the-model.html#ref-conway2010" role="doc-biblioref">Conway 2010</a>)</span>. The human side — Value and Design — is left out, or short-changed by being lumped in with domain knowledge. The very fact that the human side has to be explained and added to the model suggests strongly that it defines a pole at some distance from the areas of knowledge described in Conway’s model. The human pole refers to humanity understood as situated in their historical, social, and cultural milieu. It is synonymous with <em>human experience</em>. The machine pole refers to the technoscientific apparatus of formal, quantitative reasoning that operates on representations of the human and the world. In the context of data science, it is more or less synonymous with <em>machine intelligence</em>, broadly conceived to include machine learning but also other modes of analysis on the spectrum of prediction and inference. Given these poles, the human-machine axis represents the opposition between humanistic disciplines that seek to understand human experience as such, and the formal sciences that employ machine intelligence, broadly conceived, to interpret that experience as represented and aggregated in the form of data.</p>
+<p><strong>PC2: Concrete versus Abstract</strong></p>
+<p>The abstract-concrete axis accounts for the difference between two forms of knowledge, roughly between direct experience and the indirect representation of that experience enabled through data. Both the realm of Value and Systems involve immersion in the messy details of lived experience — and direct acquaintance with the devils in those details. This is the messy world of hacks and ironies. The realms of Design and Analysis, on the other hand, are founded on abstract representations that strive for clear and distinct purity, and which allow for deductive reasoning to succeed at the cost of simplifying assumptions and reduced representations. This is the orderly world of models. The concrete pole refers to situated knowledge, knowledge as understood by hackers and makers, but also ethnographers who seek to maximize thick description in their work. It represents <em>concrete materiality</em>. The abstract pole refers to formal knowledge, knowledge in the form of mathematical symbolism, deductive proofs, and algorithmic patterns. It is <em>abstract form</em>. Given these poles, the concrete-abstract axis is roughly the opposition between applied and pure forms of knowledge, between those that embrace materiality and those that seek purity of form.</p>
+</section>
+<section id="final-representation" class="level2" data-number="9.8">
+<h2 data-number="9.8" class="anchored" data-anchor-id="final-representation"><span class="header-section-number">9.8</span> Final Representation</h2>
+<p>The result of the preceding may be represented by the following graphic.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image5.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">The 4+1 Model of Data Science</figcaption><p></p>
+</figure>
+</div>
+<p>This visualization represents data science as composed of specific and complementary forms of knowledge. The vertical axis defines the dominant polarity between analysis — the <em>how</em> of data science, often identified entirely with it, contrasted with the <em>why</em> of data science, from which data science derives its meaning and value as a profession. The horizontal access defines the polarity of methods that are often obscured in academic definitions of data science — the supporting practices that make the Analytics component work in the first place.</p>
+</section>
+<section id="references" class="level2" data-number="9.9">
+<h2 data-number="9.9" class="anchored" data-anchor-id="references"><span class="header-section-number">9.9</span> References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-afcrl1963" class="csl-entry" role="doc-biblioentry">
+AFCRL. 1963. <span>“Report on Research at AFCRL: July 1962 - July
+1963.”</span> Bedford, Mass.
+</div>
+<div id="ref-afcrl1967" class="csl-entry" role="doc-biblioentry">
+———. 1967. <span>“Report on Research at AFCRL: July 1965 - June
+1967.”</span> Bedford, Massachusetts.
+</div>
+<div id="ref-afcrl1970" class="csl-entry" role="doc-biblioentry">
+———. 1970. <span>“Report on Research at AFCRL: July 1967 <span></span>
+June 1970.”</span> Bedford, Massachusetts.
+</div>
+<div id="ref-altshuler2013" class="csl-entry" role="doc-biblioentry">
+Altshuler, Edward E. 2013. <em>The Rise and Fall of Air Force Cambridge
+Research Laboratories</em>. CreateSpace Independent Publishing Platform.
+</div>
+<div id="ref-alvarado2017" class="csl-entry" role="doc-biblioentry">
+Alvarado, Rafael, and Paul Humphreys. 2017. <span>“Big Data, Thick
+Mediation, and Representational Opacity.”</span> <em>New Literary
+History</em> 48 (4): 729–49. <a href="https://doi.org/10.1353/nlh.2017.0037">https://doi.org/10.1353/nlh.2017.0037</a>.
+</div>
+<div id="ref-anderson2008" class="csl-entry" role="doc-biblioentry">
+Anderson, Chris. 2008. <span>“The End of Theory: The Data Deluge Makes
+the Scientific Method Obsolete.”</span> <em>Wired</em> 16 (June). <a href="http://www.wired.com/science/discoveries/magazine/16-07/pb_theory">http://www.wired.com/science/discoveries/magazine/16-07/pb_theory</a>.
+</div>
+<div id="ref-ando1966" class="csl-entry" role="doc-biblioentry">
+Ando, A., and G. M. Kaufman. 1966. <span>“Evaluation of an Ad Hoc
+Procedure for Estimating Parameters of Some Linear Models.”</span>
+<em>The Review of Economics and Statistics</em> 48 (3): 334–40. <a href="https://doi.org/10.2307/1927089">https://doi.org/10.2307/1927089</a>.
+</div>
+<div id="ref-appropriations1958" class="csl-entry" role="doc-biblioentry">
+Appropriations, United States Congress House. 1958. <em>Second
+Supplemental Appropriation Bill: 1958, Hearings ... 85th Congress, 2d
+Session</em>.
+</div>
+<div id="ref-bell2007" class="csl-entry" role="doc-biblioentry">
+Bell, Gordon, Jim Gray, and Alex Szalay. 2007. <span>“Petascale
+Computational Systems.”</span> <em>arXiv:cs/0701165</em>, January. <a href="http://arxiv.org/abs/cs/0701165">http://arxiv.org/abs/cs/0701165</a>.
+</div>
+<div id="ref-berners-lee2008" class="csl-entry" role="doc-biblioentry">
+Berners-Lee, Tim, and Mark Fischetti. 2008. <em>Weaving the Web: The
+Original Design and Ultimate Destiny of the World Wide Web by Its
+Inventor</em>. Paw Prints.
+</div>
+<div id="ref-borne2009" class="csl-entry" role="doc-biblioentry">
+Borne, Kirk D., Suzanne Jacoby, K. Carney, A. Connolly, T. Eastman, M.
+J. Raddick, J. A. Tyson, and J. Wallin. 2009. <span>“The Revolution in
+Astronomy Education: Data Science for the Masses.”</span>
+<em>arXiv:0909.3895 [Astro-Ph, Physics:physics]</em>, September. <a href="http://arxiv.org/abs/0909.3895">http://arxiv.org/abs/0909.3895</a>.
+</div>
+<div id="ref-breiman2001" class="csl-entry" role="doc-biblioentry">
+Breiman, Leo. 2001. <span>“Statistical Modeling: The Two
+Cultures.”</span> <em>Statistical Science</em> 16 (3): 199–231. <a href="https://doi.org/10.1214/ss/1009213726">https://doi.org/10.1214/ss/1009213726</a>.
+</div>
+<div id="ref-breiman1976" class="csl-entry" role="doc-biblioentry">
+Breiman, L., and W. S. Meisel. 1976. <span>“General Estimates of the
+Intrinsic Variability of Data in Nonlinear Regression Models.”</span>
+<em>Journal of the American Statistical Association</em> 71 (354):
+301–7. <a href="https://doi.org/10.2307/2285301">https://doi.org/10.2307/2285301</a>.
+</div>
+<div id="ref-bryce2001" class="csl-entry" role="doc-biblioentry">
+Bryce, G. Rex, Robert Gould, William I. Notz, and Roxy L. Peck. 2001.
+<span>“Curriculum Guidelines for Bachelor of Science Degrees in
+Statistical Science.”</span> <em>The American Statistician</em> 55 (1):
+7–13. <a href="https://www.jstor.org/stable/2685523">https://www.jstor.org/stable/2685523</a>.
+</div>
+<div id="ref-chynoweth2008" class="csl-entry" role="doc-biblioentry">
+Chynoweth, Carly. 2008. <span>“Communication Is Key for
+Programmers.”</span> <em>The Times</em>, May. <a href="https://advance.lexis.com/document/?pdmfid=1516831&amp;crid=e0aaeba2-6f62-410b-bc54-a11d5f8f5253&amp;pddocfullpath=%2Fshared%2Fdocument%2Fnews%2Furn%3AcontentItem%3A4SFX-GS40-TX38-S09K-00000-00&amp;pdcontentcomponentid=10939&amp;pdteaserkey=sr30&amp;pditab=allpods&amp;ecomp=gb63k&amp;earg=sr30&amp;prid=19e1f7de-2617-49de-93da-706f9a17e95e">https://advance.lexis.com/document/?pdmfid=1516831&amp;crid=e0aaeba2-6f62-410b-bc54-a11d5f8f5253&amp;pddocfullpath=%2Fshared%2Fdocument%2Fnews%2Furn%3AcontentItem%3A4SFX-GS40-TX38-S09K-00000-00&amp;pdcontentcomponentid=10939&amp;pdteaserkey=sr30&amp;pditab=allpods&amp;ecomp=gb63k&amp;earg=sr30&amp;prid=19e1f7de-2617-49de-93da-706f9a17e95e</a>.
+</div>
+<div id="ref-cleveland2001" class="csl-entry" role="doc-biblioentry">
+Cleveland, William S. 2001. <span>“Data Science: An Action Plan for
+Expanding the Technical Areas of the Field of Statistics.”</span>
+<em>International Statistical Review / Revue Internationale de
+Statistique</em> 69 (1): 21–26. <a href="https://doi.org/10.2307/1403527">https://doi.org/10.2307/1403527</a>.
+</div>
+<div id="ref-codd1970" class="csl-entry" role="doc-biblioentry">
+Codd, Edgar F. 1970. <span>“A Relational Model of Data for Large Shared
+Data Banks.”</span> <em>Communications of the ACM</em> 13 (6): 377387.
+<a href="http://dl.acm.org/citation.cfm?id=362685">http://dl.acm.org/citation.cfm?id=362685</a>.
+</div>
+<div id="ref-conway2010" class="csl-entry" role="doc-biblioentry">
+Conway, Drew. 2010. <span>“The Data Science Venn Diagram.”</span> <a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram">http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram</a>.
+</div>
+<div id="ref-corliss1967" class="csl-entry" role="doc-biblioentry">
+Corliss, William R. 1967. <em>Scientific Satellites</em>. Scientific;
+Technical Information Division, National Aeronautics; Space
+Administration.
+</div>
+<div id="ref-crawfordjr.1974" class="csl-entry" role="doc-biblioentry">
+Crawford, Jr., Perry. 1974. <span>“On the Connections Between Data and
+Things in the Real World.”</span> In, 51–57.
+</div>
+<div id="ref-davenport2012" class="csl-entry" role="doc-biblioentry">
+Davenport, Thomas H., and D. J. Patil. 2012. <span>“Data Scientist: The
+Sexiest Job of the 21st Century.”</span> <a href="https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century">https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century</a>.
+</div>
+<div id="ref-davis" class="csl-entry" role="doc-biblioentry">
+Davis, Miriam. n.d. <span>“The Canary That Forgot Its Song.”</span>
+</div>
+<div id="ref-donoho2017" class="csl-entry" role="doc-biblioentry">
+Donoho, David. 2017. <span>“50 Years of Data Science.”</span>
+<em>Journal of Computational and Graphical Statistics</em> 26 (4):
+745–66. <a href="https://doi.org/10.1080/10618600.2017.1384734">https://doi.org/10.1080/10618600.2017.1384734</a>.
+</div>
+<div id="ref-driscoll2009" class="csl-entry" role="doc-biblioentry">
+Driscoll, Michael E. 2009. <span>“The Three Sexy Skills of Data
+Geeks.”</span> <a href="https://web.archive.org/web/20090530074011/dataspora.com/blog/sexy-data-geeks/">https://web.archive.org/web/20090530074011/dataspora.com/blog/sexy-data-geeks/</a>.
+</div>
+<div id="ref-fayyad1996" class="csl-entry" role="doc-biblioentry">
+Fayyad, Usama M., Gregory Piatetsky-Shapiro, and Padhraic Smyth. 1996.
+<span>“From Data Mining to Knowledge Discovery: An Overview.”</span> In,
+134. USA: American Association for Artificial Intelligence.
+</div>
+<div id="ref-friedman1997" class="csl-entry" role="doc-biblioentry">
+Friedman, Jerome H. 1997. <span>“Data Mining and Statistics: What’s the
+Connection?”</span> <a href="https://www.academia.edu/28735089/Data_Mining_and_Statistics_Whats_the_Connection">https://www.academia.edu/28735089/Data_Mining_and_Statistics_Whats_the_Connection</a>.
+</div>
+<div id="ref-fry2004" class="csl-entry" role="doc-biblioentry">
+Fry, Benjamin Jotham. 2004. <span>“Computational Information
+Design.”</span> PhD thesis. <a href="https://dspace.mit.edu/handle/1721.1/26913">https://dspace.mit.edu/handle/1721.1/26913</a>.
+</div>
+<div id="ref-garfinkel2000" class="csl-entry" role="doc-biblioentry">
+Garfinkel, Simson. 2000. <em>Database Nation: The Death of Privacy in
+the 21st Century</em>. O’Reilly Media, Inc.
+</div>
+<div id="ref-ifipgui1971" class="csl-entry" role="doc-biblioentry">
+Gould, I. H., ed. 1971. <em>IFIP Guide to Concepts and Terms in Data
+Processing</em>. Vol. 2. London: North-Holland. <a href="https://www.google.com/books/edition/IFIP_Guide_to_Concepts_and_Terms_in_Data/S9C7AAAAIAAJ?hl=en&amp;gbpv=0">https://www.google.com/books/edition/IFIP_Guide_to_Concepts_and_Terms_in_Data/S9C7AAAAIAAJ?hl=en&amp;gbpv=0</a>.
+</div>
+<div id="ref-halevy2009" class="csl-entry" role="doc-biblioentry">
+Halevy, Alon, Peter Norvig, and Fernando Pereira. 2009. <span>“The
+Unreasonable Effectiveness of Data.”</span> <em>IEEE Intelligent
+Systems</em> 24 (2): 812. <a href="https://ieeexplore.ieee.org/abstract/document/4804817">https://ieeexplore.ieee.org/abstract/document/4804817</a>.
+</div>
+<div id="ref-hammerbacher2009" class="csl-entry" role="doc-biblioentry">
+Hammerbacher, Jeff. 2009. <span>“Information Platforms and the Rise of
+the Data Scientist.”</span> In, 7384. O’Reilly Media Sebastopol, CA.
+</div>
+<div id="ref-hayashi1998" class="csl-entry" role="doc-biblioentry">
+Hayashi, Chikio. 1998a. <em>Data Science, Classification, and Related
+Methods: Proceedings of the Fifth Conference of the International
+Federation of Classification Societies (IFCS-96), Kobe, Japan, March
+27-30, 1996</em>. Kobe, Japan: Springer.
+</div>
+<div id="ref-hayashi1998a" class="csl-entry" role="doc-biblioentry">
+———. 1998b. <em>Data Science, Classification, and Related Methods:
+Proceedings of the Fifth Conference of the International Federation of
+Classification Societies (IFCS-96), Kobe, Japan, March 27-30, 1996</em>.
+Kobe, Japan: Springer.
+</div>
+<div id="ref-hendry1995" class="csl-entry" role="doc-biblioentry">
+Hendry, David F. 1995. <em>Dynamic Econometrics</em>. Advanced Texts in
+Econometrics. New York: Oxford Univ Press. <a href="https://www.google.com/books/edition/Dynamic_Econometrics/XcWVN2-2ZqIC?hl=en&amp;gbpv=1&amp;dq=%22data+mining%22&amp;pg=PA544&amp;printsec=frontcover">https://www.google.com/books/edition/Dynamic_Econometrics/XcWVN2-2ZqIC?hl=en&amp;gbpv=1&amp;dq=%22data+mining%22&amp;pg=PA544&amp;printsec=frontcover</a>.
+</div>
+<div id="ref-hey2009" class="csl-entry" role="doc-biblioentry">
+Hey, Tony, Stewart Tansley, and Kristin Tolle. 2009. <em>The Fourth
+Paradigm: Data-Intensive Scientific Discovery</em>. <a href="https://www.microsoft.com/en-us/research/publication/fourth-paradigm-data-intensive-scientific-discovery/">https://www.microsoft.com/en-us/research/publication/fourth-paradigm-data-intensive-scientific-discovery/</a>.
+</div>
+<div id="ref-higgins1999" class="csl-entry" role="doc-biblioentry">
+Higgins, James J. 1999. <span>“Nonmathematical Statistics: A New
+Direction for the Undergraduate Discipline.”</span> <em>The American
+Statistician</em> 53 (1): 1–6. <a href="https://doi.org/10.1080/00031305.1999.10474418">https://doi.org/10.1080/00031305.1999.10474418</a>.
+</div>
+<div id="ref-89618ac5-1e4e-3cce-a5de-eb7b926f27c9" class="csl-entry" role="doc-biblioentry">
+Kettenring, Jon R. 1997. <span>“Shaping Statistics for Success in the
+21st Century.”</span> <em>Journal of the American Statistical
+Association</em> 92 (440): 12291234. <a href="http://www.jstor.org/stable/2965390">http://www.jstor.org/stable/2965390</a>.
+</div>
+<div id="ref-lévi-strauss1955" class="csl-entry" role="doc-biblioentry">
+Lévi-Strauss, Claude. 1955. <span>“The Structural Study of Myth.”</span>
+<em>The Journal of American Folklore</em> 68 (270): 428–44. <a href="https://doi.org/10.2307/536768">https://doi.org/10.2307/536768</a>.
+</div>
+<div id="ref-lide2012" class="csl-entry" role="doc-biblioentry">
+Lide, David R., and Gordon H. Wood. 2012. <em>CODATA @ 45 Years: The
+Story of the ICSU Committee on Data for Science and Technology (CODATA)
+from 1966 to 2010</em>. Paris, France: CODATA. <a href="https://books.google.com/books/about/CODATA_45_Years.html?id=NjA8kgEACAAJ&amp;utm_source=gb-gplus-shareCODATA">https://books.google.com/books/about/CODATA_45_Years.html?id=NjA8kgEACAAJ&amp;utm_source=gb-gplus-shareCODATA</a>.
+</div>
+<div id="ref-lohr2009" class="csl-entry" role="doc-biblioentry">
+Lohr, Steve. 2009. <span>“For Today<span>’</span>s Graduate, Just One
+Word: Statistics.”</span> <em>The New York Times</em>, August. <a href="https://www.nytimes.com/2009/08/06/technology/06stats.html">https://www.nytimes.com/2009/08/06/technology/06stats.html</a>.
+</div>
+<div id="ref-loukides2011" class="csl-entry" role="doc-biblioentry">
+Loukides, Mike. 2011. <em>What Is Data Science?</em>
+<span>"</span>O’Reilly Media, Inc.<span>"</span>.
+</div>
+<div id="ref-lovell1983" class="csl-entry" role="doc-biblioentry">
+Lovell, Michael C. 1983. <span>“Data Mining.”</span> <em>The Review of
+Economics and Statistics</em> 65 (1): 1–12. <a href="https://doi.org/10.2307/1924403">https://doi.org/10.2307/1924403</a>.
+</div>
+<div id="ref-mason2010" class="csl-entry" role="doc-biblioentry">
+Mason, Hilary, and Christopher Wiggins. 2010. <span>“A Taxonomy of Data
+Science.”</span> <a href="http://www.dataists.com/2010/09/a-taxonomy-of-data-science/">http://www.dataists.com/2010/09/a-taxonomy-of-data-science/</a>.
+</div>
+<div id="ref-mckinseycompany2009" class="csl-entry" role="doc-biblioentry">
+McKinsey &amp; Company. 2009. <span>“Hal Varian on How the Web
+Challenges Managers.”</span> <em>McKinsey &amp; Company</em>, January.
+<a href="https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/hal-varian-on-how-the-web-challenges-managers">https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/hal-varian-on-how-the-web-challenges-managers</a>.
+</div>
+<div id="ref-mohawkd1966" class="csl-entry" role="doc-biblioentry">
+<span>“Mohawk Data Sciences.”</span> 1966. <em>The New York Times</em>,
+July. <a href="https://www.nytimes.com/1966/07/30/archives/mohawk-data-sciences.html">https://www.nytimes.com/1966/07/30/archives/mohawk-data-sciences.html</a>.
+</div>
+<div id="ref-mortcollinsventures" class="csl-entry" role="doc-biblioentry">
+Mort Collins Ventures. n.d. <span>“Bio.”</span> <a href="http://www.mcollinsventures.com/bio/">http://www.mcollinsventures.com/bio/</a>.
+</div>
+<div id="ref-naur1966" class="csl-entry" role="doc-biblioentry">
+Naur, Peter. 1966. <span>“The Science of Datalogy.”</span>
+<em>Communications of the ACM</em> 9 (7): 485. <a href="https://doi.org/10.1145/365719.366510">https://doi.org/10.1145/365719.366510</a>.
+</div>
+<div id="ref-naur1968" class="csl-entry" role="doc-biblioentry">
+———. 1968. <span>“’Datalogy’, the Science of Data and Data
+Processes.”</span> In, 13831387.
+</div>
+<div id="ref-naur1974" class="csl-entry" role="doc-biblioentry">
+———. 1974. <em>Concise Survey of Computer Methods</em>. Petrocelli
+Books.
+</div>
+<div id="ref-naur1992" class="csl-entry" role="doc-biblioentry">
+———. 1992. <em>Computing, a Human Activity</em>. ACM Press.
+</div>
+<div id="ref-newscie1992" class="csl-entry" role="doc-biblioentry">
+<span>“New Scientist.”</span> 1992.
+</div>
+<div id="ref-newscie1995a" class="csl-entry" role="doc-biblioentry">
+———. 1995.
+</div>
+<div id="ref-newscie1996" class="csl-entry" role="doc-biblioentry">
+———. 1996.
+</div>
+<div id="ref-newscie1999" class="csl-entry" role="doc-biblioentry">
+———. 1999.
+</div>
+<div id="ref-newscie2001" class="csl-entry" role="doc-biblioentry">
+———. 2001.
+</div>
+<div id="ref-office1979" class="csl-entry" role="doc-biblioentry">
+Office, Library of Congress Copyright. 1979. <em>Catalog of Copyright
+Entries. Third Series: 1977: July-December: Index</em>. Copyright
+Office, Library of Congress.
+</div>
+<div id="ref-ohsumi1992" class="csl-entry" role="doc-biblioentry">
+Ohsumi, Noboru. 1992. <span>“An Experimental System for Navigating
+Statistical Meta-Information <span></span> The Meta-Stat
+Navigator.”</span> In, edited by Yadolah Dodge and Joe Whittaker,
+375–80. Heidelberg: Physica-Verlag HD. <a href="https://doi.org/10.1007/978-3-642-48678-4_48">https://doi.org/10.1007/978-3-642-48678-4_48</a>.
+</div>
+<div id="ref-ohsumi1994" class="csl-entry" role="doc-biblioentry">
+———. 1994. <span>“New Data and New Tools: A Hypermedia Environment for
+Navigating Statistical Knowledge in Data Science.”</span> In, 45–54.
+Berlin: Springer-Verlag.
+</div>
+<div id="ref-ohsumi2000" class="csl-entry" role="doc-biblioentry">
+———. 2000. <span>“From Data Analysis to Data Science.”</span> In,
+329334. Springer.
+</div>
+<div id="ref-ohsumi2004" class="csl-entry" role="doc-biblioentry">
+———. 2004. <span>“IFCS-2004 in Chicago.”</span> In. <a href="https://www.researchgate.net/publication/268719699_Memories_of_Chikio_Hayashi_and_his_great_achievement_2004">https://www.researchgate.net/publication/268719699_Memories_of_Chikio_Hayashi_and_his_great_achievement_2004</a>.
+</div>
+<div id="ref-owen2015" class="csl-entry" role="doc-biblioentry">
+Owen, Sean. 2015. <span>“What <span>“</span>50 Years of Data
+Science<span>”</span> Leaves Out.”</span> <a href="https://medium.com/@srowen/what-50-years-of-data-science-leaves-out-2366c9b61d3d">https://medium.com/@srowen/what-50-years-of-data-science-leaves-out-2366c9b61d3d</a>.
+</div>
+<div id="ref-parsons2019" class="csl-entry" role="doc-biblioentry">
+Parsons, Mark A. 2019. <span>“Revised Focus and Scope.”</span> <em>The
+Data Science Journal</em>, November. <a href="https://codata.org/codata-data-science-journal-revised-focus-and-scope/">https://codata.org/codata-data-science-journal-revised-focus-and-scope/</a>.
+</div>
+<div id="ref-parzen1977" class="csl-entry" role="doc-biblioentry">
+Parzen, Emanuel. 1977. <span>“Nonparametric Statistical Data Science: A
+Unified Approach Based on Density Estimation and Testing for’white
+Noise’.”</span>
+</div>
+<div id="ref-parzen1979" class="csl-entry" role="doc-biblioentry">
+———. 1979. <span>“Nonparametric Statistical Data Modeling.”</span>
+<em>Journal of the American Statistical Association</em> 74 (365):
+105–21. <a href="https://doi.org/10.2307/2286734">https://doi.org/10.2307/2286734</a>.
+</div>
+<div id="ref-parzen2013" class="csl-entry" role="doc-biblioentry">
+Parzen, Emanuel, and Subhadeep Mukhopadhyay. 2013. <span>“LP Mixed Data
+Science : Outline of Theory.”</span> <em>arXiv:1311.0562 [Math,
+Stat]</em>, November. <a href="http://arxiv.org/abs/1311.0562">http://arxiv.org/abs/1311.0562</a>.
+</div>
+<div id="ref-patil2011" class="csl-entry" role="doc-biblioentry">
+Patil, D. J. 2011. <span>“Building Data Science Teams.”</span>
+<em>O’Reilly Radar</em>, September. <a href="http://radar.oreilly.com/2011/09/building-data-science-teams.html">http://radar.oreilly.com/2011/09/building-data-science-teams.html</a>.
+</div>
+<div id="ref-piatetsky-shapiro1991" class="csl-entry" role="doc-biblioentry">
+Piatetsky-Shapiro, Gregory. 1991. <span>“Knowledge Disovery in Real
+Databases: A Report on the IJCAI-89 Workshop.”</span> <em>AI
+Magazine</em> 11 (January): 68–70. <a href="https://www.kdnuggets.com/meetings-past/kdd89/kdd-89-report-aimag.html">https://www.kdnuggets.com/meetings-past/kdd89/kdd-89-report-aimag.html</a>.
+</div>
+<div id="ref-propp1977" class="csl-entry" role="doc-biblioentry">
+Propp, V. I. A, and A. Dundes. 1977. <em>Morphology of the
+Folktale</em>. University of Texas Press.
+</div>
+<div id="ref-roberta" class="csl-entry" role="doc-biblioentry">
+<span>“Robert Allen Obituary (2014) - St. Louis, MO - St. Louis
+Post-Dispatch.”</span> n.d. <a href="https://www.legacy.com/us/obituaries/stltoday/name/robert-allen-obituary?id=3008349">https://www.legacy.com/us/obituaries/stltoday/name/robert-allen-obituary?id=3008349</a>.
+</div>
+<div id="ref-russell1995" class="csl-entry" role="doc-biblioentry">
+Russell, Stuart Jonathan, and Peter Norvig. 1995. <em>Artificial
+Intelligence: A Modern Approach</em>. Prentice Hall.
+</div>
+<div id="ref-shannon1948" class="csl-entry" role="doc-biblioentry">
+Shannon, C. E. 1948. <span>“A Mathematical Theory of
+Communication.”</span> <em>Bell Systems Technical Journal</em> 27:
+379423 and 623656. <a href="http://portal.acm.org/citation.cfm?id=584093">http://portal.acm.org/citation.cfm?id=584093</a>.
+</div>
+<div id="ref-shapiro2006" class="csl-entry" role="doc-biblioentry">
+Shapiro, Ehud, Stuart Rison, Andrew Phillips, Andrew Herbert, Editors,
+and Stephen Emmott. 2006. <em>Towards 2020 Science</em>. Microsoft. <a href="https://www.microsoft.com/en-us/research/publication/towards-2020-science-2/">https://www.microsoft.com/en-us/research/publication/towards-2020-science-2/</a>.
+</div>
+<div id="ref-simberloff2005" class="csl-entry" role="doc-biblioentry">
+Simberloff, Daniel, B. C. Barish, K. K. Droegemeier, D. Etter, N.
+Fedoroff, K. Ford, L. Lanzerotti, A. Leshner, J. Lubchenco, and M.
+Rossmann. 2005. <span>“Long-Lived Digital Data Collections: Enabling
+Research and Education in the 21st Century.”</span> <em>National Science
+Foundation</em>.
+</div>
+<div id="ref-smith2006" class="csl-entry" role="doc-biblioentry">
+Smith, F. 2006. <span>“Data Science as an Academic Discipline.”</span>
+<em>Data Science Journal</em> 5 (0): 163–64. <a href="http://datascience.codata.org/articles/abstract/482/">http://datascience.codata.org/articles/abstract/482/</a>.
+</div>
+<div id="ref-swan2008" class="csl-entry" role="doc-biblioentry">
+Swan, Alma, and Sheridan Brown. 2008. <span>“The Skills, Role and Career
+Structure of Data Scientists and Curators: An Assessment of Current
+Practice and Future Needs.”</span> <a href="http://repository.jisc.ac.uk/245/">http://repository.jisc.ac.uk/245/</a>.
+</div>
+<div id="ref-tukey1962" class="csl-entry" role="doc-biblioentry">
+Tukey, John W. 1962. <span>“The Future of Data Analysis.”</span> <em>The
+Annals of Mathematical Statistics</em> 33 (1): 1–67. <a href="http://www.jstor.org/stable/2237638">http://www.jstor.org/stable/2237638</a>.
+</div>
+<div id="ref-tukey1979" class="csl-entry" role="doc-biblioentry">
+———. 1979. <span>“Nonparametric Statistical Data Modeling:
+Comment.”</span> <em>Journal of the American Statistical
+Association</em> 74 (365): 121–22. <a href="https://doi.org/10.2307/2286735">https://doi.org/10.2307/2286735</a>.
+</div>
+<div id="ref-varian2010" class="csl-entry" role="doc-biblioentry">
+Varian, Hal R. 2010. <span>“Computer Mediated Transactions.”</span>
+<em>American Economic Review</em> 100 (2): 1–10. <a href="https://doi.org/10.1257/aer.100.2.1">https://doi.org/10.1257/aer.100.2.1</a>.
+</div>
+<div id="ref-wirth1999" class="csl-entry" role="doc-biblioentry">
+Wirth, Rüdiger, and Jochen Hipp. 1999. <span>“CRISP-DM: Towards a
+Standard Process Model for Data Mining.”</span> <a href="https://www.semanticscholar.org/paper/Crisp-dm%3A-towards-a-standard-process-modell-for-Wirth-Hipp/48b9293cfd4297f855867ca278f7069abc6a9c24">https://www.semanticscholar.org/paper/Crisp-dm%3A-towards-a-standard-process-modell-for-Wirth-Hipp/48b9293cfd4297f855867ca278f7069abc6a9c24</a>.
+</div>
+<div id="ref-witt2008" class="csl-entry" role="doc-biblioentry">
+Witt, Michael. 2008. <span>“Institutional Repositories and Research Data
+Curation in a Distributed Environment.”</span> <em>Library Trends</em>
+57 (2): 191201.
+</div>
+<div id="ref-wu1997a" class="csl-entry" role="doc-biblioentry">
+Wu, C. F. Jeff. 1997. <span>“Statistics = Data Science?”</span>
+</div>
+<div id="ref-wu1997" class="csl-entry" role="doc-biblioentry">
+Wu, Dekai. 1997. <em>Stochastic Inversion Transduction Grammars and
+Bilingual Parsing of Parallel Corpora</em>.
+</div>
+<div id="ref-yau2009" class="csl-entry" role="doc-biblioentry">
+Yau, Nathan. 2009. <span>“Rise of the Data Scientist.”</span> <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/">https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/</a>.
+</div>
+<div id="ref-zhu2015" class="csl-entry" role="doc-biblioentry">
+Zhu, Yangyong, and Yun Xiong. 2015. <span>“Towards Data Science.”</span>
+<em>Data Science Journal</em> 14 (0): 8. <a href="https://doi.org/10.5334/dsj-2015-008">https://doi.org/10.5334/dsj-2015-008</a>.
+</div>
+<div id="ref-zhu2009" class="csl-entry" role="doc-biblioentry">
+Zhu, Yangyong, Ning Zhong, and Yun Xiong. 2009. <span>“Data Explosion,
+Data Nature and Dataology.”</span> In, edited by Ning Zhong, Kuncheng
+Li, Shengfu Lu, and Lin Chen, 147–58. Lecture Notes in Computer Science.
+Berlin, Heidelberg: Springer. <a href="https://doi.org/10.1007/978-3-642-04954-5_25">https://doi.org/10.1007/978-3-642-04954-5_25</a>.
+</div>
+<div id="ref-zuboff1995" class="csl-entry" role="doc-biblioentry">
+Zuboff, Shoshana. 1995. <em>In the Age of the Smart Machine: The Future
+of Work and Power</em>. [Repr.]. Basic Books. <a href="http://gen.lib.rus.ec/book/index.php?md5=76dd1180c201eed5973bf83d45489b37">http://gen.lib.rus.ec/book/index.php?md5=76dd1180c201eed5973bf83d45489b37</a>.
+</div>
+<div id="ref-zuboff2019" class="csl-entry" role="doc-biblioentry">
+———. 2019. <em>The Age of Surveillance Capitalism: The Fight for a Human
+Future at the New Frontier of Power</em>. 1 edition. New York:
+PublicAffairs.
+</div>
+</div>
+
+
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>For a detailed review of these sources, see the <a href="../99_Appendices/structure-sources.qmd">Appendix</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../chapters/01_History/08-history-interpretation.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Interpration</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../chapters/02_Structure/02-structure-ds-and-ai.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Relation to AI</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -1,0 +1,200 @@
+# The 2010s
+
+## The Disconnect with Statistics
+
+Among the most significant developments in the years immediately
+following the emergence of what I have called big data science was the
+explicit perception by professional statisticians that all of this
+occurred independently of their field, and that statisticians would do
+well to take advantage of the new interest in data that was sweeping the
+business world. In a series of surprisingly candid editorials in
+*AmStatNews*---the membership magazine of the American Statistical
+Society---no fewer than three succeeding presidents of the organization,
+from 2012 to 2014, offered their views on what they saw as a troubling
+"disconnect" between the field of statistics and data science.
+
+This disconnect---between the self-perception among statisticians that
+they already are data scientists and their exclusion from real
+developments in industry and the media under the name of big data---is
+captured by this anecdote given by Marie Davidian in her column
+(entitled "Aren't We Data Scientists?"):
+
+I was astonished to review the list of founding members \[of the
+National Consortium for Data Science (NCDS) based in North Carolina\]
+and see that not only is my university (North Carolina State) a founding
+member, but so are Duke University and UNC-CH. Along with SAS Institute;
+Research Triangle Institute International; NIH's National Institute for
+Environmental Health Sciences; IBM; and several other institutions,
+businesses, and government agencies that employ numerous statisticians.
+The member representatives listed on the website from NC State, Duke,
+and UNC-CH are computer scientists/engineers, and among all 17
+representatives, *there is not one statistician*. (Davidian 2013: 3;
+emphasis added.)
+
+The gap was noted a year earlier by Robert Rodriguez, but without the
+surprise:
+
+A recurring theme in Big Data stories is the scarcity of "data
+scientists"---the term used for people who can draw insights from large
+quantities of data. This shortage was highlighted in an April 26, 2012,
+*Wall Street Journal* article titled, "Big Data's Big Problem: Little
+Talent" (Rooney 2012). The question "What is a data scientist?" is still
+being debated (see the articles with this title at Forbes). However,
+*there is consensus that data scientists must be innovative problem
+solvers with expertise in statistical modeling and machine learning,
+specialized programming skills, and a solid grasp of the problem
+domain*. Hilary Mason, chief data scientist at bitly, adds that "*data
+scientists are responsible for effectively communicating the things that
+they learn. That might be creating visualizations or telling the story
+of the question, the answer, and the context*." (Rodriguez 2012: 3-4;
+citation and emphases added.)
+
+It is notable that Rodriguez clearly recognized the reality behind the
+disconnect, conceding that "our profession and the ASA have not been
+very involved in Big Data activities." He did not trivialize the
+concepts of big data and data science; instead, he patiently explained
+their distinctive features and provided suggestions for how
+statisticians can add value to these developments going forward. He
+suggested that statisticians should "view data science as a blend of
+statistical, mathematical, and computational sciences," and focus their
+efforts on how to "extract value from data not only by learning from it,
+but also by understanding its limitations and improving its quality.
+Better data matters because simply having Big Data does not guarantee
+reliable answers for Big Questions."
+
+In a subsequent editorial co-authored with the two succeding presidents
+of the ASA, Rodriguez's recognition of the absence of statistics from
+data science and his strategy to focus on what statisticians do best is
+amplified and augmented:
+
+Ideally, statistics and statisticians should be the leaders of the Big
+Data and data science movement. Realistically, we must take a different
+view. While our discipline is certainly central to any data analysis
+context, *the scope of Big Data and data science goes far beyond our
+traditional activities.* As Bob \[Rodriguez\] noted in his column, the
+sheer scale and velocity of the data being generated from multiple
+sources requires new data management and computational paradigms. New
+techniques for analysis and visualization must be developed. And
+communication and leadership skills are critical.
+
+We believe we should focus on what we need to do as a profession and as
+individuals to become valued contributors whose unique skills and
+expertise make us essential members of the Big Data team. . . . We know
+statistical thinking---our understanding of modeling, bias, confounding,
+false discovery, uncertainty, sampling, and design---brings much to the
+table. We also must be prepared to understand other ways of thinking
+that are critical in the Age of Big Data and to integrate these with our
+own expertise and knowledge.
+
+We have had many discussions---among ourselves and with ASA members who
+are familiar with Big Data---about strategies for achieving this
+preparation and integration. These discussions have led to our joint ASA
+presidential initiative to establish the statistical profession as a
+valued partner in Big Data activities and to position the ASA in a
+proactive and facilitating role. *The goal is to prepare members of our
+profession to collaborate on Big Data problems.* Ultimately, this
+preparation will bridge the disconnect between statistics and data
+science (Rodriguez, Davidian, and Schenker 2013; emphases added).
+
+Not all academic statisticians were willing to concede the point that
+data science "goes far beyond our traditional activities." Indeed, many
+viewed data science as an invader of their territory. Bin Yu, then
+president of the Institute of Mathematical Statistics, exhorted her
+colleagues to "own data science" (Yu 2014), echoing Davidian's
+exasperatated observation (and no doubt the sentiment of many) that
+statisticians "already are" data scientists. To make her point, she
+defined the core components of data science---statistics, domain
+knowledge, computing, teamwork, and communication---and then traced each
+of these to the traits of various ancestors in her field. In this
+narrative, Harry Carver, Herman Hollerrith, and John Tukey are all data
+scientists *avante la lettre*. Indeed, in Yu's narrative Carver is an
+"early machine learner," which allow her to claim machine learning as a
+province of statistics.
+
+## The Academic Response
+
+After 2012, the field of data science and the cluster of associated
+activities associated with it grew exponentially. As mentioned above,
+this growth was associated with a high demand for data scientists, a
+story that continues to be covered by the news media. The response by
+institutions of higher education to train data scientists to meet
+industry demand was rapid and pronounced. Hundreds of master's degree
+programs in data science and closely related fields were established in
+the United States, often associated with the formation of institutes of
+data science. More recently, a handful of doctoral programs and schools
+of data science have emerged, along with undergraduate offerings to meet
+increasing student demand. The trend to create degree programs for the
+field continues.
+
+One effect of these developments has been to stimulate a preferential
+attachment process within the network of disciplines that constitute the
+academy: as a field representing the "sexiest job of the 21^st^
+century," attracting students, gifts, and internal resources, many
+adjacent disciplines---from systems engineering and computer science to
+statistics and a variety of quantitative and computational
+sciences---have sought to associate themselves with the field. Indeed,
+because data science per se has had no history in the academy, these
+contiguous fields have provided the courses and faculty out of which the
+majority of data science programs have been built. The result is that
+data science has become a complex and internally competitive patchwork
+of industrial and academic interests and perspectives, reflecting the
+broader engagement of society with data and its analysis beyond the
+concept of data science inherited from industry.
+
+Yu's argument that statistics should take over data science is made
+again later, and more thoroughly, by Donoho in "50 Years of Data
+Science" (Donoho 2017), which is essentially a manifesto for the
+annexation of data science by departments of statistics in response to
+the proliferation of academic programs associated with the new field. He
+charts out the territory of "Greater Data Science" (GDS)---a playful
+reversal of Chambers' earlier plea for a "greater statistics" that would
+be "based on an inclusive concept of learning from data"---and places
+statistics at its center (Chambers 1993: 1). He locates GDS in a
+genealogy that begins with data analysis---a practice envisioned in the
+1960s by his mentor at Princeton, the legendary mathematician John
+Tukey, who serves as the founding ancestor in this legitimation
+narrative. GDS is thus defined as "a superset of the fields of
+statistics and machine learning, which adds some technology for 'scaling
+up' to 'big data'" (Donoho 2017 \[2015\]: 745). He also attempts to
+deflate the concept of big data, so central to contempory data science,
+by citing the Holerith's punched card system, which was invented to
+process the unexpectedly large volume of data produced by the 1890 US
+census, as an early instance and therefore nothing new. Like Yu,
+Donoho's argument is that, beyond the introducing a few useful
+technologies, data science as a whole is nothing new. It is a scandal
+that it has emerged outside of the field of statistics and is
+represented in the media as a distinct field.
+
+Donoho's essay has been criticized for downplaying the contribution of
+computational technology to data science. In his response to it, Chris
+Wiggins, Chief Data Scientist of the *New York Times* and a professor at
+Columbia, sensed this and asserted that data science is a form of
+engineering that will be defined by its practitioners, not by academics
+trying to turn it into a (pure) science. In his response, Sean Owen,
+Director of Data Science at Cloudera, argued that Donoho's history
+excluded the significant contributions of data engineering (Donoho 2017:
+764). Elsewhere, Bryan and Wickham pointed out that, like many
+statisticians, Donoho mistakenly relegated computational work to
+superficial status while also missing "the full process of analysis" in
+which statistics "is but one small part" (Bryan and Wickham 2017). In
+his defense, Donoho acknowledged his bias, but justified it by noting
+that although technological know-how is important, technologies are
+transitory and prone to rapid obsolescence, and therefore "the academic
+community can best focus on teaching broad principles---'science' rather
+than 'engineering'" (Donoho 2017: 765). *Scientia longa, brevis ars.*
+
+It is beyond the scope of this essay to fully evaluate the arguments of
+Donoho and Yu. Suffice it to say that when Facebook was hiring data
+scientists in 2008, the fact that someone's academic field could claim
+Hollerith and Carver as data scientists would not have improved that
+candidate's chances of being hired. What is significant here for
+understanding the history of data science is the social underpinning of
+the observed disconnect between members of the established field of
+statistics and those of the emerging one of data science. By 2012,
+Breiman's observation that the developments in algorithmic modeling, and
+more generally data mining, "occurred largely outside statistics in a
+new community," was proven to be both true and prescient: that new
+community became one of the primary tributaries to data science, and the
+long standing opposition of statistics toward the beliefs of that
+community---evident in Donoho and the predecessors he cites in the 1990s
+and early 2000s---became manifest.

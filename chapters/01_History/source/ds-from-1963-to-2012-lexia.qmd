@@ -1,0 +1,296 @@
+---
+title: "HODS Lexia"
+editor: visual
+---
+
+# Quotes to use
+
+> SK: Most statisticians start with design, followed by the col lection of data. Today a lot of "nondesigned" data are widely available. Others will analyze them if statisticians do not. It is imperative that the profession gets to the table earlier.
+>
+> SK: Sally Keller.
+>
+> Kettenring, Jon R., Kenneth J. Koehler, and John D. McKenzie. 2015. "Challenges and Opportunities for Statistics in the Next 25 Years." *The American Statistician* 69 (2): 86--90.
+
+> The second area is the current hot topic of data mining, which statisticians might reasonably think of as data analysis of very large databases. In fact, if you dig down and look at what is involved in data mining, you will find a variety of statistical components, such as statistical graphics and cluster analysis. Moreover, there is a great opportunity to bring a variety of statistical concepts to bear-modeling, sampling, robust estimation, outlier detection, dimensionality reduction, etc. Nevertheless, there are new opportunities as well, and we would be wise to pay very close attention and to become seriously involved with these developments.
+>
+> In fact, if we don't, there is risk that we will be blown away by the momentum that is flowing in this direction. As Jerry Friedman pointed out in his keynote address at Interface '97, we are no longer the only game in town. Many other data oriented sciences are competing with us for customers and students.
+>
+> Also it should not go unnoticed-speaking of image reconstruction!-that the very term, data mining, has captured the fancy of many people, especially in the business community. It is grabbing headlines that statisticians would kill for. The image of data mining is that something powerful is going on there. The reality? Well that may be rather different. It may even turn out that the phrase of the day in the 21st century is
+>
+> > lies, damned lies, and data mining.
+>
+> But for now I believe we should take advantage of the momentum before it fades into another missed opportunity for statistics [@89618ac5-1e4e-3cce-a5de-eb7b926f27c9: 1232].
+
+# Conway footnote
+
+Conway's famous Venn diagram comprising the areas of computer programming ("hacking"), math and statistics, and substantive expertise (domain knowledge) is no help here; each area is loosely defined, and the structure and purpose of their intersections are underspecified, a point underscored by the numerous reformulations of the diagram. This ambiguity may have been intentional, as Conway himself considered the term a "misnomer" (Conway 2010).
+
+# Use of Data Science in Other Contexts
+
+The formation of organizational units devoted to data science within the military was not limited to the AFCRL at this time.
+
+## WSMR
+
+White Sands Missile Range, Data Science Division, 1964?
+
+NOTE: WSMR was involved with AFCRL in the 1950s.
+
+-   Not sure when formed ... At least as far back as 1974 when Higgins assumes control.
+
+> The Data Sciences Division had responsibility for both *real-time* and post-test data acquisition and processing at White Sands. The real-time responsibility included the critical data (radar, telemetry, optics, etc.) acquisition, development of *real-time algorithms*, data processing, and display support for missile flight safety officers and project engineers --- a Range Control Center operation (Burkett 2003: 5; emphases added).
+
+**THIS CONNECTS DATA SCIENCE TO REAL-TIME!!!!**
+
+Continues to this day: Consider this Computer Engineer profile from LinkedIn:
+
+-   US Army, Sep 2007 - Jan 2010, 2 yrs 5 mos, Data Science Division, White Sands Missile Range, NM
+
+-   Member of team supporting the **Real Time Data Processing System** (RTDPS). Provided timely solutions to critical problems in RTDPS that were adversely affecting system performance and/or schedule.
+
+-   Utilized **real time programming** techniques to upgrade or generate different system utilities in the system. Utilized experience in networking to solve various network issues associated with the system.
+
+-   Served as expert in system timing providing solutions for keeping all machines synchronized to with 200 us of one another. Developed software in C, C++, and FORTRAN for different utilities used in the system.
+
+-   Developed Graphical User Interfaces (GUI) for multiple applications in the system. Upgraded outdated system components with newer commercial available technologies.
+
+-   Installed various system components (computers, routers, switches, timing units, etc.) needed for different missions.
+
+## USAF
+
+US Air Force; not limited to missiles.
+
+Data Sciences Division, USAF
+
+-   Indirect evidence points to 1968 \[Hispanic-American Almanac\]
+
+-   Direct evidence from the 1970s and '80s.
+
+## VA
+
+In 1965, the US Verterans Administration contained a Data Science Division, whose mission was described in a later appropriations hearing as follows:
+
+> Data Science Division---\
+> Conducts basic and applied research and development in advanced data management sciences and technology.\
+> *Develops models* of VA programs and operations to provide management the capability of simulating the effect of proposed courses of administrative action and to determine quickly and accurately the effect of proposed legislation on veterans and their beneficiaries.\
+> Provides technical support, guidance, and training in *the use of mathematical, statistical, and data-transmission techniques* in the field of data management.\
+> Maintains liaison with agencies and activities in the professional, scientific, and technical fields related to data-management research (U. S. C. H. Appropriations 1965: 73; emphases added).
+
+The passage notes a staff of ten persons in 1965 and 1966. Significantly, the work described here was not limited to data management and processing---the division was part of the larger Department of Data Management---but included the development of mathematical models and simulations related to the effects of policies. Just as with the AFCRL, the field of data science comprised both the processing and analysis of data sets whose provenance derived not from designed research, but from operational information sources whose outputs required computational resources. In the case of the VA, these sources include medicial records, payroll, and other human-tracking services.
+
+# OTHER USES
+
+## Industry -- Divisions
+
+Pattern echoed by industry
+
+-   Data Science Division of Dynalectron (1967) Now DynaCorp. Inside the beltway since 1949, "providing support of the nation's missile and space efforts at White Sands ..." "... providing engineering, radar, telemetry, optical, communications, timing, aeromedical and photographical technical and support services" (see ad in Army 1967)
+-   Data Sciences Division of Technology Services Corporation
+-   Data Sciences Division of Technology Services Corporation (1974, 1978) -- to which Leo Breiman was a consultant (!)
+
+## Industry -- Corporations
+
+-   Data Science Corporation, 1967
+
+    -   Military Prime Contract File, 7/1/1966 - 6/30/1967
+
+    -   Contracts through August 1979
+
+In addition, the term appeared in the trademarked name of at least two corporations in the United States: Data Science Corporation, formed in 1962 by a former IBM employee (*St. Louis Post-Dispatch* 2014), and Mohawk Data Sciences, founded in 1964 by a three former UNIVAC engineers (*The New York Times* 1966). Both companies provided data processing services and lasted well into the era of personal computing. In the late 1960s and 1970s, many other companies used term as well, such as Data Science Ventures (Mort Collins Ventures n.d.) and Carroll Data Science Corporation (Office 1979).[^ds-from-1963-to-2012-lexia-1]
+
+[^ds-from-1963-to-2012-lexia-1]: This continues into the 1980s, with Gateway Data Sciences Corp and Vertex Data Science, Ltd.
+
+# 1970s
+
+\>\>\> Discuss Mansfield Ammendment --- fn. 10. Also describe the wider context of the proverbial military-industrial complex, a term coined by the outgoing President Eisenhower in 1961, the year that Dynalectron is renamed and around the time the DSL is formed.
+
+### After Naur --- REFACTOR
+
+After Naur, the term receded into the long tail of usage. Companies continued to use it (mostly in the plural), and it also appeared in the name of a unit within the US National Oceanic and Atmospheric Administration (NOAA), Environmental Data Science (*Library Journal* 1977), tasked with managing a growing collection of environmental data sets. For its part, the term datalogy continues to be used in Denmark and Sweden.
+
+### Leo Breiman and the Data Science Division of TSC
+
+1976, Breiman and Meisel, "General Estimates of the Intrinsic Variability of Data in Nonlinear Regression Models." --- both associated with DDS, TSC (as consultant and as manasger).
+
+### White Sands
+
+## The 1980s
+
+The category of data science become mainstream within military, commercial, and scientific settings.
+
+-   Data Science Divisions in military and related private sectors
+
+    -   White Sands
+
+        -   Cite examples of research
+
+    -   USAFSAM Data Sciences Division
+
+        -   Mentioned by the Senate Committee on Veterans' Affair in
+
+            1980. 
+
+            -   "Agency responsible, including agency, component(s) directly responsible for activity: United States Air Force, School of Aerospace Medicine, Epidemiology Division **Data Sciences Division** Clinical Sciences Division 3. \...Albanese, MD, GS-15 Chief., Biomathematical Modeling Branch **Data Sciences Division** USAF School of Aerospace Medicine Brooks AFB, TX 78235 #12;"
+
+            -   
+
+        -   Reorganized in 1985
+
+        -   Biomathematics Modeling Branch
+
+        -   Ranch Hand II
+
+        -   Samn, Sherwood W. 1981. "Optimal Staging and Scheduling in Airlift Operations." SCHOOL OF AEROSPACE MEDICINE BROOKS AFB TX. [[https://apps.dtic.mil/sti/citations/ADA107518]{.underline}](https://apps.dtic.mil/sti/citations/ADA107518).
+
+        -   Engelken, Edward J., Kennith W. Stevens, and James W. Wolfe. 1982. "Application of Digital Filters in the Processing of Eye Movement Data." *Behavior Research Methods & Instrumentation* 14 (3): 314--19. [[https://doi.org/10.3758/BF03203222]{.underline}](https://doi.org/10.3758/BF03203222).
+
+        -   Gupta, Ramesh, Ram Tripathi, Joel Michalek, and Thomas White. 1985. "An Exact Test for the Mean of a Normal Distribution with a Known Coefficient of Variation." *Computational Statistics & Data Analysis* 3 (May): 219--26. [[https://doi.org/10.1016/0167-9473(85)90085-4]{.underline}](https://doi.org/10.1016/0167-9473(85)90085-4).
+
+        -   Wolfe, William H., George D. Lathrop, Richard A. Albanese, and Patricia M. Moynahan. 1985. "An Epidemiologic Investigation of Health Effects in Air Force Personnel Following Exposure to Herbicides and Associated Dioxins." *Chemosphere* 14 (6): 707--16. [[https://doi.org/10.1016/0045-6535(85)90178-X]{.underline}](https://doi.org/10.1016/0045-6535(85)90178-X).
+
+    -   In all cases, data processing and modeling are part and parcel . . .
+
+-   Data Science Corporations
+
+    -   1986 Mohawk Continues (featured in New York Magazine)
+
+    -   1987 Data Sciences, Incl.
+
+    -   1988 International Data Science, Inc.
+
+-   Data Scientist jobs
+
+    -   National Optical Astronomy Observatories
+
+        -   1989 Project Data Scientist mentioned in National Optical Astronomy Observatories Newsletter, Issues 18-36.
+
+    -   International Council for the Exploration of the Sea
+
+        -   1985 Marine Data Scientist name (Kai Jancke)
+
+    -   New Scientist
+
+        -   28 Oct 1982, p. 267: Data scientist mentioned in job for data processing assistant.
+
+        -   26 Sept 1985, p. 13: Data Scientist for the Institute of Oceanographic Sciences, Boston Office.
+
+        -   6 Feb 1986, p. 79: Data scientist for the Marine Information and Advisory Service.
+
+    -   Scripps
+
+        -   1987: Data scientist listed as statff member at Scripps.
+
+        -   1989: Data scientist listed as statff member at Scripps.
+
+    -   These jobs continue to be appear
+
+        -   2004 refers to Glaxo's Medical Data Science's Division:
+
+![Text Description automatically generated](media/image1.png){width="6.5in" height="2.125in"}
+
+Moreover, the kind of work is consistent. Consider the work of White Sands
+
+-   Sumarize this: what was the problem and what role did data science play?
+
+    -   Telemetry data overwhelming existing systems -- data impedance again
+
+        -   "More data parameters \[variety\] at higher data rates \[velocity\] were being processed in PCM, FM, and PAM. Telemetry formats were becoming more complicated, such as embedded asynchronous subcomms and dynamic format changes. More real-time decisions had to be made for mission safety, verification of location, and mission success. WSMR needed a more versatile system that would synchronize, process and display higher data rates with more accuracy than it had at this time."
+
+    -   Not only volume, but the "data itself" --- new data
+
+    -   DS called in to produce a better system
+
+    -   KEY: "Real-time data analysis should emphasize display of analytical results rather than raw data in an effort to reduce post-mission processing."
+
+Prior to 1985 the National Range had, for a number of years, serious and recurring mission support problems with the IBM 360 Telemetry Data Processing System due to equipment reliability and obsolescence of the system which was installed in 1968. These problems became particularly acute when higher data rate requirements and the need for reliable telemetry data processing dictated that prompt and unusual action was necessary if WSMR was to continue to provide telemetry data processing support. Realizing that the above cited problems of reliability and obsolescence would continue in detriment to the mission of WSMR, Department of Defense (DOD) and the nation, coupled with the loss of thousands of dollars in reimbursables due to WSMR's inability to support missile test requirements, the Systems Engineering Branch was tasked by the Director of National Range to lead a study, and propose and implement solutions to meet current and future requirements in telemetry data processing support. With the explosion in PCM data rates, it had become obvious that WSMR could not continue to upgrade existing systems and meet the demands of the future. More data parameters at higher data rates were being processed in PCM, FM, and PAM. Telemetry formats were becoming more complicated, such as embedded asynchronous subcomms and dynamic format changes. More real-time decisions had to be made for mission safety, verification of location, and mission success. WSMR needed a more versatile system that would synchronize, process and display higher data rates with more accuracy than it had at this time. This paper describes a historical perspective of steps WSMR has taken to satisfy present and future test vehicle telemetry data processing requirements.
+
+...
+
+Telemetry technology began to change in the early 70's as electronics began to shrink in size and grow in capability. Telemetry test packages began using onboard microprocessors which allowed them to respond to changes in mission profiles in real-time. The need to monitor these changes led to *an increase in measured parameters with a corresponding increase in data rates*. One of the first projects to severely tax the IBM 360 TM system was an Army missile system. It used a 100K sample PAM for its TM. TDC support was limited to recording the data in real-time, then making reduced speed playbacks to slow down the rate to a speed the IBM 360 TM system could handle. The rule of thumb became for every hour of real-time, two and one half hours of playback time were required. With this system being just one of many projects to support, there literally was not enough time in a day for TDC to support the range. It became necessary to run a second shift crew, whose sole purpose was to catch up on playbacks.
+
+...
+
+The actual data itself also began to change. The standard parameters such as pressure, voltage, attitude, remained, but they were joined by computer status, guidance parameters, packed events, and flag words. These new parameters had a marked effect on the IBM 360 TM system. The higher data rate cut into the basic 50K system rate, *the special processing required to recognize the new data types effectively lowered the IBM 360 TM system data rate* to 25K and less.
+
+...
+
+A comprehensive investigation for data processing was conducted to define the optimum data processing system. This study involved personnel from the Instrumentation Directorate along with personnel from the Data Sciences Division. Every effort was made to define a system that had the flexibility and data processing power required, and yet maintained a simple man-machine interface that the average telemetry systems operator could operate. By an integration of the facts derived from all of these inputs, the following general system characteristics began to develop
+
+-   The system should be a mission test tool, with the mission controller in control of the data analysis process through real-time system activity.
+
+-   It should have a very high availability factor.
+
+-   It should use distributed processing techniques to obtain the processing power required.
+
+-   Man-machine interface should be via CRT display terminals with a straightforward telemetry systems language for the Telemetry Operator.
+
+-   It should reduce man power required for mission support.
+
+-   Time tagging of real-time data.
+
+-   Real-time data analysis should emphasize display of analytical results rather than raw data in an effort to reduce post-mission processing.
+
+-   Multi-mission configuration information should be stored on system disk files with rapid set up for a particular mission. This should include a library of flight test analysis routines.
+
+-   Versatile and flexible with a minimum capability to process all IRIG Standard Formats.
+
+-   It should have the capability to process multiple missions simultaneously.
+
+-   Modular for future expansion.
+
+-   Multiple data displays with modern microprocessor- controller color graphics with large screens.
+
+-   A set of diagnostics software to aid in troubleshooting the system problems and minimizing the downtime.
+
+-   Capable of processing complex data formats, and higher data rates to support WSMR testing for the next decade.
+
+-   Real-time data logging.
+
+(Ogaz 1989)
+
+### CRI: A WESTERN NEW YORK COMPUTATIONAL AND DATA SCIENCE GRID
+
+This project builds on the Western New York Bio-informatics and Life Sciences initiative headquartered in Buffalo, NY. Partners include SUNY-Buffalo, Niagara University, and SUNY-Geneseo. Collaborators include the Roswell Park Cancer Institute, the Center for Computational Research at SUNY-Buffalo, and the Hauptman-Woodward Medical Research Institute The project will focus on the design, analysis and implementation of a computational and data grid serving the research, teaching, education and outreach needs of computer science, technology, bioinformatics, and life sciences in western New York. Research will include enabling technologies for lightweight, efficient monitoring of a the grid, methods to allow subsets of processors to seamlessly join and leave the grid, *data collection and mining to support predictive scheduling*, improve backfill usage, and providing a ubiquitous interface to users. Applications supported include bioinformatics, structural biology and life sciences. Broader impacts include outreach activities to the K-16 programs, a certificate program in high-performance computing, and diverse recruiting.
+
+## 2013: Data Science as Data Mining
+
+DS had become DM in 2013. See references to DS and software engineering.
+
+DS is considered a replacement for statistics. See blog posts on the end of statistics.
+
+### Data Science for Software Engineering (2013)
+
+In the age of big data, data science for software engineering is a very active area. A search through Amazon.com reveals dozens of new data science texts, just in the last 2 years. Yet most of those texts are overly concerned with the specific details of particular data miners. Industrial practitioners should be able to use data mining approaches as decision support tools, which allow prediction of useful information on new software projects based on completed projects. For that, what industrial practitioners and researchers need is a view of data mining that is higher level than (e.g.) how to build a Naive Bayes classifier, and that at the same time takes into account the particularities of software prediction tasks. The presenters of this tutorial have been active for many years in this area. Their work has found general principles that cover multiple data mining methods. This tutorial will present those principles. Note that there is much evidence that such a "higher view" is urgently required. Recent work by Martin Shepperd shows just how much user expertise can alter the conclusions reached by a data miner \[15\]. His work clearly shows that even supposedly skilled researchers can use these tools very poorly. Therefore it is time to take a second better look, at a higher level, at these tools. The overall goal of the tutorial: Better data mining by better skilled software engineers. Concrete objectives to be achieved: The following list repeats paragraph 3 from the abstract: (1) Before running data mining algorithms, this tutorial discusses the systems tasks needed to deploy learners into an organization. (2) Where a lack or scarcity of local data is a problem, this tutorial shows how to adapt data from other organizational sources to local problems. (3) When privacy concerns block access to data, this tutorial shows how to privatize data while preserving our ability to mine that data. (4) When working with data of dubious quality, this tutorial will show how to prune spurious attributes and examples. (5) When data or models seem too complex, this tutorial shows how to simplify the results of data mining. (6) When data is too scarce to support intricate models, this tutorial discusses case-based reasoning methods for generating predictions. (7) When the world is a changing environment, and models need to be updated, this tutorial shows how to handle those updates. (8) When the effect being studied is too complex for one model, this tutorial presents methods for reasoning across ensembles of models (Menzies et al. 2013: 1484).
+
+### Lean Data Science Research Life Cycle (2013)
+
+Data Science is a new study that combines computer science, data mining, data engineering and software development. Based on the concept of lean software development we propose an idea of lean data science research as a technology for data analysis software development. This concept includes the mandatory stages of the life cycle that meet the lean manufacturing principles. We have defined the business understanding stage with defining the targeted questions, the set of lean data analysis sprints and a decision support stage. Each lean data analysis sprint contents of the task statement step, a step of data integration, a step of data analysis and the interpretation of the results. This approach allows to build data analysis software with iterative improvement quality of the results. Some case study have been suggested as examples of the proposed concept (Shcherbakov et al. 2014).
+
+## The End of Statistics
+
+### Broman, "Data science is statistics"
+
+-   Later revised -- realizing that he defined statistics too broadly
+
+> ... I must admit that *my* definition of "statistics" is rather different than most others' definition. In my view, a good statistician will consider *all* aspects of the data analysis process ... most academic statisticians focus solely on developing "sophisticated" methods for formal inference
+
+-   See responses
+
+> When physicists do mathematics, they don't say they're doing "number science". They're doing math.
+>
+> If you're analyzing data, you're doing statistics. You can call it data science or informatics or analytics or whatever, but it's still statistics.
+>
+> If you say that one kind of data analysis is statistics and another kind is not, you're not allowing innovation. We need to define the field broadly.
+>
+> You may not like what [[some statisticians]{.underline}](http://amstat.org/) do. You may feel they don't share your values. They may embarrass you. But that shouldn't lead us to abandon the term "statistics" (Broman 2013).
+
+### Normal Deviate, "Data Science: The End of Statistics?
+
+-   Cites Broman
+
+-   Makes some thoughtful observations
+
+### LinkedIn Discussion
+
+Here is an interesting discussion on LinkedIn, started by a provocative post "Data Science: The End of Statistics?" What is the relationship between Data Science and Statistics and in what sense are "Statistics" ending? (Piatetsky 2013)
+
+## 

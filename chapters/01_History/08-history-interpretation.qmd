@@ -1,0 +1,311 @@
+# Interpration
+
+## Summary 
+
+Moving between social fields
+
+1.  Military-Industrial
+    1.  AFCRL, VA, WSMR, etc.
+    2.  Dynalectron, Mohawh, etc.
+2.  Government-Scientific
+    1.  NOAA, NASA, NIMS (?)
+3.  Academia
+    1.  Naur
+    2.  Japan
+    3.  US
+4.  Business (Silicon Valley)
+    1.  Facebook, LinkedIn
+    2.  O'Reilly
+
+## Themes
+
+Let us stop here, roughly at the point where data science becomes widely
+known and legitimate in the eyes of industry, and both accepted and
+contested within academia, and which characterizes the current period.
+What can we glean from this historical outline? Several themes emerge.
+Most significantly, it has been established that the term data science
+per se dates back to the early 1960s with the formation of the Data
+Sciences Laboratory in Cambridge, Massachusetts, and this usage was
+surprisingly close to its current one. To review, the esseential
+elements were there: the presence of big data (properly understood) and
+the use of both computational machinery and artificial intelligence to
+make sense of it. Morevoer, this original meaning remains surprisingly
+consistent in the decades that follow, even as the term developed and
+accreted new senses. This development can be characterized as having
+three main phases resulting in three major variant definitions of the
+term: (1) Computational Data Science, (2) Statistical Data Science, and
+(3) Big Data Science. In addition, we can add a fourth definition,
+inchoate and currently being developed, that we may call Academic Data
+Science. These are described below.
+
+## Four Definitions
+
+### DS~1~: Computational Data Science
+
+This is the original, or classical, definition of data science that
+begins with the Data Sciences Laboratory and is taken up, at first in
+spirit if not in name, by organizations like CODATA during the same era.
+Data science in this definition is *the science of data in support of
+science and decision-making*. This definition also includes the concept
+of datalogy developed by Naur as well as the data processing know-how of
+corporations like Mohawk Data Science, but it is primarily a field
+developed by and for scientists and engineers to handle the problems
+arising from data surplus, culminating in the so-called fourth paradigm
+of science. That this field by this name persists and becomes
+established through the current era is evident in the fact that the term
+"data scientist" had currency in places like *New Scientist*, *TheTimes*
+of London, and other news sources in the 1990s and 2000s. In addition,
+data science in this sense is the subject of high level reports from the
+NSF and JISC in the 2000s. That this definition persists to this day can
+be found in examples like the work of the Dutch data scientist
+Demchenko, who assigns data management, curation, preservation central
+places in the definition of data science (Demchenko 2017).
+
+Essential to this definition is a focus on what is eventually called big
+data and issues arising from its curation and processing. Importantly,
+this definition also frames data surplus as a positive condition that
+makes possible new ways doing science, i.e. the fourth paradigm view of
+sicence. Methodologically, this definition also embraces AI, machine
+learning, and data mining methods that may or may not be principled from
+a strict statistical point of view. It also embraces statistical
+methods, but from the practical perspective of scientists are who often
+not concerned with the concerns of pure, mathematical statisticians.
+
+Arguably this definition also includes adjacent work in computer science
+of data processing, information retrieval, and information science which
+led to the invention and development of databases and general theories
+of data. Eventually, the fruits of this work would lead to the
+conditions of data impedance that led to data mining, a practice that
+converted the vice of surplus into a virtue by establishing a mutually
+beneficial relationship between surplus digital data and machine
+learning.
+
+### DS~2~: Statistical Data Science
+
+By statistical data science, I refer to the usage developed by Hayashi
+and Ohsumi (the Tokyo School) and the American statisticians Wu,
+Kettenring, and Cleveland, as well as Donoho. These statisticians
+implored their colleagues, unsuccessfully, to adopt the term data
+science in order to rebrand their discipline in response to the
+overshadowing effects of computational statistics and data mining that
+were being felt in the 1990s.
+
+The essential characteristics of this definition are the renewed
+commitment to Tukey's conception of data analysis and, more generally,
+an appreciation of the foundational role of data in statistics, along
+with an exhortation to take seriously recent developments in computer
+science in areas ranging from machine learning to databases. However,
+these technologies are to be incorporated with the admonition to avoid
+the practices of data mining, which, on its own, is considered
+unprincipled. Indeed, this definition may be seen primarily as an effort
+to correct what are perceived to be the fruitful but misguided efforts
+of data mining by grounding its computational methods in a
+mathematically sound framework.[^ds-from-1963-to-2012-19]
+
+[^ds-from-1963-to-2012-19]: The works of Hastie, Tibshirini, and their
+    coauthors are perhaps the most successful exemplars of this
+    definition; their work incorporates enthusiastically data mining,
+    but always within the encompassing framework of statistical thinking
+    that effectively domesticates the field (Hastie, Tibshirani, and
+    Friedman 2009; Efron and Hastie 2016).
+
+Regarding the relationship of data science to the computational
+technologies on which it depends, this definition treats them as
+essential but external to core practice. Languages, servers, and
+databases are thought of as an environment within which the analyst
+carries out an essentially mathematical set of tasks with greater
+efficiency, not as the medium through which one thinks about the world.
+Their net effect on the work of statistics is considered to be a
+difference in degree, not in kind.
+
+### DS~3~: Big Data Science
+
+By big data science, I refer to the form of data science that emerged in
+the context of web companies like Google and Facebook and become both
+viral and paradigmatic after being anointed by *HBR* in 2012. As we have
+seen, this definition transfers the classical, computational definition,
+developed within the military-industrial context of the 1960s, to the
+context of the Silicon Valley social media firm, or what Zuboff has
+called surveillance capitalism. The conditions of data impedance that
+attended the rise of Big Science after WWII are embraced and become the
+foundation of a new business model that in turn becomes a model for all
+other firms and sectors to imitate, from the automotive industry to
+medicine.
+
+One of the distinctive features of this definition is the close
+association with big data, in perception if not always in reality, as
+both a set of new technologies to manage 3D data and a set of
+"unreasonably effective" methods to convert these data into value.
+Another feature is the focus on data wrangling, the work required to
+convert the widely varying formats and conditions of data in the wild
+into the standard analytical form. In addition to these features, and
+consistent with Varian's remarks in the 2008 McKinsey interview, big
+data science embraces a suite of activities that connect these practices
+to the context of business and decision-making, such as visualization,
+communication, business acumen, and a focus on marketable data products.
+
+It follows that Donoho is incorrect in asserting that "\[w\]e can
+immediately reject 'big data' as a criterion for meaningful distinction
+between statistics and data science" (Donoho 2017: 747). The assemblage
+of computational technology associated with big data is the condition of
+possibility of data science in this definition, its *sine qua non*. It
+is impossible to imagine this kind of data science without the
+infrastructure of data generating machinery, high-performance
+computating architectures, scalable database technologies such as Hadoop
+and its descendants, and data-savvy programming languages such as R,
+Python, and Julia, and, to a high degree, the availability of extant
+datasets on the web. Indeed, the connection between this kind of data
+science and the technology stack on which it stands is so close that the
+relationship between technology and science becomes blurred, leading to
+revolutionary proclamantions of new kinds of science and conservative
+reactions to such claims (such as Donoho's).
+
+### DS~4~: Academic Data Science
+
+By academic data science, I refer to the ongoing reception of big data
+science by the academic community in response to the demand for data
+scientists across all sectors of society. The idea of data science has
+influenced the academy in two ways: first, by stimulating the production
+of degree programs to meet workforce demands, and second, by providing a
+model for effective knowledge production in the context of pervasive
+data and data technologies. Both of these influences have given rise to
+the secondary effect of bringing to the surface and aggregating the
+myriad other forms of data-centric and analytic activities already being
+conducted in the academy (and elsewhere) for years, from statistics to
+operations research to e-sceince, all of which have claims to be
+"already doing data science." This situation has led to current crisis
+in the definition of data science that is has produced responses such as
+Donoho's as well as the current essay.
+
+Based on personal experience, I believe that the term data science
+within the academy has in recent years been nudged in the direction of
+being identified with an expanded form of statistics (DS~2~), regardless
+of whether its programs are "owned" by departments of statistics or
+not. This is because of the great authority of the field of statistics
+within the academy, as well as a general skepticism toward
+industry-generated categories by academics, many of whom dismiss the
+terms big data and data science as buzzwords. This has put pressure on
+developers of data science programs to become academically legitimate in
+the eyes of their peers and administrators. The shift in meaning is also
+due, quite frankly, to the co-opting of the phrase by departments of
+statistics to both cash in on it's name recognition and stem the tide of
+what are perceived to be its negative qualities. This tendendency has
+had the effect of flooding the market of data scientstis with de facto
+data analysts who are unable to perform the work that many in industry
+had previously sought under the sign of data scientist. And this has
+produced a counter-effect within industry to invent new categories of
+work, such as the data engineer and the data software developer. In
+reality, these new categories are surprisingly close in meaning to the
+original category of data-processing scientist that was coined in the
+1950s in the context of data reduction and other work that eventually
+became associated with the AFCRL Data Sciences Laboratory and with
+scientific research data management in general.
+
+This is an unfortunate state of affairs. The great value of data science
+has been in its cultivation of the fertile land between the science and
+engineering of data opened up by the great advances in data generating
+and processing machinery for both science and industry. It is also
+unfortunate because as the academy produces a definition of data science
+at odds with what science and industry need, the latter are once again
+left to fend for themselves, creating their own ad hoc educational
+resources to convert computer scientists and other adjacent role into
+data engineers. A rose is a rose by another other name.
+
+## Data Impedance
+
+To summarize, the field of data science has a surprisingly consistent
+and durable history, even if, on the ground, the individual actors in
+this social drama have not been not aware of this fact. The original
+constitution of the field, DS~1,~ survives to the present day, providing
+the backbone and the foil for each of the following configurations. For
+if DS~2~ is clearly a reaction to the effects of the first, DS~3~ is a
+revival of DS~1~ in a new key. Wu and Hammberbacher may not have been
+aware that they were borrowing a term from one context and applying it
+to another analogous one, but social facts are rarely perceived as such
+by the individuals who participate in them.
+
+I hypothesize that the source of this continuity is a persistent
+situation in which it makes sense to use the term data science. The term
+is motivated in at least two ways. First, it is motivated semiotically
+by virtue of its complementary relationship to other extant categories
+which constitute the repertoire available concepts and terms. Data
+science is not computer science nor information science nor statistics
+nor data analysis but adjacent to each of these. In each case, the term
+was selected from the sample space of these other terms, which always
+remained possible choices. The fact that they were not selected is what
+is significant. Second, the term was and is motivated by the role that
+it plays in referencing a persistent assemblage of material conditions
+that emerged during the post war era and continues to this day. In
+addition to being embodied by the SAGE system that arguably motived the
+initial coinage of data science, those material conditions gave birth to
+the Internet, whose construction was first conceived shortly after 1957
+in response to the launch of Sputnik by the Soviet Union, and to the
+field of data processing and everything associated with it, including
+the development of databases and the refining of the concept of data
+itself.
+
+I have chosen the term data impedance to characterize this persistent
+situation. Again, by this term I mean the disproportion between the
+surplus of data generated by the machinery of data production, and the
+relative scarcity of computational power and methods to process these
+data and extract value from them. To be sure the condition of impedance
+has been part of the human condition since the formation of states which
+require the use of media to function. By media, I mean external records
+that must be stored and interpreted to be useful. Such records range
+from the quipus of the ancient Inca, to the hieroglyphic writing systems
+of the ancient Maya and Egyptians, to those of Asia and Europe. What is
+historically unique about the post-war condition of data impedance is
+that it occurs within the milieux of digital and electronic data
+characterized as the input and output of computational machinery.
+Although other forms of data are clearly part of the condition I am
+describing, these technologies are at the center and what gives the
+unique historical character to the condition I am describing and to data
+science.
+
+## Data mining vs data analysis
+
+A final theme one may observe in this history is that data science has
+been a contested term at least since the 1990s, when statistical data
+science (DS~2~) emerged in Japan and the US in response to the
+developments of classical, computational data science. As we have seen,
+this response was partly an attempt to embrace the advances made by
+computational data science (DS~1~) and partly an effort to correct what
+were perceived to be the excesses of this approach. The marginalization
+of computational technology in this definition of data science is
+consistent with the larger conflict between what Breiman famously called
+"two cultures" in the work of statistics.[^ds-from-1963-to-2012-20]
+Breiman's trope provides a useful framework for capturing the
+epistemological differences between the two communities associated with
+these definitions. On the one hand, we have the data analysts, on the
+other the data miners. The former, descendants of Tukey, remained
+faithful to the mission of statistics to provide a mathematically
+principled methodology for working with data. Ideally, all data were
+understood to be produced by information generating mechanisms that can
+be described by interpretable models and, in the ideal case,
+parametrically. Even Bayesian methods, long held back by their
+complexity, but reborn with the rise of computational methods like MCMC
+and Gibbs Sampling, were reined in by the data modeler's ethos. The
+latter, the data miners, unfettered by such requirements,
+enthusiastically applied the newer and rapidly developing world of
+algorithms and, more generally, computational thinking to the data
+surplus that was inundating science, government, and industry.
+
+[^ds-from-1963-to-2012-20]: It is no coincidence that Breiman's essay
+    appeared at about the time some academic statisticians sought to
+    rebrand their field as data science in an attempt to integrate the
+    gains of computational technology while purging it of the
+    methodological sins of data mining. Although Breiman is sometimes
+    counted among those wishing to rebrand statistics as data science,
+    the substance of his remarks, which did not reject the spirit of
+    data mining, went against the grain of that movement.
+
+To conclude, an authentic definition of data science would embrace the
+term's history. As we have seen, this history is not merely
+etymological; the term indexes a persistent situation that continues to
+motivate the current practice of data science in industry and science.
+Academics would do well to embrace this and avoid what may be called the
+fallacy of purism as we seek to make sense of the field as a body of
+knowledge. This means embracing the oppositions between data analysis
+and data mining, and between science and engineering, as a core,
+animating tensions in the field that may be cultivated for its
+generativity.

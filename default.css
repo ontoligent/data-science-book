@@ -1,0 +1,41 @@
+/*-- scss:defaults --*/
+// Put your default styles here
+
+/*-- scss:rules --*/
+// Put your basic rules here
+
+/*-- scss:mixins --*/
+// Define your mixins here
+
+/*-- scss:functions --*/
+// Define your functions here
+
+/*-- scss:uses --*/
+// Import or use other SCSS files or styles here
+
+#abstract {
+    font-size: 90%;
+}
+
+.blockquote {
+    padding: 0 1rem;
+    color: black;
+    border-left: None;
+}
+
+.bourdieu {
+    font-size: 90%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+.epigraph {
+    margin-left: 2rem;
+    font-size: 90%;
+}
+
+.comment {
+    display: None;
+}

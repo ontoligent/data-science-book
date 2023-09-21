@@ -1,0 +1,87 @@
+# Introduction
+
+::: epigraph
+The interests of data scientists---the information and computer
+scientists, database and software engineers and programmers,
+disciplinary experts, curators and expert annotators, librarians,
+archivists, and others, who are crucial to the successful management of
+a digital data collection---lie in having their creativity and
+intellectual contributions fully recognized.
+
+National Science Board, "Long-Lived Digital Collections: Enabling
+Research and Education in the 21st Century" [@simberloff2005: 27].
+:::
+
+Data science today is characterized by a paradox. The large number and
+rapid growth of job opportunities and academic programs associated with
+the field over the past decade suggest that it has matured into an
+established field with a recognizable body of knowledge. Yet consensus
+on the definition of data science remains low. Members and observers of
+the field possess widely variant understandings of data science,
+resulting in divergent expectations of the knowledge, skill sets, and
+abilities required by data scientists. Definitions, when they are not
+laundry lists, range from a rebranded version of statistics to
+data-driven science to the science of data to simply the application of
+machine learning to so-called big data to solve real world problems.
+These differences cannot be reduced to so-called semantics; they reflect
+a range of deep-seated institutional commitments and values, as well as
+variant understandings about the nature of knowledge and science. The
+lack of shared understanding poses a significant problem for academic
+programs in data science: it inhibits the development of standards and a
+professional community, confounds the allocation of resources, and
+threatens to undermine the authority and long-term prospects of these
+programs.
+
+This essay approaches the problem of defining data science by describing
+how the collocation "data science," and its grammatical variants "data
+sciences" and "data scientist," have been used
+historically.[^ds-from-1963-to-2012-1] The primary method employed is
+the close reading and precise seriation of textual evidence drawn from a
+representative collection of primary sources, including organizational
+reports, academic articles, news stories, advertisements, and other
+contemporary forms of evidence. These are used to trace the history of
+the term's social and institutional contexts of use as well as its
+denotative and connotative meanings. Extensive extracts are often
+presented, rather than paraphrased, as these in many cases provide the
+reader with direct and illuminating evidence for the meanings in
+question.[^ds-from-1963-to-2012-2]
+
+[^ds-from-1963-to-2012-1]: In this essay, a collocation is defined as a
+    combination of two or more words that function as a lexical unit. In
+    contrast to a mere n-gram, its usage tends to be idiomatic and
+    non-random. Etymologically, the usage of a collocation often begins
+    as a marked construction, by means of quotes and hyphens, before
+    eventually becoming idiomatic. Often, a collocation becomes so
+    common that it becomes a single word. For example, the word
+    "database" began as "data base" and "data-base" before evolving into
+    its current form (after beating out "data bank"). Throughout this
+    essay, the collocation "data science" is referred to as a term or
+    phrase, reflecting its unitary semantic status.
+
+[^ds-from-1963-to-2012-2]: The arguments and observations made by the
+    authors in each case are represented in historical tense, not the
+    textual present, which is the usual custom in writing about the
+    history of ideas. For example, instead of saying that "Tukey argues
+    P" in an essay from the 1960s, the evidence is presented as "Tukey
+    argued P." This is done in order to ground the evidence in its
+    social and historical setting.
+
+This historiography is presented as a series of decades in which the
+term takes on a new meaning, beginning with its initial usage in the
+1960s and ending around 2012, when the phrase becomes a commonplace. It
+is shown that the phrase has a continuous and consistent usage
+throughout this history. As usage of the phrase evolved, its meanings
+were always additions to and inflections on prior meanings; in no case
+did newer usages completely contradict what preceded them, nor did they
+appear as cases of random independent invention.
+
+The result is a picture of the transformation of a semantic complex that
+indexes a consistent set of technical, social, and cultural realities
+that constitute what may be called the situation of data science, a
+situation that motivates the writing of this essay. Anticipating
+follow-up research to this essay, this situation has been described
+repeatedly by data scientists of all stripes as a kind of data
+processing *pipeline*, a sequence of operations that begins with the
+consumption of data and ends with the production of data products,
+ranging from research results and visualizations to software services
+employed by various sectors of society.
