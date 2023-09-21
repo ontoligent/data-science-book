@@ -1,3 +1,9 @@
+---
+editor: 
+  markdown: 
+    wrap: 72
+---
+
 # The 1970s and 80s
 
 ## The 1970s
@@ -10,9 +16,10 @@ world and closely connected with Harvard and MIT [@altshuler2013], an
 international cross-roads of intellectual life where many would have
 come into contact with the term. Similarly, IBM and UNIVAC, the sources
 of the founders of two self-proclaimed data science companies, were the
-two largest computer manufacturers at the time.[^ds-from-1963-to-2012-9]
+two largest computer manufacturers at the
+time.[^03-history-1970s-and-80s-1]
 
-[^ds-from-1963-to-2012-9]: a" have they been displaced by a more
+[^03-history-1970s-and-80s-1]: a" have they been displaced by a more
     positive term.
 
     This is the very same General Doolittle of Doolittle's Raid.
@@ -27,7 +34,7 @@ two largest computer manufacturers at the time.[^ds-from-1963-to-2012-9]
     Massachusetts 02115 ("Announcements" 1964) ("Announcements" 1964).
 
 Although the AFCRL closed the Data Sciences Lab by
-1970,[^ds-from-1963-to-2012-10] the term continued to be used, most
+1970,[^03-history-1970s-and-80s-2] the term continued to be used, most
 notably by the Danish computer scientist Peter Naur, who suggested that
 computer science, a relatively new field, be renamed to data science.
 His argument, consistent with previous usage, was that computer science
@@ -40,7 +47,7 @@ with the DSL, which shared his research interest in developing
 programming languages [@naur1966; @naur1968]. In contrast to the AFCRL,
 Naur provided an explicit definition of data science:
 
-[^ds-from-1963-to-2012-10]: Altshuler writes that the lab was
+[^03-history-1970s-and-80s-2]: Altshuler writes that the lab was
     "abolished" in June 1972 "in response to a large reduction in
     manpower authorizations" (Altshuler 2013: 27). However, the unit is
     not mentioned in the July 1970 to June 1972 research report (AFCRL
@@ -119,13 +126,4 @@ entitled "Computing: A Human Activity" [@naur1992].
 
 ## The 1980s
 
-::: comment
-Data Scientist becomes commonplace.
-
-Topics:
-
--   New Scientist jobs
--   NASA, NOAA
-
-Discuss rise of data mining?
-:::
+<!--#  Data Scientist becomes commonplace. New Scientist, NASA, NOAA. Discuss rise of data mining? -->

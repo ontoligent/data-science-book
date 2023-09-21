@@ -41,8 +41,3 @@ So it makes sense to compare the above table with this one for data science:
 | concrete | machine | systems   | hardware, software, security                   |
 
 By comparing last columns of each table we can see that the 4+1 model of data science and Russell and Norvig's model of artificial intelligence share the same general space. The difference is that the former defines kinds of *acquired knowledge*, whereas the latter concerns kinds of *built systems*.
-
-**References**
-
-::: {#refs}
-:::

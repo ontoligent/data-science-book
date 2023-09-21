@@ -152,8 +152,3 @@ The result of the preceding may be represented by the following graphic.
 ![The 4+1 Model of Data Science](images/image5.png){fig-align="center"}
 
 This visualization represents data science as composed of specific and complementary forms of knowledge. The vertical axis defines the dominant polarity between analysis --- the *how* of data science, often identified entirely with it, contrasted with the *why* of data science, from which data science derives its meaning and value as a profession. The horizontal access defines the polarity of methods that are often obscured in academic definitions of data science --- the supporting practices that make the Analytics component work in the first place.
-
-## References
-
-::: {#refs}
-:::

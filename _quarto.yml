@@ -15,7 +15,7 @@ book:
     chapters: 
     - chapters/01_History/00-history-abstract.qmd # Abstract
     - chapters/01_History/02-history-1960s.qmd # Origins
-    - chapters/01_History/03-history-1970s-and-80s.qmd # Normalization
+    # - chapters/01_History/03-history-1970s-and-80s.qmd # Normalization
     - chapters/01_History/04-history-1990s.qmd # Statistics Disrupted
     - chapters/01_History/05-history-2000s.qmd # Data Science Grows
     - chapters/01_History/06-history-2008-2012.qmd # The Sexy Science
