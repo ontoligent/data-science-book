@@ -1,5 +1,6 @@
 # Interpration
 
+<!--#
 ## Summary 
 
 Moving between social fields
@@ -16,6 +17,7 @@ Moving between social fields
 4.  Business (Silicon Valley)
     1.  Facebook, LinkedIn
     2.  O'Reilly
+-->
 
 ## Themes
 

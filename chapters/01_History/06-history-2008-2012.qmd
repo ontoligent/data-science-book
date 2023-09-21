@@ -388,12 +388,12 @@ the infrastructural framework within which it made sense. Again, the
 meaning of data science remains relatively unchanged from the classical
 definition; what changes is the context.
 
-::: comment
+<!--#
 It may be good to insert a vignette about the RTCC as a business model.
 From SAGE to Google: The Role of Data Science in ...
 
 Focus on data as a social medium ...
-:::
+-->
 
 By 2012, the terms data science and data scientist had trended widely in
 the media, in part due to the amplifying effects of the *HBR* article,

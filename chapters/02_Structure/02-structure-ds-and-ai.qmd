@@ -9,7 +9,6 @@ The four areas of data science defined here are surprisingly analogous to the fo
 | acting   | humanly    | Turing test, situated action |
 | acting   | rationally | agents, bots                 |
 
-
 Now, it is easy to see how the following analogies make sense:
 
 $$

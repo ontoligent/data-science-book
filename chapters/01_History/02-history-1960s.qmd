@@ -101,10 +101,11 @@ significant research on pattern recognition and classification, machine
 learning, neural networks, and spoken language processing in the service
 of processing the novel forms of data described above.
 
+```{=html}
 <!--#  Insert here description of example projects. Pattern recognition of
 planes and letters, extracting linguistic features from voice, the idea
 of "dynamic data processing," and the DX-1. -->
-
+```
 More important than locating a precise time and place for the origin of
 the field---a task doomed to fail, given the complexity and
 multithreaded nature of historical phenomena---is the work of describing
@@ -368,11 +369,10 @@ world and closely connected with Harvard and MIT [@altshuler2013], an
 international cross-roads of intellectual life where many would have
 come into contact with the term. Similarly, IBM and UNIVAC, the sources
 of the founders of two self-proclaimed data science companies, were the
-two largest computer manufacturers at the
-time.[^03-history-1970s-and-80s-1]
+two largest computer manufacturers at the time.[^02-history-1960s-6]
 
-[^03-history-1970s-and-80s-1]: a" have they been displaced by a more
-    positive term.
+[^02-history-1960s-6]: a" have they been displaced by a more positive
+    term.
 
     This is the very same General Doolittle of Doolittle's Raid.
 
@@ -386,23 +386,23 @@ time.[^03-history-1970s-and-80s-1]
     Massachusetts 02115 ("Announcements" 1964) ("Announcements" 1964).
 
 Although the AFCRL closed the Data Sciences Lab by
-1970,[^03-history-1970s-and-80s-2] the term continued to be used, most
-notably by the Danish computer scientist Peter Naur, who suggested that
-computer science, a relatively new field, be renamed to data science.
-His argument, consistent with previous usage, was that computer science
-is fundamentally concerned with data processing and not mere
-computation, i.e. what the AFCRL derided as numerical calculation.
-Earlier, in the 1960s, Naur had coined the term "datalogy" (Danish:
-*datalogi*) for this purpose, but later found the term data science to
-be a suitable synonym, perhaps due to its currency or to his familiarity
-with the DSL, which shared his research interest in developing
-programming languages [@naur1966; @naur1968]. In contrast to the AFCRL,
-Naur provided an explicit definition of data science:
+1970,[^02-history-1960s-7] the term continued to be used, most notably
+by the Danish computer scientist Peter Naur, who suggested that computer
+science, a relatively new field, be renamed to data science. His
+argument, consistent with previous usage, was that computer science is
+fundamentally concerned with data processing and not mere computation,
+i.e. what the AFCRL derided as numerical calculation. Earlier, in the
+1960s, Naur had coined the term "datalogy" (Danish: *datalogi*) for this
+purpose, but later found the term data science to be a suitable synonym,
+perhaps due to its currency or to his familiarity with the DSL, which
+shared his research interest in developing programming languages
+[@naur1966; @naur1968]. In contrast to the AFCRL, Naur provided an
+explicit definition of data science:
 
-[^03-history-1970s-and-80s-2]: Altshuler writes that the lab was
-    "abolished" in June 1972 "in response to a large reduction in
-    manpower authorizations" (Altshuler 2013: 27). However, the unit is
-    not mentioned in the July 1970 to June 1972 research report (AFCRL
+[^02-history-1960s-7]: Altshuler writes that the lab was "abolished" in
+    June 1972 "in response to a large reduction in manpower
+    authorizations" (Altshuler 2013: 27). However, the unit is not
+    mentioned in the July 1970 to June 1972 research report (AFCRL
     1973). The lab's closure may have been a consequence of the passing
     of the Mansfield Amendment in 1969, which prohibited the military
     from carrying out "any research project or study unless such project

@@ -186,7 +186,7 @@ failure to come up with a predictive model of smog formation in Los
 Angeles, Breiman wished he had had "the tools available today," not
 better data (201).
 
-::: comment
+<!--#
 *Connect Breiman to 1990s movements. Describes the structural
 contradiction that gave rise tod the movements to the malaise and the
 desire to rebirth statistics.*
@@ -195,7 +195,7 @@ In his remarks to the commentators on his essay, among whom were Cox and
 Parzen, Breiman lamented: "Many of the best statisticians I have talked
 to over the past years have serious concerns about the viability of
 statistics as a field" (231).
-:::
+-->
 
 ## 2005: Data Science in the Sciences
 
@@ -602,10 +602,10 @@ discovery (in databases)," referring to the framing context of activity,
 was sufficient to capture their understanding of their work
 [@fayyad1996].
 
-::: comment
+<!--#
 May want to change the following to say "re-emerged"; depends on
 discussion of the 1980s.
-:::
+-->
 
 Notably, during this period the term "data scientist" emerged as well,
 in both statistical and classical contexts. Its appearance reflected a
