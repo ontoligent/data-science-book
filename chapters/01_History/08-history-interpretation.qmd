@@ -1,5 +1,12 @@
+---
+editor: 
+  markdown: 
+    wrap: 72
+---
+
 # Interpration
 
+```{=html}
 <!--#
 ## Summary 
 
@@ -18,7 +25,7 @@ Moving between social fields
     1.  Facebook, LinkedIn
     2.  O'Reilly
 -->
-
+```
 ## Themes
 
 Let us stop here, roughly at the point where data science becomes widely
@@ -55,19 +62,20 @@ developed by and for scientists and engineers to handle the problems
 arising from data surplus, culminating in the so-called fourth paradigm
 of science. That this field by this name persists and becomes
 established through the current era is evident in the fact that the term
-"data scientist" had currency in places like *New Scientist*, *TheTimes*
-of London, and other news sources in the 1990s and 2000s. In addition,
-data science in this sense is the subject of high level reports from the
-NSF and JISC in the 2000s. That this definition persists to this day can
-be found in examples like the work of the Dutch data scientist
-Demchenko, who assigns data management, curation, preservation central
-places in the definition of data science (Demchenko 2017).
+"data scientist" had currency in places like *New Scientist*, *The
+Times* of London, and other news sources in the 1990s and 2000s. In
+addition, data science in this sense is the subject of high level
+reports from the NSF and JISC in the 2000s. That this definition
+persists to this day can be found in examples like the work of the Dutch
+data scientist Demchenko, who assigns data management, curation,
+preservation central places in the definition of data science
+[@demchenko2017].
 
 Essential to this definition is a focus on what is eventually called big
 data and issues arising from its curation and processing. Importantly,
 this definition also frames data surplus as a positive condition that
 makes possible new ways doing science, i.e. the fourth paradigm view of
-sicence. Methodologically, this definition also embraces AI, machine
+science. Methodologically, this definition also embraces AI, machine
 learning, and data mining methods that may or may not be principled from
 a strict statistical point of view. It also embraces statistical
 methods, but from the practical perspective of scientists are who often
@@ -102,10 +110,10 @@ the practices of data mining, which, on its own, is considered
 unprincipled. Indeed, this definition may be seen primarily as an effort
 to correct what are perceived to be the fruitful but misguided efforts
 of data mining by grounding its computational methods in a
-mathematically sound framework.[^ds-from-1963-to-2012-19]
+mathematically sound framework.[^08-history-interpretation-1]
 
-[^ds-from-1963-to-2012-19]: The works of Hastie, Tibshirini, and their
-    coauthors are perhaps the most successful exemplars of this
+[^08-history-interpretation-1]: The works of Hastie, Tibshirini, and
+    their coauthors are perhaps the most successful exemplars of this
     definition; their work incorporates enthusiastically data mining,
     but always within the encompassing framework of statistical thinking
     that effectively domesticates the field (Hastie, Tibshirani, and
@@ -238,13 +246,13 @@ remained possible choices. The fact that they were not selected is what
 is significant. Second, the term was and is motivated by the role that
 it plays in referencing a persistent assemblage of material conditions
 that emerged during the post war era and continues to this day. In
-addition to being embodied by the SAGE system that arguably motived the
-initial coinage of data science, those material conditions gave birth to
-the Internet, whose construction was first conceived shortly after 1957
-in response to the launch of Sputnik by the Soviet Union, and to the
-field of data processing and everything associated with it, including
-the development of databases and the refining of the concept of data
-itself.
+addition to being embodied by the SAGE system that arguably motivated
+the initial coinage of data science, those material conditions gave
+birth to the Internet, whose construction was first conceived shortly
+after 1957 in response to the launch of Sputnik by the Soviet Union, and
+to the field of data processing and everything associated with it,
+including the development of databases and the refining of the concept
+of data itself.
 
 I have chosen the term data impedance to characterize this persistent
 situation. Again, by this term I mean the disproportion between the
@@ -275,7 +283,7 @@ computational data science (DS~1~) and partly an effort to correct what
 were perceived to be the excesses of this approach. The marginalization
 of computational technology in this definition of data science is
 consistent with the larger conflict between what Breiman famously called
-"two cultures" in the work of statistics.[^ds-from-1963-to-2012-20]
+"two cultures" in the work of statistics.[^08-history-interpretation-2]
 Breiman's trope provides a useful framework for capturing the
 epistemological differences between the two communities associated with
 these definitions. On the one hand, we have the data analysts, on the
@@ -292,10 +300,10 @@ enthusiastically applied the newer and rapidly developing world of
 algorithms and, more generally, computational thinking to the data
 surplus that was inundating science, government, and industry.
 
-[^ds-from-1963-to-2012-20]: It is no coincidence that Breiman's essay
-    appeared at about the time some academic statisticians sought to
-    rebrand their field as data science in an attempt to integrate the
-    gains of computational technology while purging it of the
+[^08-history-interpretation-2]: It is no coincidence that Breiman's
+    essay appeared at about the time some academic statisticians sought
+    to rebrand their field as data science in an attempt to integrate
+    the gains of computational technology while purging it of the
     methodological sins of data mining. Although Breiman is sometimes
     counted among those wishing to rebrand statistics as data science,
     the substance of his remarks, which did not reject the spirit of

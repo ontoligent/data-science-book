@@ -2,9 +2,9 @@
 
 ## A Common Theme
 
-A review of the literature on data science definitions, including sources from the adjacent fields data analysis and data mining, reveals that most invoke the image of a data processing *pipeline* --- a sequence of events through which data flows as it moves from the consumption of so-called raw data to production of useful results. In this view, consumed data may come from a variety of sources, such as databases or intentional experiments or sensors, and results may be equally various, from the visual communication of analytical results to stake-holders to the development of an interactive data product for use on the web.[^the-four-plus-one-model-1]
+A review of the literature on data science definitions, including sources from the adjacent fields data analysis and data mining, reveals that most invoke the image of a data processing *pipeline* --- a sequence of events through which data flows as it moves from the consumption of so-called raw data to production of useful results. In this view, consumed data may come from a variety of sources, such as databases or intentional experiments or sensors, and results may be equally various, from the visual communication of analytical results to stake-holders to the development of an interactive data product for use on the web.[^01-structure-the-model-1]
 
-[^the-four-plus-one-model-1]: For a detailed review of these sources, see the [Appendix](../99_Appendices/structure-sources.qmd).
+[^01-structure-the-model-1]: For a detailed review of these sources, see the [Appendix](structure-sources.qmd).
 
 For analytic purposes, it is helpful to view the pipeline image as a kind of story, a micronarrative that encodes and socializes an understanding about the practice of data science. All forms of work involve the sharing of stories in one form or another, both formally in the context of education and informally through the countless acts of training, mentorship, and imitation that go on everyday in the academy and the workplace. When we want to explain to a trainee, a peer, or a supervisor how something is done, we often resort to a story that is general enough to apply to a variety of contexts yet specific enough to be translatable into action. The data processing pipeline is like that, and the essays in which it appears are part of the ongoing discourse by which a community of practice grows and learns.
 
@@ -59,11 +59,11 @@ Each of these thematic groups may be considered a "chapter" in the story. Note t
 
 ![The Standard Sequence as a Narrative Arc](images/image1.png){fig-align="center"}
 
-To be sure, the middle chapter plays a central role in our story. If we think of the story as following a classical "there and back again" structure --- a chiasmus pattern like $X_1, Y_1, Z, Y_2, X_2$ --- then chapter $D$ is the pivot, while chapters $A,$ $B,$ and $C$ mirror $E,$ $F,$ and $G$. Thinking of the story in this way allows us to identify a parallel structure in the pipeline, connecting phases that are usually seen as separate. Specifically, we may visualize the pipeline as an arc, a **U**-shaped process in which chapters in the first half of the pipeline mirror the those of the second half. We may then group chapters by the pairs formed in this way, yielding four zones --- $A$ and $G$ belong to zone $I$, $B$ and $F$ to $II$, $C$ and $E$ to $III$, and $D$ to $IV$ --- as in the following diagram:
+To be sure, the middle chapter plays a central role in our story. If we think of the story as following a classical "there and back again" structure---a chiasmus pattern like $X_1, Y_1, Z, Y_2, X_2$---then chapter $D$ is the pivot, while chapters $A,$ $B,$ and $C$ mirror $E,$ $F,$ and $G$. Thinking of the story in this way allows us to identify a parallel structure in the pipeline, connecting phases that are usually seen as separate. Specifically, we may visualize the pipeline as an arc, a **U**-shaped process in which chapters in the first half of the pipeline mirror the those of the second half. We may then group chapters by the pairs formed in this way, yielding four zones---$A$ and $G$ belong to zone $I$, $B$ and $F$ to $II$, $C$ and $E$ to $III$, and $D$ to $IV$---as in the following diagram:
 
 ![The Arc Transposed](images/image2.png){fig-align="center"}
 
-With this visualization, we can discern some interesting properties about the data science pipeline that are not obvious in the original sequential image. For one, the arc structure suggests that the two ends of the pipe are not separate; both make direct contact with the external world (relative to the internal world of the pipeline considered as a system). The external world --- natural or social --- from which data are pulled is the same world into which data products are inserted. This insight echoes the CRISP-DM model, which connects $A$ and $G$ (actually $F$), except that the two ends of the arc model are not directly connected. Instead, they come into contact with --- and are separated by --- the world in all of its complexity and unpredictability. The relationship between the effects caused by our data products $G$ and the data we pull from the world $A$ is not given but a matter of discovery --- and often surprise. This is an important distinction between the model being proposed here and the simple idea that the pipeline forms a closed circle.
+With this visualization, we can discern some interesting properties about the data science pipeline that are not obvious in the original sequential image. For one, the arc structure suggests that the two ends of the pipe are not separate; both make direct contact with the external world (relative to the internal world of the pipeline considered as a system). The external world---natural or social---from which data are pulled is the same world into which data products are inserted. This insight echoes the CRISP-DM model, which connects $A$ and $G$ (actually $F$), except that the two ends of the arc model are not directly connected. Instead, they come into contact with --- and are separated by --- the world in all of its complexity and unpredictability. The relationship between the effects caused by our data products $G$ and the data we pull from the world $A$ is not given but a matter of discovery --- and often surprise. This is an important distinction between the model being proposed here and the simple idea that the pipeline forms a closed circle.
 
 ## Interpreting the Themes
 
@@ -71,7 +71,7 @@ At this point, we can explore the unifying themes associated with the four zones
 
 Zone $IV$ is the easiest to interpret in this way because as the pivot of the arc it is not paired. It represents the work of modeling a problem mathematically, as well as evaluating and interpreting the results of mathematical modeling. This work requires data to be available in a particular form --- clean and organized, usually as "tidy" analytical tables --- and it produces results that need to be prepared for consumption by non-specialists. As stated above, it is the pivot of the arc, the core process, where the prior phases constitute pre-processing and following phases post-processing.
 
-Zone $I$ is also relatively easy to interpret: the functions in this group each involve understanding the relationship between the pipeline and the external world, the messy interface between the enterprise of data science and the variety of real world situations in which it operates and impacts. Again, this relationship has a dual character, based on the difference between input and output, reading from and writing to the world. Note also that there is an open-ended quality to the this relationship that is elided by circular representations --- there is always a knowledge gap between one's understanding of a data product and its real effects on the world, effects which may in turn influence source data. 
+Zone $I$ is also relatively easy to interpret: the functions in this group each involve understanding the relationship between the pipeline and the external world, the messy interface between the enterprise of data science and the variety of real world situations in which it operates and impacts. Again, this relationship has a dual character, based on the difference between input and output, reading from and writing to the world. Note also that there is an open-ended quality to the this relationship that is elided by circular representations --- there is always a knowledge gap between one's understanding of a data product and its real effects on the world, effects which may in turn influence source data.
 
 We may note in passing that $I$ and $IV$ can be contrasted in several ways --- external vs internal, messy vs clean, exoteric vs esoteric, qualitative vs quantitative, existential vs essential, concrete vs abstract, periphery vs center, etc.
 
@@ -117,9 +117,8 @@ Is there a way to understand how the four primary areas are related to each othe
 
 Regarding the concrete and the abstract, it's clear that the arc model has a metric quality to it: as one moves toward the pivot point of analysis, one moves away from the concrete messiness of reality as experienced to the "tidy" and abstract world of mathematics; similarly, as one moves from the pivot back to the world, there is a requirement to convert esoteric results into more humanly intelligible forms, often through a process of concretization; visualizations succeed by employing concrete metaphors that flesh out mathematical ideas that are notoriously detached from the imagination --- no one can imagine, for example, n-dimensional spaces beyond a handful of dimensions. The arc describes a dialectic of abstraction and concretization that defines the ebb and flow and data science work.
 
-::: .table
-
-| &nbsp;         | Concrete        | Abstract        |
+::: table
+|                | Concrete        | Abstract        |
 |----------------|-----------------|-----------------|
 | <b>Human</b>   | I<br>VALUE      | II'<br>DESIGN   |
 | <b>Machine</b> | III'<br>SYSTEMS | IV<br>ANALYTICS |
@@ -127,10 +126,11 @@ Regarding the concrete and the abstract, it's clear that the arc model has a met
 
 The Four Areas in Two Dimensions
 
+```{=html}
 <!--
 ![The Four Areas in Two Dimensions](images/image4.png){fig-align="center"}
 -->
-
+```
 The dimension of human and machine processing exhibits a similar duality, that between the conversion of information from humanly accessible forms, such as given by data acquired by instruments, into machine readable and processible forms, and the reverse. The process of moving from human to machine representations is a large part of what data capture, modeling, and wrangling is all about, while the process of converting the results of machine learning, broadly conceived, into humanly actionable form is what visualization and productization are all about. The reality of this dualism is captured by the concept of human-computer interaction (HCI), an established field that is applicable to both sides of the arc.
 
 How do the four fundamental areas map onto these two dimensions? We can define each area as a combination of one pole from each duality; the four areas result from all possible permutations of the two dimensions. This produces the following high level characterizations of each area: (1) Value is concerned with concrete humanity, (2) Design with abstract humanity, (3) Analytics with abstract machinery, and (4) Systems is concerned with concrete machinery. All of these make intuitive sense, with the exception of Design. This is consistent, however, with the fact that the area of Design emerges from this analysis as an undervalued and not well understood area of expertise, even though Yau emphasized it early on (Yau 2009b). Indeed, one of the consequences of this analysis is to train our attention on this area of knowledge and to develop it further.

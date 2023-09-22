@@ -1,3 +1,9 @@
+---
+editor: 
+  markdown: 
+    wrap: 72
+---
+
 # 2008: The Sexy Science
 
 Around 2008 a decisive shift in the meanings of "data science" and "data
@@ -5,7 +11,7 @@ scientist" took place. After nearly a half century of development, in
 which two broad and consistent usages had emerged---the classical and
 the statistical---the term was applied in a context that launched it
 into the public eye and increased its circulation by orders of
-magnitude.[^ds-from-1963-to-2012-16] This context was the social media
+magnitude.[^06-history-2008-2012-1] This context was the social media
 corporation of the Web 2.0 era, itself the inheritor of two crowning
 achievements of data processing engineering---the database and the
 Internet---catalyzed by Berners-Lee's invention of a global hypertext
@@ -14,11 +20,11 @@ topic, *Harvard Business Review*'s "Data Scientist: The Sexiest Job of
 the 21^st^ Century," the term "data scientist" was "coined in 2008 by
 \... D.J. Patil, and Jeff Hammerbacher, then the respective leads of
 data and analytics efforts at LinkedIn and Facebook"
-[@davenport2012].[^ds-from-1963-to-2012-17] Although on its face this
+[@davenport2012].[^06-history-2008-2012-2] Although on its face this
 claim is obviously false, it is apparently correct in having identified
 the first usages of the term in this new context.
 
-[^ds-from-1963-to-2012-16]: According to the Google Books NGram Viewer,
+[^06-history-2008-2012-1]: According to the Google Books NGram Viewer,
     using the English (2019) corpus with a smoothing factor of 3, the
     corpus frequency of the bigram "data scientist" (case insensitive)
     goes from 0.0000000613% in 2008 to 0.0000035018% in 2012 and
@@ -30,7 +36,7 @@ the first usages of the term in this new context.
     similar for "data science," with increases of 11 and 56 times from
     2008 to 2012 and 2016 respectively.
 
-[^ds-from-1963-to-2012-17]: The title of this article was adapted from a
+[^06-history-2008-2012-2]: The title of this article was adapted from a
     phrase used in 2008 by Hal Varian, chief economist at Google. In an
     interview with McKinsey's James Manyika, Varian quipped: "I keep
     saying the sexy job in the next ten years will be statisticians"
@@ -38,8 +44,9 @@ the first usages of the term in this new context.
 
 Consistent with this claim, in 2009 Hammerbacher published an essay
 recounting his experience as a data scientist at Facebook entitled
-"Information Platforms and the Rise of the Data Scientist" (Hammerbacher
-2009), where he explained the motivation for adopting the term:
+"Information Platforms and the Rise of the Data Scientist"
+[@hammerbacher2009], where he explained the motivation for adopting the
+term:
 
 > At Facebook, we felt that traditional titles such as Business Analyst,
 > Statistician, Engineer, and Research Scientist didn't quite capture
@@ -74,14 +81,14 @@ unreasonable effectiveness of data" and explained in an essay with that
 title [@halevy2009]. In this approach, the size of data is considered
 more important than the sophistication of models---"invariably, simple
 models and a lot of data trump more elaborate models based on less data"
-(9; also quoted by Hammerbacher).[^ds-from-1963-to-2012-18] In essence,
+(9; also quoted by Hammerbacher).[^06-history-2008-2012-3] In essence,
 then, the new role of data scientist at Facebook was close to that of
 the data scientist for the British Antarctic Survey, i.e. the classical,
 not the statistical definition, with the added focus on machine
 learning. Indeed, Hammerbacher appears to have recognized the provenance
 of the term:
 
-[^ds-from-1963-to-2012-18]: By "simple," the authors meant few
+[^06-history-2008-2012-3]: By "simple," the authors meant few
     assumptions about the nature of the data, such as are required by
     data models that posit parametric distributions or causal relations
     among features. The usage is ironic, since one of the differences
@@ -388,13 +395,14 @@ the infrastructural framework within which it made sense. Again, the
 meaning of data science remains relatively unchanged from the classical
 definition; what changes is the context.
 
+```{=html}
 <!--#
 It may be good to insert a vignette about the RTCC as a business model.
 From SAGE to Google: The Role of Data Science in ...
 
 Focus on data as a social medium ...
 -->
-
+```
 By 2012, the terms data science and data scientist had trended widely in
 the media, in part due to the amplifying effects of the *HBR* article,
 which employed Varian's catchy quip but adopted Yau's characterization
@@ -408,13 +416,13 @@ other places, demonstrating the currency of the term in industry at that
 time. In addition to media coverage, consulting firms such as Booz Allen
 and Gartner produced documents targeting at C-suite executives providing
 an overview of the field, including the definition of a data scientist
-(Herman et al. 2013; Laney 2012). Throughout these writings, the
-definitions provided were consistent with the newer meaning, roughly the
-combination of computer competency, data mining, statistical knowledge,
+[@herman2013; @laney2012]. Throughout these writings, the definitions
+provided were consistent with the newer meaning, roughly the combination
+of computer competency, data mining, statistical knowledge,
 communication and visualization skills, and business acumen. In
 addition, the terms big data and data science were highly correlated;
 sentences like "\[d\]ata scientists are the magicians of the Big Data
-era" were frequent (Miller 2013).
+era" were frequent [@miller2013].
 
 ## A Note on "Big Data"
 
@@ -423,7 +431,7 @@ its co-occurrence and close semantic association with the
 often-capitalized phrase "big data." The phrase was used to refer to
 both large amounts of data---retroactively identified with Laney's
 concept of "3D data," data with high "volume, velocity, and variety"
-(Laney 2001)---and to the assemblage of technologies and methods
+[@laney2001]---and to the assemblage of technologies and methods
 associated with these data. The following definition from ZDNet is
 typical:
 
@@ -439,7 +447,7 @@ typical:
 > procedures allowing an organization to create, manipulate, and manage
 > very large data sets and storage facilities. Does this mean terabytes,
 > petabytes or even larger collections of data? The answer offered by
-> these suppliers is "yes" (Kusnetzky 2010).
+> these suppliers is "yes" [@kusnetzky2010].
 
 Indeed, the phrases big data and data science were often used
 interchangeably. For example, consider this usage from a New York Times
@@ -447,23 +455,23 @@ piece:
 
 > *The field known as "big data"* offers a contemporary case study. The
 > catchphrase stands for the modern abundance of digital data from many
-> sources --- the web, sensors, smartphones and corporate databases ---
-> that can be mined with clever software for discoveries and insights.
-> Its promise is smarter, data-driven decision-making in every field.
-> That is why data scientist is the economy's hot new job (Lohr 2014;
-> emphasis added).
+> sources---the web, sensors, smartphones and corporate databases---that
+> can be mined with clever software for discoveries and insights. Its
+> promise is smarter, data-driven decision-making in every field. That
+> is why data scientist is the economy's hot new job [@lohr2014;
+> emphasis added].
 
 Although in use since the 1990s, the term big data was launched into the
 public sphere (i.e. became viral) at nearly the same time as the terms
 data science and data scientist: around 2008, when the British weekly
 scientific journal *Nature* published a special issue entitled "Big
 Data: Science in the Petabyte Era" on the tenth anniversary of Google's
-incorporation ("Community Cleverness Required" 2008). By this time,
-Google's enormous success as a company founded on data mining had caught
-the world's attention, including that of the scientific community, to
-the point where the company had become something of a paradigm for
-science. The issue was devoted to exploring how science ought to manage
-and exploit big data by following Google's lead through various data
+incorporation [@CommunityClevernessRequired2008]. By this time, Google's
+enormous success as a company founded on data mining had caught the
+world's attention, including that of the scientific community, to the
+point where the company had become something of a paradigm for science.
+The issue was devoted to exploring how science ought to manage and
+exploit big data by following Google's lead through various data
 processing methods, from data mining to visualization to library
 science. This connection between Google and science was also made by
 *WIRED*'s Chris Anderson at this time, in an issue also devoted to "the
@@ -473,7 +481,7 @@ Petabyte Age," who argued:
 > data is changing science, medicine, business, and technology. As our
 > collection of facts and figures grows, so will the opportunity to find
 > answers to fundamental questions. Because in the era of big data, more
-> isn't just more. More is different (Anderson 2008b).
+> isn't just more. More is different [@anderson2008].
 
 Anderson argued that Google's successful application of model-free
 algorithms, as in its ad auctioning system, showed that the scientific
@@ -488,22 +496,22 @@ the problem of data impedance was conceptualized. Since at least the
 problem of data surplus was always framed as a kind of disaster, as is
 evident from the image of a flood, and the semantically close and more
 popular phrase "information explosion," implicitly likened to nuclear
-weapons by the frequent use of the image of the mushroom to signify
-exponential growth. With the success of the data-driven corporation on
-the model of Google, these negative terms began to be replaced by the
-more positive, or at least neutral, expression big data. In fact, one
-may observe this transition in the simultaneous publication of the
-*Nature* and *WIRED* issues on the topic (cited above)---the former
-introduces the new term while the latter uses the old, and both are
-linked by the metonym of the "petabyte" era or age. Since then, the term
-big data has been used to signify the context and opportunity within
-which the data science operates. For example, Patel and Davenport's 2012
-article defined a data scientist as "a high-ranking professional with
-the training and curiosity to make discoveries in the world of big
-data." This connection became a commonplace. In 2013, *Communications of
-the ACM* published "Data Science and Prediction," which also directly
-linked big data to data science, while providing some flesh to the
-former:
+weapons by the frequent use of the image of the mushroom cloud to
+signify exponential growth. With the success of the data-driven
+corporation on the model of Google, these negative terms began to be
+replaced by the more positive, or at least neutral, expression big data.
+In fact, one may observe this transition in the simultaneous publication
+of the *Nature* and *WIRED* issues on the topic (cited above)---the
+former introduces the new term while the latter uses the old, and both
+are linked by the metonym of the "petabyte" era or age. Since then, the
+term big data has been used to signify the context and opportunity
+within which the data science operates. For example, Patel and
+Davenport's 2012 article defined a data scientist as "a high-ranking
+professional with the training and curiosity to make discoveries in the
+world of big data." This connection became a commonplace. In 2013,
+*Communications of the ACM* published "Data Science and Prediction,"
+which also directly linked big data to data science, while providing
+some flesh to the former:
 
 > ... data science is different from statistics and other existing
 > disciplines in several important ways. To start, the raw material, the
@@ -524,7 +532,7 @@ former:
 > data that serves as the raw material for the creation of new
 > knowledge; Watson, IBM's "Jeopardy!" champion, is a prime illustration
 > of an emerging machine intelligence fueled by data and
-> state-of-the-art analytics (Dhar 2013: 64).
+> state-of-the-art analytics [@dharDataSciencePrediction2013: 64].
 
 Here, big data is linked to both data science and to the *kinds* of data
 that have been associated with the field since the AFCRL, in addition to

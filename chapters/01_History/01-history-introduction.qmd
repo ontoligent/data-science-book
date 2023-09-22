@@ -1,3 +1,9 @@
+---
+editor: 
+  markdown: 
+    wrap: 72
+---
+
 # Introduction
 
 ::: epigraph
@@ -35,7 +41,7 @@ programs.
 This essay approaches the problem of defining data science by describing
 how the collocation "data science," and its grammatical variants "data
 sciences" and "data scientist," have been used
-historically.[^ds-from-1963-to-2012-1] The primary method employed is
+historically.[^01-history-introduction-1] The primary method employed is
 the close reading and precise seriation of textual evidence drawn from a
 representative collection of primary sources, including organizational
 reports, academic articles, news stories, advertisements, and other
@@ -44,11 +50,11 @@ the term's social and institutional contexts of use as well as its
 denotative and connotative meanings. Extensive extracts are often
 presented, rather than paraphrased, as these in many cases provide the
 reader with direct and illuminating evidence for the meanings in
-question.[^ds-from-1963-to-2012-2]
+question.[^01-history-introduction-2]
 
-[^ds-from-1963-to-2012-1]: In this essay, a collocation is defined as a
-    combination of two or more words that function as a lexical unit. In
-    contrast to a mere n-gram, its usage tends to be idiomatic and
+[^01-history-introduction-1]: In this essay, a collocation is defined as
+    a combination of two or more words that function as a lexical unit.
+    In contrast to a mere n-gram, its usage tends to be idiomatic and
     non-random. Etymologically, the usage of a collocation often begins
     as a marked construction, by means of quotes and hyphens, before
     eventually becoming idiomatic. Often, a collocation becomes so
@@ -58,7 +64,7 @@ question.[^ds-from-1963-to-2012-2]
     essay, the collocation "data science" is referred to as a term or
     phrase, reflecting its unitary semantic status.
 
-[^ds-from-1963-to-2012-2]: The arguments and observations made by the
+[^01-history-introduction-2]: The arguments and observations made by the
     authors in each case are represented in historical tense, not the
     textual present, which is the usual custom in writing about the
     history of ideas. For example, instead of saying that "Tukey argues

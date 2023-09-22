@@ -3,17 +3,19 @@ project:
   output-dir: docs  
 
 book:
-  title: "The History and Structure of Data Science"
+  title: "Essays on Data Science"
   author: "Rafael C. Alvarado"
-  reader-mode: true
+  #reader-mode: true
   page-navigation: true  
   date: "9/20/2023"
+  
   chapters:
   - index.qmd
   # - chapters/00_FrontMatter/preface.qmd
   - part: "History"
     chapters: 
     - chapters/01_History/00-history-abstract.qmd # Abstract
+    - chapters/01_History/01-history-introduction.qmd
     - chapters/01_History/02-history-1960s.qmd # Origins
     # - chapters/01_History/03-history-1970s-and-80s.qmd # Normalization
     - chapters/01_History/04-history-1990s.qmd # Statistics Disrupted
@@ -21,19 +23,27 @@ book:
     - chapters/01_History/06-history-2008-2012.qmd # The Sexy Science
     - chapters/01_History/07-history-disconnect.qmd # The Disconnect
     - chapters/01_History/08-history-interpretation.qmd # Conclusion
+    appendices:
+    - chapters/01_History/history-method.qmd
+  #  appendices:
+  #  - chapters/99_Appendices/history-method.qmd
   - part: "Structure"
     chapters: 
     - chapters/02_Structure/01-structure-the-model.qmd
     - chapters/02_Structure/02-structure-ds-and-ai.qmd
     - chapters/02_Structure/03-structure-remarks.qmd
+    appendices:
+    - chapters/02_Structure/structure-sources.qmd
+  #  appendices:
+  #  - chapters/99_Appendices/structure-sources.qmd  
   # - part: "Design"
   #   chapters: 
   #   - chapters/03_Future/ethical-models.qmd
-  - part: "Back Matter"
-    appendices:  
-    - chapters/99_Appendices/history-method.qmd
-    - chapters/99_Appendices/structure-sources.qmd  
+  # - part: "Back Matter"
   - references.qmd
+  # appendices: 
+  #  - chapters/01_History/history-method.qmd
+  #  - chapters/02_Structure/structure-sources.qmd  
 
 page-footer:
   left: |
@@ -48,7 +58,7 @@ format:
   html:
     theme: cosmo
   pdf:
-    documentclass: scrreprt
+    documentclass: report
     include-in-header: 
       text: |
         \usepackage{makeidx}
