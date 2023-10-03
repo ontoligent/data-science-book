@@ -48,14 +48,14 @@ bibliography: bib/references.bib
 format:
   html:
     theme: cosmo
-  pdf:
-    documentclass: report
-    include-in-header: 
-      text: |
-        \usepackage{makeidx}
-        \makeindex
-    include-after-body: 
-      text: |
-        \printindex
+  # pdf:
+  #   documentclass: report
+  #   include-in-header: 
+  #     text: |
+  #       \usepackage{makeidx}
+  #       \makeindex
+  #   include-after-body: 
+  #     text: |
+  #       \printindex
 
 
