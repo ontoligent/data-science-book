@@ -11,40 +11,31 @@ book:
   
   chapters:
   - index.qmd
-  # - chapters/00_FrontMatter/preface.qmd
-  - part: "History"
+  - part: "The History of Data Science"
     chapters: 
-    - chapters/01_History/00-history-abstract.qmd # Abstract
-    - chapters/01_History/01-history-introduction.qmd
-    - chapters/01_History/02-history-1960s.qmd # Origins
-    # - chapters/01_History/03-history-1970s-and-80s.qmd # Normalization
-    - chapters/01_History/04-history-1990s.qmd # Statistics Disrupted
-    - chapters/01_History/05-history-2000s.qmd # Data Science Grows
-    - chapters/01_History/06-history-2008-2012.qmd # The Sexy Science
-    - chapters/01_History/07-history-disconnect.qmd # The Disconnect
+    - chapters/01_History/00-history-abstract.qmd       # Abstract
+    - chapters/01_History/00-synopsis.qmd               # Synopsis
+    - chapters/01_History/01-history-introduction.qmd   # Introduction
+    - chapters/01_History/02-history-1960s.qmd          # Origins
+    - chapters/01_History/04-history-1990s.qmd          # Statistics Disrupted
+    - chapters/01_History/05-history-2000s.qmd          # Data Science Grows
+    - chapters/01_History/06-history-2008-2012.qmd      # The Sexy Science
+    - chapters/01_History/07-history-disconnect.qmd     # The Disconnect
     - chapters/01_History/08-history-interpretation.qmd # Conclusion
     appendices:
     - chapters/01_History/history-method.qmd
-  #  appendices:
-  #  - chapters/99_Appendices/history-method.qmd
-  - part: "Structure"
+  - part: "The 4+1 Model of Data Science"
     chapters: 
     - chapters/02_Structure/01-structure-the-model.qmd
     - chapters/02_Structure/02-structure-ds-and-ai.qmd
     - chapters/02_Structure/03-structure-remarks.qmd
     appendices:
     - chapters/02_Structure/structure-sources.qmd
-  #  appendices:
-  #  - chapters/99_Appendices/structure-sources.qmd  
   # - part: "Design"
   #   chapters: 
   #   - chapters/03_Future/ethical-models.qmd
-  # - part: "Back Matter"
   - references.qmd
-  # appendices: 
-  #  - chapters/01_History/history-method.qmd
-  #  - chapters/02_Structure/structure-sources.qmd  
-
+  
 page-footer:
   left: |
     Written by Rafael C. Alvarado with input from many colleagues at UVA's [School of Data Science](http://datascience.virginia.edu).

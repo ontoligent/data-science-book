@@ -1,0 +1,32 @@
+<https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1450810>
+
+> The Experimental Dynamic Processor, DX-1 \[192\], \[I951 was started around the late 1950's to study on-line interactive sensor data processing. This was one of the pioneering efforts in the study of **interactive statistical signal analysis** using a graphics display and the use of color displays in this context \[194\], \[196\]. In addition to radar and biological signal processing and on-line filter design \[193\], \[149\], the major use of this system has been in studies of various statistical bandwidth compression schemes.
+
+## Connections
+
+-   DDP
+
+    -   Interactive statistical signal analysis
+    -   See definitions in various AFCRL articles
+        -   @afcrl1963 See "Dynamic Measurement Processes," p. 195.
+        -   @walter1964 "Disovering the Invariant Characteristics of Things," p. 17.
+    -   See research related to DD
+        -   <https://www.evernote.com/shard/s5/sh/21db1975-81a0-4f29-f10f-38baacb79846/nhfjPThvvb01EplwLt7QIdae2zGelv2gp_ett4BZM_sBgpocNMaLI9JaMg>
+    -   Referred to in a [Congressional hearing](https://www.google.com/books/edition/HOUSE_REPORTS/mig8AQAAMAAJ?hl=en&gbpv=1&dq=%22dynamic+data+processing%22&pg=RA1-PA123&printsec=frontcover). Context: merging of communications and data processing technologies --- same merger behind the DSL.
+
+-   DX-1
+
+    -   @walter1962 The Experimental Dynamic Processor DX-1
+    -   Implements DDP
+    -   Based on SAGE
+    -   Role John T. Gilmore and Adams Associates -- see <https://www.evernote.com/shard/s5/sh/47c1de7d-5e85-e929-d5ce-36bdc13b82e6/KeBl96ajHaYil7G68AGhGc_aao4ry07T616PfnOsxm8gcHGI-IAeXuReKA>
+
+## Extracts
+
+<https://www.evernote.com/shard/s5/sh/21db1975-81a0-4f29-f10f-38baacb79846/nhfjPThvvb01EplwLt7QIdae2zGelv2gp_ett4BZM_sBgpocNMaLI9JaMg>
+
+## Sources
+
+Chien, Y.T. 1976. "Interactive Pattern Recognition: Techniques and Systems." *Computer* 9 (5): 11--25. <https://doi.org/10.1109/C-M.1976.218582>.
+
+Kanal, L.N. 1972. "Interactive Pattern Analysis and Classification Systems: A Survey and Commentary." *Proceedings of the IEEE* 60 (10): 1200--1215. <https://doi.org/10.1109/PROC.1972.8880>.

@@ -6,10 +6,7 @@ editor:
 
 # Interpration
 
-```{=html}
-<!--#
-## Summary 
-
+<!-- ## Summary 
 Moving between social fields
 
 1.  Military-Industrial
@@ -23,9 +20,8 @@ Moving between social fields
     3.  US
 4.  Business (Silicon Valley)
     1.  Facebook, LinkedIn
-    2.  O'Reilly
--->
-```
+    2.  O'Reilly -->
+
 ## Themes
 
 Let us stop here, roughly at the point where data science becomes widely
@@ -35,10 +31,10 @@ What can we glean from this historical outline? Several themes emerge.
 Most significantly, it has been established that the term data science
 per se dates back to the early 1960s with the formation of the Data
 Sciences Laboratory in Cambridge, Massachusetts, and this usage was
-surprisingly close to its current one. To review, the esseential
-elements were there: the presence of big data (properly understood) and
-the use of both computational machinery and artificial intelligence to
-make sense of it. Morevoer, this original meaning remains surprisingly
+surprisingly close to its current one. To review, the essential elements
+were there: the presence of big data (properly understood) and the use
+of both computational machinery and artificial intelligence to make
+sense of it. Morevoer, this original meaning remains surprisingly
 consistent in the decades that follow, even as the term developed and
 accreted new senses. This development can be characterized as having
 three main phases resulting in three major variant definitions of the
@@ -49,7 +45,9 @@ Science. These are described below.
 
 ## Four Definitions
 
-### DS~1~: Computational Data Science
+<!--# These should be changed to two definitions, with older and newer versions. Classical 1 and 2, and Statistical 1 and 2. Or perhaps just make this observation after giving the fours definitions. -->
+
+### DS~1~: Classica Data Science
 
 This is the original, or classical, definition of data science that
 begins with the Data Sciences Laboratory and is taken up, at first in
@@ -132,19 +130,19 @@ difference in degree, not in kind.
 
 By big data science, I refer to the form of data science that emerged in
 the context of web companies like Google and Facebook and become both
-viral and paradigmatic after being anointed by *HBR* in 2012. As we have
-seen, this definition transfers the classical, computational definition,
-developed within the military-industrial context of the 1960s, to the
-context of the Silicon Valley social media firm, or what Zuboff has
-called surveillance capitalism. The conditions of data impedance that
-attended the rise of Big Science after WWII are embraced and become the
-foundation of a new business model that in turn becomes a model for all
-other firms and sectors to imitate, from the automotive industry to
-medicine.
+viral and paradigmatic after being anointed by *HBR* and the NSF in
+2012. As we have seen, this definition transfers the computational
+definition, developed within the military-industrial context of the
+1960s, to the context of the Silicon Valley social media firm---what
+Zuboff has called surveillance capitalism. The conditions of data
+impedance that attended the rise of Big Science after WWII are embraced
+and become the foundation of a new business model that in turn becomes a
+model for all other firms and sectors to imitate, from the automotive
+industry to medicine.
 
 One of the distinctive features of this definition is the close
 association with big data, in perception if not always in reality, as
-both a set of new technologies to manage 3D data and a set of
+both a set of new technologies to manage so-called 3D data and a set of
 "unreasonably effective" methods to convert these data into value.
 Another feature is the focus on data wrangling, the work required to
 convert the widely varying formats and conditions of data in the wild
@@ -154,62 +152,65 @@ data science embraces a suite of activities that connect these practices
 to the context of business and decision-making, such as visualization,
 communication, business acumen, and a focus on marketable data products.
 
-It follows that Donoho is incorrect in asserting that "\[w\]e can
-immediately reject 'big data' as a criterion for meaningful distinction
-between statistics and data science" (Donoho 2017: 747). The assemblage
-of computational technology associated with big data is the condition of
-possibility of data science in this definition, its *sine qua non*. It
-is impossible to imagine this kind of data science without the
-infrastructure of data generating machinery, high-performance
-computating architectures, scalable database technologies such as Hadoop
-and its descendants, and data-savvy programming languages such as R,
-Python, and Julia, and, to a high degree, the availability of extant
-datasets on the web. Indeed, the connection between this kind of data
-science and the technology stack on which it stands is so close that the
-relationship between technology and science becomes blurred, leading to
-revolutionary proclamantions of new kinds of science and conservative
-reactions to such claims (such as Donoho's).
+::: bourdieu
+By the way, it follows that Donoho is incorrect in asserting that
+"\[w\]e can immediately reject 'big data' as a criterion for meaningful
+distinction between statistics and data science" (Donoho 2017: 747). The
+assemblage of computational technology and new data forms associated
+with big data is the condition of possibility of data science in this
+definition, its *sine qua non*. It is impossible to imagine this kind of
+data science without the infrastructure of data generating machinery,
+high-performance computing architectures, scalable database technologies
+such as Hadoop and its descendants, and data-savvy programming languages
+such as R, Python, and Julia, and, to a high degree, the availability of
+extant datasets on the web. Indeed, the connection between this kind of
+data science and the technology stack on which it stands is so close
+that the relationship between technology and science becomes blurred,
+leading to revolutionary proclamations of new kinds of science and
+conservative reactions to such claims (such as Donoho's).
+:::
 
 ### DS~4~: Academic Data Science
 
 By academic data science, I refer to the ongoing reception of big data
 science by the academic community in response to the demand for data
-scientists across all sectors of society. The idea of data science has
+scientists across all sectors of society. The field of data science has
 influenced the academy in two ways: first, by stimulating the production
 of degree programs to meet workforce demands, and second, by providing a
 model for effective knowledge production in the context of pervasive
-data and data technologies. Both of these influences have given rise to
-the secondary effect of bringing to the surface and aggregating the
-myriad other forms of data-centric and analytic activities already being
+data and data technologies. Both of these influences have produced the
+secondary effect of bringing to the surface and aggregating the myriad
+other forms of data-centric and analytic activities already being
 conducted in the academy (and elsewhere) for years, from statistics to
 operations research to e-sceince, all of which have claims to be
 "already doing data science." This situation has led to current crisis
 in the definition of data science that is has produced responses such as
 Donoho's as well as the current essay.
 
+::: bourdieu
 Based on personal experience, I believe that the term data science
 within the academy has in recent years been nudged in the direction of
 being identified with an expanded form of statistics (DS~2~), regardless
-of whether its programs are "owned" by departments of statistics or
-not. This is because of the great authority of the field of statistics
-within the academy, as well as a general skepticism toward
-industry-generated categories by academics, many of whom dismiss the
-terms big data and data science as buzzwords. This has put pressure on
-developers of data science programs to become academically legitimate in
-the eyes of their peers and administrators. The shift in meaning is also
-due, quite frankly, to the co-opting of the phrase by departments of
-statistics to both cash in on it's name recognition and stem the tide of
-what are perceived to be its negative qualities. This tendendency has
-had the effect of flooding the market of data scientstis with de facto
-data analysts who are unable to perform the work that many in industry
-had previously sought under the sign of data scientist. And this has
-produced a counter-effect within industry to invent new categories of
-work, such as the data engineer and the data software developer. In
-reality, these new categories are surprisingly close in meaning to the
-original category of data-processing scientist that was coined in the
-1950s in the context of data reduction and other work that eventually
-became associated with the AFCRL Data Sciences Laboratory and with
-scientific research data management in general.
+of whether its programs are "owned" by departments of statistics or not.
+This is because of the great authority of the field of statistics within
+the academy, as well as a general skepticism toward industry-generated
+categories by academics, many of whom dismiss the terms big data and
+data science as buzzwords. This has put pressure on developers of data
+science programs to become academically legitimate in the eyes of their
+peers and administrators. The shift in meaning is also due, quite
+frankly, to the co-opting of the phrase by departments of statistics to
+both cash in on it's name recognition and stem the tide of what are
+perceived to be its negative qualities. This tendency has had the effect
+of flooding the market of data scientists with de facto data analysts
+who are unable to perform the work that many in industry had previously
+sought under the sign of data scientist. And this has produced a
+counter-effect within industry to invent new categories of work, such as
+the data engineer and the data software developer. In reality, these new
+categories are surprisingly close in meaning to the original category of
+data-processing scientist that was coined in the 1950s in the context of
+data reduction and other work that eventually became associated with the
+AFCRL Data Sciences Laboratory and with scientific research data
+management in general.
 
 This is an unfortunate state of affairs. The great value of data science
 has been in its cultivation of the fertile land between the science and
@@ -220,6 +221,7 @@ at odds with what science and industry need, the latter are once again
 left to fend for themselves, creating their own ad hoc educational
 resources to convert computer scientists and other adjacent role into
 data engineers. A rose is a rose by another other name.
+:::
 
 ## Data Impedance
 
@@ -319,3 +321,12 @@ knowledge. This means embracing the oppositions between data analysis
 and data mining, and between science and engineering, as a core,
 animating tensions in the field that may be cultivated for its
 generativity.
+
+## Data Science and RTCC
+
+-   AFCRL: From the Battle of Brittain to SAGE to DX-1
+-   Google and Surveillance Capitalism
+-   Big Data R&D Challenge---referred to as "hypothesis-driven
+    discovery," but described as, in effect, an RTCC: Environmental and
+    People-centric sensing, informatics, and computing (Emergency
+    Response)

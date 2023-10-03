@@ -158,11 +158,11 @@ statistics at its center [@chambersGreaterLesserStatistics1993: 1]. He
 locates GDS in a genealogy that begins with data analysis---a practice
 envisioned in the 1960s by his mentor at Princeton, the legendary
 mathematician John Tukey, who serves as the founding ancestor in this
-legitimation narrative. GDS is thus defined as "a superset of the fields
+legitimating narrative. GDS is thus defined as "a superset of the fields
 of statistics and machine learning, which adds some technology for
 'scaling up' to 'big data'" [@donoho2017: 745]. He also attempts to
-deflate the concept of big data, so central to contempory data science,
-by citing the Holerith's punched card system, which was invented to
+deflate the concept of big data, so central to contemporary data
+science, by citing Holerith's punched card system, which was invented to
 process the unexpectedly large volume of data produced by the 1890 US
 census, as an early instance and therefore nothing new. Like Yu,
 Donoho's argument is that, beyond the introducing a few useful
@@ -188,18 +188,18 @@ prone to rapid obsolescence, and therefore "the academic community can
 best focus on teaching broad principles---'science' rather than
 'engineering'" [@donoho2017: 765]. *Scientia longa, brevis ars.*
 
-It is beyond the scope of this essay to fully evaluate the arguments of
-Donoho and Yu. Suffice it to say that when Facebook was hiring data
-scientists in 2008, the fact that someone's academic field could claim
-Hollerith and Carver as data scientists would not have improved that
-candidate's chances of being hired. What is significant here for
-understanding the history of data science is the social underpinning of
-the observed disconnect between members of the established field of
-statistics and those of the emerging one of data science. By 2012,
-Breiman's observation that the developments in algorithmic modeling, and
-more generally data mining, "occurred largely outside statistics in a
-new community," was proven to be both true and prescient: that new
-community became one of the primary tributaries to data science, and the
-long standing opposition of statistics toward the beliefs of that
-community---evident in Donoho and the predecessors he cites in the 1990s
-and early 2000s---became manifest.
+It is beyond the scope of this essay to evaluate the arguments of Donoho
+and Yu. Suffice it to say that when Facebook was hiring data scientists
+in 2008, the fact that someone's academic field could claim Hollerith
+and Carver as data scientists would not have improved that candidate's
+chances of being hired. What is significant here for understanding the
+history of data science is the social underpinning of the observed
+disconnect between members of the established field of statistics and
+those of the emerging one of data science. By 2012, Breiman's
+observation that the developments in algorithmic modeling, and more
+generally data mining, "occurred largely outside statistics in a new
+community," was proven to be both true and prescient: that new community
+became one of the primary tributaries to data science, and the long
+standing opposition of statistics toward the beliefs of that
+community---evident in Donoho and his predecessors in the 1990s and
+early 2000s---became manifest.

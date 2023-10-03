@@ -1,0 +1,21 @@
+# Critique of Donoho
+
+In general, Donoho's argument is a form of discplinary chauvanism.
+
+## Invalid Dismisal of Big Data
+
+-   The Holreith card system is not an example of big data.
+-   It does meet the criterion of being too large to process, but it does not meet the criteria of requiring data reduction, of being real-time, of including non-structured data, of being non-experimental, etc.
+-   It also misses the significance of the expression "big data," which refers not only to a class of data but to a set of practices associated with it.
+-   This is a case of academic and business linguistic practices colliding. The grammatically correct interpretation is not always the semantically or pragmatically correct one.
+
+## Invalid Dismissal of Technology
+
+-   The salient characteristics of big data are missed because of a deeper dismissal of technology as incidental.
+-   Critics of data science as "just statistics" consistently missed the significance of technology as a medium for the construction of knowledge.
+
+## Incorrect History
+
+-   Begs the question when citing Tukey.
+-   Misses the origin of both classical and statistical data science.
+-   In general, the argument is disciplinarily ethnocentric---it projects its own bias onto history and selects only those pieces of evidence that support this view. In fairness, the historical research conducted to support the argument is insufficient.

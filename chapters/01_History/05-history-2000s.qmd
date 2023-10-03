@@ -2,190 +2,41 @@
 
 ## Breiman: A Prophet in the Wilderness
 
-Perhaps the most eloquent and authoritative account of the difference
-between what we are calling data analysis and data mining is found in
-Leo Breiman's contemporary essay on an analogous pairing, what he
-called, echoing C. P. Snow, the "two cultures" of statistical modeling
-[@breiman2001]. In brief, one culture seeks to represent causality---the
-black box of nature that generates the empirical data with which
-statistics begins---by means of probabilistic or stochastic data models.
-The parameters, random variables, and relationships that compose these
-models are imagined to correspond to things in the world, at least in
-principle. Data are used to estimate the parameters of these models.
-This is the "data modeling culture," associated with traditional
-statistics and data analysis. Breiman guessed this culture comprised 98%
-of all statisticians, broadly conceived. The other culture bypasses
-attempts to directly model the contents of the black box and instead
-focuses on accounting for the data by means of goal-oriented algorithms,
-regardless of the correspondence of these to the world. This is the
-"algorithmic modeling culture," associated with computer science,
-machine learning, and, we might add, data mining. Breiman described the
-growth of this culture as "rapid" (beginning circa 1985) and
-characterized its results as "startling" [@breiman2001: 200].
+Perhaps the most eloquent and authoritative account of the difference between what we are calling data analysis and data mining is found in Leo Breiman's contemporary essay on an analogous pairing, what he called, echoing C. P. Snow, the "two cultures" of statistical modeling [@breiman2001]. In brief, one culture seeks to represent causality---the black box of nature that generates the empirical data with which statistics begins---by means of probabilistic or stochastic data models. The parameters, random variables, and relationships that compose these models are imagined to correspond to things in the world, at least in principle. Data are used to estimate the parameters of these models. This is the "data modeling culture," associated with traditional statistics and data analysis. Breiman guessed this culture comprised 98% of all statisticians, broadly conceived. The other culture bypasses attempts to directly model the contents of the black box and instead focuses on accounting for the data by means of goal-oriented algorithms, regardless of the correspondence of these to the world. This is the "algorithmic modeling culture," associated with computer science, machine learning, and, we might add, data mining. Breiman described the growth of this culture as "rapid" (beginning circa 1985) and characterized its results as "startling" [@breiman2001: 200].
 
-As Ohsumi wrote, for one culture the data models are more important than
-the data, and not all data are suitable to supporting the development of
-good data models. Hence the emphasis on design for data---the most
-important phase of data science is in the careful production of data.
-For the other, data are both abundant and intrinsically valuable, and to
-a great extent have the power to account for themselves. Whereas the
-former is highly selective about the data it employs, and views with
-great suspicion---as we have seen---new forms of data coming from
-databases in a variety of formats, the latter embrace these data, and
-are not daunted by their size and complexity. On the contrary, these
-qualities are essential to the methods applied.
+As Ohsumi wrote, for one culture the data models are more important than the data, and not all data are suitable to supporting the development of good data models. Hence the emphasis on design for data---the most important phase of data science is in the careful production of data. For the other, data are both abundant and intrinsically valuable, and to a great extent have the power to account for themselves. Whereas the former is highly selective about the data it employs, and views with great suspicion---as we have seen---new forms of data coming from databases in a variety of formats, the latter embrace these data, and are not daunted by their size and complexity. On the contrary, these qualities are essential to the methods applied.
 
-The point of Breiman's essay was to convince the 98% that their
-commitment to correspondence models had led to "irrelevant theory and
-questionable scientific conclusions" about underlying mechanisms.
-Perhaps more important, he argued that their priestly avoidance of
-impure algorithmic methods and data "not suitable for analysis by data
-models" (i.e. the accidental data found in databases, as opposed to data
-created by design) had prevented "statisticians from working on exciting
-new problems" (199--200). The canary had forgotten to sing, but for
-reasons precisely opposite to that claimed by the Tokyo school, whom
-Breiman may have admonished for an excessive concern for the conditions
-of acquisition.
+The point of Breiman's essay was to convince the 98% that their commitment to correspondence models had led to "irrelevant theory and questionable scientific conclusions" about underlying mechanisms. Perhaps more important, he argued that their priestly avoidance of impure algorithmic methods and data "not suitable for analysis by data models" (i.e. the accidental data found in databases, as opposed to data created by design) had prevented "statisticians from working on exciting new problems" (199--200). The canary had forgotten to sing, but for reasons precisely opposite to that claimed by the Tokyo school, whom Breiman may have admonished for an excessive concern for the conditions of acquisition.
 
 ::: bourdieu
-One way to account for the difference between the two cultures is to
-compare their institutional settings. The data modeling culture is
-closely aligned with the project of academic science and the search for
-intelligible models of nature, whereas the latter are more associated
-with business needs, the pragmatic decision-making requirements of those
-clients who own the databases in the first place. This difference is
-reflected in Breiman's own biography, which is that of a liminal figure
-in this binary. He spent significant amounts of time as both an
-"academic probabilist" and as a free-lance consultant to industry and
-government, where he "became a member of the small second culture."
-Indeed, in the mid-1970s Breiman worked for Data Sciences Division of
-Technology Services Corporation [@breiman1976]. These different value
-orientations---deriving from the purpose for which one works with data
-in the first place---are reflected in their attitudes toward data and
-models. For one group, models are the capital on which one builds a
-career and a name. One wins a Nobel Prize for a successful model of the
-world, not for collecting the data upon which it was built, which are
-often forgotten and poorly documented. In business, however, models come
-and go, but the data constitute an irreplaceable form of capital, often
-taking years to accumulate and jealously guarded. Thus, for one group,
-models precede data; for the other, data precedes models. We might
-characterize the former as *essentialist* and the latter as
-*existentialist*, given the analogy that data : models :: existence :
-essence.
+One way to account for the difference between the two cultures is to compare their institutional settings. The data modeling culture is closely aligned with the project of academic science and the search for intelligible models of nature, whereas the latter are more associated with business needs, the pragmatic decision-making requirements of those clients who own the databases in the first place. This difference is reflected in Breiman's own biography, which is that of a liminal figure in this binary. He spent significant amounts of time as both an "academic probabilist" and as a free-lance consultant to industry and government, where he "became a member of the small second culture." Indeed, in the mid-1970s Breiman worked for Data Sciences Division of Technology Services Corporation [@breiman1976]. These different value orientations---deriving from the purpose for which one works with data in the first place---are reflected in their attitudes toward data and models. For one group, models are the capital on which one builds a career and a name. One wins a Nobel Prize for a successful model of the world, not for collecting the data upon which it was built, which are often forgotten and poorly documented. In business, however, models come and go, but the data constitute an irreplaceable form of capital, often taking years to accumulate and jealously guarded. Thus, for one group, models precede data; for the other, data precedes models. We might characterize the former as *essentialist* and the latter as *existentialist*, given the analogy that data : models :: existence : essence.
 :::
 
 ## Data Mining Considered Harmful
 
-Breiman's essay marks a significant shift in the history of data
-science, a reversal in how data are regarded in relation to models.
-Consider that the phrase "data mining" itself, which was actually used
-by econometric statisticians to refer to the frowned upon practice of
-fishing for models in the data, of letting data specify models, a usage
-dating back to 1966 and at least up to 1995 [@lovell1983; @ando1966;
-@hendry1995: 544]. In his review of the concept in 1983, Lovell's
-remarks make it clear that the two usages are not entirely unrelated:
+Breiman's essay marks a significant shift in the history of data science, a reversal in how data are regarded in relation to models. Consider that the phrase "data mining" itself, which was actually used by econometric statisticians to refer to the frowned upon practice of fishing for models in the data, of letting data specify models, a usage dating back to 1966 and at least up to 1995 [@lovell1983; @ando1966; @hendry1995: 544]. In his review of the concept in 1983, Lovell's remarks make it clear that the two usages are not entirely unrelated:
 
-> The development of data banks \... has increased tremendously the
-> efficiency with which the investigator marshals evidence. The art of
-> fishing over alternative models has been partially automated with
-> stepwise regression programs. While such advances have made it easier
-> to find high $\overline{R}^ 2$s and "significant" *t*-coefficients, it
-> is by no means obvious that reductions in the costs of data mining
-> have been matched by a proportional increase in our knowledge of how
-> the economy actually works [@lovell1983: 1].
+> The development of data banks \... has increased tremendously the efficiency with which the investigator marshals evidence. The art of fishing over alternative models has been partially automated with stepwise regression programs. While such advances have made it easier to find high $\overline{R}^ 2$s and "significant" *t*-coefficients, it is by no means obvious that reductions in the costs of data mining have been matched by a proportional increase in our knowledge of how the economy actually works [@lovell1983: 1].
 >
-> When a data miner uncovers *t*-statistics that appear significant at
-> the 0.05 level by running a large number of alternative regressions on
-> the same body of data, the probability of a Type I error of rejecting
-> the null hypothesis when it is true is much greater than the claimed
-> 5% (1).
+> When a data miner uncovers *t*-statistics that appear significant at the 0.05 level by running a large number of alternative regressions on the same body of data, the probability of a Type I error of rejecting the null hypothesis when it is true is much greater than the claimed 5% (1).
 >
-> It is ironic that the data mining procedure that is most likely to
-> produce regression results that appear impressive in terms of the
-> customary criteria is also likely to be the most misleading in terms
-> of what it asserts about the underlying process generating the data
-> under study (10).
+> It is ironic that the data mining procedure that is most likely to produce regression results that appear impressive in terms of the customary criteria is also likely to be the most misleading in terms of what it asserts about the underlying process generating the data under study (10).
 
-The fact that the same phrase, with a common referent but opposite
-sentiments, would be used contemporaneously is an indication of the
-social distance between the two cultures. But also, we can see that the
-approach Breiman proposed was exactly what was criticized by these
-statisticians: among the perceptions, or principles, he acquired as a
-consultant to work successfully with data, he specified the "\[s\]earch
-for a model that gives a good solution, either algorithmic or data"
-(201), a definition of data mining that would fit among those quoted,
-with wry humor, by Lovell. In fact, the meaning of data mining, even
-among statisticians, changes during this period, going from a bad habit
-to a hot new area of research. Its negative evaluation by some, however,
-has persisted.
+The fact that the same phrase, with a common referent but opposite sentiments, would be used contemporaneously is an indication of the social distance between the two cultures. But also, we can see that the approach Breiman proposed was exactly what was criticized by these statisticians: among the perceptions, or principles, he acquired as a consultant to work successfully with data, he specified the "\[s\]earch for a model that gives a good solution, either algorithmic or data" (201), a definition of data mining that would fit among those quoted, with wry humor, by Lovell. In fact, the meaning of data mining, even among statisticians, changes during this period, going from a bad habit to a hot new area of research. Its negative evaluation by some, however, has persisted.
 
 ::: bourdieu
-In defense of data miners against the criticisms of econometric
-statisticians and those of the Tokyo school, their focus on already
-collected data reflects Naur's view that data science should focus on
-representation and transformation, and not on establishment and domain
-knowledge---precisely the areas on which the Tokyo school focused. But
-more important, data miners had discovered something that data analysis
-had not, at least not as a shared perspective: data in fact do have a
-certain autonomy with respect to their provenance, and a variety of
-methods, including many from statistics, were revealing an entirely new
-and quite radical paradigm of science---one without need of "theory"
-[@anderson2008]. "Self-contained play" actually pays off. In a certain
-sense, data miners were carrying out a principle asserted by Claude
-Shannon in his groundbreaking essay on information theory---that the
-"semantic aspects of communication are irrelevant to the engineering
-problem" [@shannon1948: 5]. The engineering problem in this case being
-the ability to discover significant patterns among features and to make
-predictions, and the semantics being the relationship between phenomena
-and data.
+In defense of data miners against the criticisms of econometric statisticians and those of the Tokyo school, their focus on already collected data reflects Naur's view that data science should focus on representation and transformation, and not on establishment and domain knowledge---precisely the areas on which the Tokyo school focused. But more important, data miners had discovered something that data analysis had not, at least not as a shared perspective: data in fact do have a certain autonomy with respect to their provenance, and a variety of methods, including many from statistics, were revealing an entirely new and quite radical paradigm of science---one without need of "theory" [@anderson2008]. "Self-contained play" actually pays off. In a certain sense, data miners were carrying out a principle asserted by Claude Shannon in his groundbreaking essay on information theory---that the "semantic aspects of communication are irrelevant to the engineering problem" [@shannon1948: 5]. The engineering problem in this case being the ability to discover significant patterns among features and to make predictions, and the semantics being the relationship between phenomena and data.
 :::
 
-At the most general level, the epistemological orientations of the two
-cultures can be described by reference to how each understands the
-proper relationship between data and models on the one hand and
-motivating questions on the other. For the traditional data analyst, one
-acquires data and develops models in order to answer scientific
-questions. These derive from established fields ranging across the
-natural, life, and social sciences, from which there is no shortage of
-compelling problems to solve. For the data miner, the relationship is
-reversed: the presence of abundant data, found in databases, creates a
-need to find value in them, a vacuum to fill. Although, as we have seen,
-the field is sometimes called knowledge discovery, it might better have
-been called *question* discovery. Consider this sentence, drawn from an
-early essay on KDD: "American Airlines is looking for patterns in its
-frequent flyer databases" [@piatetsky-shapiro1991]. This is not
-something a data analyst would utter publicly.
+At the most general level, the epistemological orientations of the two cultures can be described by reference to how each understands the proper relationship between data and models on the one hand and motivating questions on the other. For the traditional data analyst, one acquires data and develops models in order to answer scientific questions. These derive from established fields ranging across the natural, life, and social sciences, from which there is no shortage of compelling problems to solve. For the data miner, the relationship is reversed: the presence of abundant data, found in databases, creates a need to find value in them, a vacuum to fill. Although, as we have seen, the field is sometimes called knowledge discovery, it might better have been called *question* discovery. Consider this sentence, drawn from an early essay on KDD: "American Airlines is looking for patterns in its frequent flyer databases" [@piatetsky-shapiro1991]. This is not something a data analyst would utter publicly.
 
-It is hard to overestimate the width of the gap between these two
-fields. To this day, statisticians, who view themselves as the
-inheritors and guardians of the scientific method, regard the
-unidirectional relationship between understanding why and how one
-collects data, and the collected data themselves, nearly as strongly as
-geneticists regard the relationship between genotype and phenotype---the
-arrow of information moves in one direction. Epigenetics
-notwithstanding, violation of this dogma is tantamount to heresy. The
-data miner has no such concern; data are data and data have value. The
-trick is to discover that value before anyone else does. This is not to
-say that data miners do not have questions in hand before working with
-data. Often clients have very specific questions, and existing databases
-are found that more or less match the requirements of the question.
-Indeed, in defending himself against Cox's charge of putting data before
-questions, Breiman wrote:
+It is hard to overestimate the width of the gap between these two fields. To this day, statisticians, who view themselves as the inheritors and guardians of the scientific method, regard the unidirectional relationship between understanding why and how one collects data, and the collected data themselves, nearly as strongly as geneticists regard the relationship between genotype and phenotype---the arrow of information moves in one direction. Epigenetics notwithstanding, violation of this dogma is tantamount to heresy. The data miner has no such concern; data are data and data have value. The trick is to discover that value before anyone else does. This is not to say that data miners do not have questions in hand before working with data. Often clients have very specific questions, and existing databases are found that more or less match the requirements of the question. Indeed, in defending himself against Cox's charge of putting data before questions, Breiman wrote:
 
-> I have never worked on project that has started with "Here is a lot of
-> data; let's look at it and see if we can get some ideas on how we can
-> use it." The data has been put together and analyzed starting with an
-> objective (226).
+> I have never worked on project that has started with "Here is a lot of data; let's look at it and see if we can get some ideas on how we can use it." The data has been put together and analyzed starting with an objective (226).
 
-There is a difference between a general objective and a specific
-question. In these cases, the data miner is much more likely to work
-happily with these data and not wait for experimental data to be
-produced. If she does not succeed, she is as likely to blame her methods
-more than the data themselves. It is telling that in recounting his
-failure to come up with a predictive model of smog formation in Los
-Angeles, Breiman wished he had had "the tools available today," not
-better data (201).
+There is a difference between a general objective and a specific question. In these cases, the data miner is much more likely to work happily with these data and not wait for experimental data to be produced. If she does not succeed, she is as likely to blame her methods more than the data themselves. It is telling that in recounting his failure to come up with a predictive model of smog formation in Los Angeles, Breiman wished he had had "the tools available today," not better data (201).
 
+```{=html}
 <!--#
 *Connect Breiman to 1990s movements. Describes the structural
 contradiction that gave rise tod the movements to the malaise and the
@@ -196,425 +47,95 @@ Parzen, Breiman lamented: "Many of the best statisticians I have talked
 to over the past years have serious concerns about the viability of
 statistics as a field" (231).
 -->
-
+```
 ## 2005: Data Science in the Sciences
 
-As some members of the statistics community presented plans to
-incorporate data science into their field, the terms "data science" and
-"data scientist" nevertheless continued to be used in the classical
-sense of the science of data in the service of science. Indeed, by 2005,
-the role of data scientist had become sufficiently developed within the
-scientific community that it appeared as a central element in a report
-from the US National Science Foundation (NSF), "Long-Lived Digital Data
-Collections: Enabling Research and Education in the 21st Century"
-[@simberloff2005]. The report defines the role in specific terms:
+As some members of the statistics community presented plans to incorporate data science into their field, the terms "data science" and "data scientist" nevertheless continued to be used in the classical sense of the science of data in the service of science. Indeed, by 2005, the role of data scientist had become sufficiently developed within the scientific community that it appeared as a central element in a report from the US National Science Foundation (NSF), "Long-Lived Digital Data Collections: Enabling Research and Education in the 21st Century" [@simberloff2005]. The report defines the role in specific terms:
 
 > DATA SCIENTISTS
 >
-> The interests of data scientists---the information and computer
-> scientists, database and software engineers and programmers,
-> disciplinary experts, curators and expert annotators, librarians,
-> archivists, and others, who are crucial to the successful management
-> of a digital data collection---lie in having their creativity and
-> intellectual contributions fully recognized. In pursuing these
-> interests, they have the responsibility to:
+> The interests of data scientists---the information and computer scientists, database and software engineers and programmers, disciplinary experts, curators and expert annotators, librarians, archivists, and others, who are crucial to the successful management of a digital data collection---lie in having their creativity and intellectual contributions fully recognized. In pursuing these interests, they have the responsibility to:
 >
 > -   conduct creative inquiry and analysis;
 >
-> -   enhance through consultation, collaboration, and coordination the
->     ability of others to conduct research and education using digital
->     data collections;
+> -   enhance through consultation, collaboration, and coordination the ability of others to conduct research and education using digital data collections;
 >
-> -   be at the forefront in developing innovative concepts in database
->     technology and information sciences, *including methods for data
->     visualization and information discovery*, and applying these in
->     the fields of science and education relevant to the collection;
+> -   be at the forefront in developing innovative concepts in database technology and information sciences, *including methods for data visualization and information discovery*, and applying these in the fields of science and education relevant to the collection;
 >
 > -   implement best practices and technology;
 >
-> -   serve as a mentor to beginning or transitioning investigators,
->     students and others interested in pursuing data science; and
->     design and implement education and outreach programs that make the
->     benefits of data collections and digital information science
->     available to the broadest possible range of researchers,
->     educators, students, and the general public.
+> -   serve as a mentor to beginning or transitioning investigators, students and others interested in pursuing data science; and design and implement education and outreach programs that make the benefits of data collections and digital information science available to the broadest possible range of researchers, educators, students, and the general public.
 >
-> Almost all long-lived digital data collections contain data that are
-> materially different: text, electro-optical images, x-ray images,
-> spatial coordinates, topographical maps, acoustic returns, and
-> hyper-spectral images. In some cases, it has been the data scientist
-> who has determined how to register one category of representation
-> against another and how to cross-check and combine the metadata to
-> ensure accurate feature registration. Likewise, there have been cases
-> of data scientists developing a model that permits representation of
-> behavior at very different levels to be integrated. *Research insights
-> can arise from the deep understanding of the data scientist of the
-> fundamental nature of the representation. Such insights complement the
-> insights of the domain expert. As a result, data scientists sometimes
-> are primary contributors to research progress.* Their contribution
-> should be documented and recognized. One means for recognition is
-> through publication, i.e., refereed papers in which they are among the
-> leading authors [@simberloff2005: 26; emphases added].
+> Almost all long-lived digital data collections contain data that are materially different: text, electro-optical images, x-ray images, spatial coordinates, topographical maps, acoustic returns, and hyper-spectral images. In some cases, it has been the data scientist who has determined how to register one category of representation against another and how to cross-check and combine the metadata to ensure accurate feature registration. Likewise, there have been cases of data scientists developing a model that permits representation of behavior at very different levels to be integrated. *Research insights can arise from the deep understanding of the data scientist of the fundamental nature of the representation. Such insights complement the insights of the domain expert. As a result, data scientists sometimes are primary contributors to research progress.* Their contribution should be documented and recognized. One means for recognition is through publication, i.e., refereed papers in which they are among the leading authors [@simberloff2005: 26; emphases added].
 
-This account of the role of data scientist demonstrates both the
-currency of the term and its adherence to the classical definition.
-Again, this usage stood in contrast to that developed in the statistics
-community for its emphasis on the creative role of data curation and
-representation and its sympathetic view toward knowledge discovery. It
-is also worth noting the normative intent of the definition---the report
-described the role of data scientist as both heterogeneous---comprising
-a wide array of knowledge workers from computer scientists to
-librarians---and undervalued. The report sought to correct this
-condition. As evidence for its influence, consider that Purdue
-University's Distributed Data Curation Center (D2C2), founded in 2007 as
-"a research center that would connect domain scientists, librarians,
-archivists, computer scientists, and information technologists" to
-address "the need by researchers for help in discovering, managing,
-sharing, and archiving their research data," included "a full-time Data
-Research Scientist, a position based on the data scientist role" as
-described in the report [@witt2008: 199].
+This account of the role of data scientist demonstrates both the currency of the term and its adherence to the classical definition. Again, this usage stood in contrast to that developed in the statistics community for its emphasis on the creative role of data curation and representation and its sympathetic view toward knowledge discovery. It is also worth noting the normative intent of the definition---the report described the role of data scientist as both heterogeneous---comprising a wide array of knowledge workers from computer scientists to librarians---and undervalued. The report sought to correct this condition. As evidence for its influence, consider that Purdue University's Distributed Data Curation Center (D2C2), founded in 2007 as "a research center that would connect domain scientists, librarians, archivists, computer scientists, and information technologists" to address "the need by researchers for help in discovering, managing, sharing, and archiving their research data," included "a full-time Data Research Scientist, a position based on the data scientist role" as described in the report [@witt2008: 199].
 
-The NSF report drew on the established usage of the term in the
-scientific community. During this period there appeared numerous
-instances of the term "data scientist" in popular media that are
-consistent with the classical definition of data science. For example,
-in 2008 *The Times* of London published a piece that quoted "Nathan
-Cunningham, 36, data scientist, British Antarctic Survey":
+The NSF report drew on the established usage of the term in the scientific community. During this period there appeared numerous instances of the term "data scientist" in popular media that are consistent with the classical definition of data science. For example, in 2008 *The Times* of London published a piece that quoted "Nathan Cunningham, 36, data scientist, British Antarctic Survey":
 
-> When I am on the ship I am part of a team of scientists collecting
-> data about everything from the biomass in the ocean to the weather
-> patterns. ... Our monitoring equipment is always on and sends us 180
-> pieces of information every second. *My role is to make sure that each
-> person can find the exact data that they want among all this, so I
-> write programs to help them to do this*. Another one of my field
-> responsibilities is getting the information that we collect back to
-> Cambridge via satellite link so that other researchers can use the
-> data [@chynoweth2008; emphasis added].
+> When I am on the ship I am part of a team of scientists collecting data about everything from the biomass in the ocean to the weather patterns. ... Our monitoring equipment is always on and sends us 180 pieces of information every second. *My role is to make sure that each person can find the exact data that they want among all this, so I write programs to help them to do this*. Another one of my field responsibilities is getting the information that we collect back to Cambridge via satellite link so that other researchers can use the data [@chynoweth2008; emphasis added].
 
-Other stories about data scientists were reported in news media touting
-the work of local universities, such as at Brigham Young University and
-Rensselaer Polytechnic Institute (Harmon 2007; Targeted News Service
-2008). The *New Scientist* posted job ads for data scientists as far
-back as 1992 [@newscie1992; @newscie1995a; @newscie1996; @newscie1999;
-@newscie2001]. In some cases, the term was prefixed, as in "Clinical
-Data Scientist," "Marine Data Scientist," and "Senior Data Scientist,"
-but in others it was not.
+Other stories about data scientists were reported in news media touting the work of local universities, such as at Brigham Young University and Rensselaer Polytechnic Institute (Harmon 2007; Targeted News Service 2008). The *New Scientist* posted job ads for data scientists as far back as 1992 [@newscie1992; @newscie1995a; @newscie1996; @newscie1999; @newscie2001]. In some cases, the term was prefixed, as in "Clinical Data Scientist," "Marine Data Scientist," and "Senior Data Scientist," but in others it was not.
 
-Alongside but contrary to plans for data science curricula from the
-statisticians' perspective, computer scientists and scientists in
-disciplines that had long been engaged with data impedance, such as
-physics and astronomy, began to outline requirements for data science to
-become a mature field. In "Data Science as an Academic Discipline,"
-published in CODATA's *Data Science Journal*, Irish computer scientist
-F. Jack Smith (OBE) argued for data science to develop its own
-peer-reviewed body of knowledge, in the form of refereed journals and
-textbooks, on the premise that "\[o\]nce a body of literature is in
-place, academic courses can begin at universities" [@smith2006: 164].
-Consistent with the journal's source, Smith's definition of data science
-was different to that proposed by Wu and Cleveland. The following
-historical perspective makes this clear:
+Alongside but contrary to plans for data science curricula from the statisticians' perspective, computer scientists and scientists in disciplines that had long been engaged with data impedance, such as physics and astronomy, began to outline requirements for data science to become a mature field. In "Data Science as an Academic Discipline," published in CODATA's *Data Science Journal*, Irish computer scientist F. Jack Smith (OBE) argued for data science to develop its own peer-reviewed body of knowledge, in the form of refereed journals and textbooks, on the premise that "\[o\]nce a body of literature is in place, academic courses can begin at universities" [@smith2006: 164]. Consistent with the journal's source, Smith's definition of data science was different to that proposed by Wu and Cleveland. The following historical perspective makes this clear:
 
-> To be taken seriously, any discipline needs to have endured over time.
-> Unlike computers, scientific data has a long history. Without
-> astronomic data, Newton would not have discovered gravitation. Without
-> data on materials, the Titanic would not have been built, and with
-> good data on the location of icebergs, it might not have sunk! Data
-> then consisted of tables of facts and quantities found in textbooks
-> and journals, but data science did not yet exist. *Then computers and
-> mass storage devices became available, and the first databases were
-> designed holding scientific data. Data science was born soon
-> afterwards, about 1966, when a few far seeing pioneers formed CODATA*.
+> To be taken seriously, any discipline needs to have endured over time. Unlike computers, scientific data has a long history. Without astronomic data, Newton would not have discovered gravitation. Without data on materials, the Titanic would not have been built, and with good data on the location of icebergs, it might not have sunk! Data then consisted of tables of facts and quantities found in textbooks and journals, but data science did not yet exist. *Then computers and mass storage devices became available, and the first databases were designed holding scientific data. Data science was born soon afterwards, about 1966, when a few far seeing pioneers formed CODATA*.
 >
-> Data science has developed since to include the study of the capture
-> of data, their analysis, metadata, fast retrieval, archiving,
-> exchange, *mining to find unexpected knowledge and data
-> relationships*, visualization in two and three dimensions including
-> movement, and management. Also included are intellectual property
-> rights and other legal issues*.*
+> Data science has developed since to include the study of the capture of data, their analysis, metadata, fast retrieval, archiving, exchange, *mining to find unexpected knowledge and data relationships*, visualization in two and three dimensions including movement, and management. Also included are intellectual property rights and other legal issues*.*
 >
-> Data science, however, has become more than this, something that the
-> pioneers who started CODATA could not have foreseen; data has ceased
-> being exclusively held in large databases on centrally located main
-> frames but has become scattered across an internet, instantly
-> accessible by personal computers that can themselves store gigabytes
-> of data. *Therefore, the nature and scope of much scientific and
-> engineering data and, in consequence, of much scientific research has
-> changed.* Measurement technologies have also improved in quality and
-> quantity with measurement times reduced by orders of magnitude.
-> Virtually every area of science, astronomy, chemistry, geoscience,
-> physics, biology, and engineering is also becoming based on *models
-> dependent on large bodies of data, often terabytes, held in large
-> scientific data systems* (163; emphases added).
+> Data science, however, has become more than this, something that the pioneers who started CODATA could not have foreseen; data has ceased being exclusively held in large databases on centrally located main frames but has become scattered across an internet, instantly accessible by personal computers that can themselves store gigabytes of data. *Therefore, the nature and scope of much scientific and engineering data and, in consequence, of much scientific research has changed.* Measurement technologies have also improved in quality and quantity with measurement times reduced by orders of magnitude. Virtually every area of science, astronomy, chemistry, geoscience, physics, biology, and engineering is also becoming based on *models dependent on large bodies of data, often terabytes, held in large scientific data systems* (163; emphases added).
 
-This view, close to that espoused here, locates data science in the
-historically specific emergence of networked, computational
-databases---what has been called the datasphere [@garfinkel2000;
-@alvarado2017]. This emphasis on the dependence of models on this
-infrastructure represents what seems to be a distinct view to that of
-the statistician, who tends to regard these developments as exogenous to
-her engagement with data. Put another way, for the statistician, the
-historical shift from data to databases---from print to digital modes of
-communication---is often represented as a difference in degree, but for
-the scientist, who produces and lives among these data, it is a
-difference in kind. This difference in perspective was not without
-epistemic consequences. For one, Smith's definition clearly included
-data mining. For another, just as data mining had been excluded from the
-statistician's definition of data science, so too was a concern for
-databases excluded from what was considered worthwhile scientific work:
+This view, close to that espoused here, locates data science in the historically specific emergence of networked, computational databases---what has been called the datasphere [@garfinkel2000; @alvarado2017]. This emphasis on the dependence of models on this infrastructure represents what seems to be a distinct view to that of the statistician, who tends to regard these developments as exogenous to her engagement with data. Put another way, for the statistician, the historical shift from data to databases---from print to digital modes of communication---is often represented as a difference in degree, but for the scientist, who produces and lives among these data, it is a difference in kind. This difference in perspective was not without epistemic consequences. For one, Smith's definition clearly included data mining. For another, just as data mining had been excluded from the statistician's definition of data science, so too was a concern for databases excluded from what was considered worthwhile scientific work:
 
-> I recall being a proud young academic about 1970; I had just received
-> a research grant to build and study a scientific database, and I had
-> joined CODATA. I was looking forward to the future in this new
-> exciting discipline when the head of my department, an internationally
-> known professor, advised me that data was "a low level activity" not
-> suitable for an academic. I recall my dismay. What can we do to ensure
-> that this does not happen again and that data science is universally
-> recognized as a worthwhile academic activity? Incidentally, I did not
-> take that advice, or I would not be writing this essay, but moved into
-> computer science. I will use my experience to draw comparisons between
-> the problems computer science had to become academically recognized
-> and those faced by data science [@smith2006:
-> 163].[^ds-from-1963-to-2012-15]
+> I recall being a proud young academic about 1970; I had just received a research grant to build and study a scientific database, and I had joined CODATA. I was looking forward to the future in this new exciting discipline when the head of my department, an internationally known professor, advised me that data was "a low level activity" not suitable for an academic. I recall my dismay. What can we do to ensure that this does not happen again and that data science is universally recognized as a worthwhile academic activity? Incidentally, I did not take that advice, or I would not be writing this essay, but moved into computer science. I will use my experience to draw comparisons between the problems computer science had to become academically recognized and those faced by data science [@smith2006: 163].[^05-history-2000s-1]
 
-[^ds-from-1963-to-2012-15]: Based on the affiliations cited in his three
-    publications between 1960 and 1969, the setting for Smith's story
-    was the School of Physics and Applied Mathematics at the Queen's
-    University of Belfast in Northern Ireland.
+[^05-history-2000s-1]: Based on the affiliations cited in his three publications between 1960 and 1969, the setting for Smith's story was the School of Physics and Applied Mathematics at the Queen's University of Belfast in Northern Ireland.
 
-Further evidence for the divergent conceptions of data science held by
-statisticians and scientists during this period appears in an ambitious
-position paper prepared for the 2010 Astronomy and Astrophysics Decadal
-Survey, written to "address the impact of the emerging discipline of
-data science on astronomy education" [@borne2009]. Building on Smith's
-conception of both science and data science, the report cited the usual
-concerns with data impedance---the gap between information and data on
-the one hand and knowledge and understanding on the other, produced by
-"information explosion" and "exponential data deluge." As a response,
-the authors proposed to redefine science as fundamentally data-driven
-and dependent upon computational technologies. Indeed, in their
-four-part model, data were depicted as central, as the fourth node
-within a triangle consisting of "Sensor," "HPC," and "Model." The result
-was a conception of science in which data science would participate as a
-first-class member:
+Further evidence for the divergent conceptions of data science held by statisticians and scientists during this period appears in an ambitious position paper prepared for the 2010 Astronomy and Astrophysics Decadal Survey, written to "address the impact of the emerging discipline of data science on astronomy education" [@borne2009]. Building on Smith's conception of both science and data science, the report cited the usual concerns with data impedance---the gap between information and data on the one hand and knowledge and understanding on the other, produced by "information explosion" and "exponential data deluge." As a response, the authors proposed to redefine science as fundamentally data-driven and dependent upon computational technologies. Indeed, in their four-part model, data were depicted as central, as the fourth node within a triangle consisting of "Sensor," "HPC," and "Model." The result was a conception of science in which data science would participate as a first-class member:
 
-> The emerging confluence of new technologies and approaches to science
-> has produced a new Data-Sensor-Computing-Model synergism. This has
-> been driven by numerous developments, including the information
-> explosion, the development of dynamic intelligent sensor networks
-> \..., the acceleration in high performance computing (HPC) power, and
-> advances in algorithms, models, and theories. *Among these, the most
-> extreme is the growth in new data*. The acquisition of data in all
-> scientific disciplines is rapidly accelerating and causing a nearly
-> insurmountable data avalanche \[3 [@bell2007]\]. Computing power
-> doubles every 18 months (Moore's Law), corresponding to a factor of
-> 100 in ten years. The I/O bandwidth (into and out of our systems,
-> including data systems) increases by 10% each year---a factor 3 in ten
-> years. By comparison, data volumes appear to double every year (a
-> factor of 1,000 in ten years). Consequently, as growth in data volume
-> accelerates, especially in the natural sciences (where funding
-> certainly does not grow commensurate with data volumes), we will fall
-> further and further behind in our ability to access, analyze,
-> assimilate, and assemble knowledge from our data collections---unless
-> we develop and apply increasingly more powerful algorithms,
-> methodologies, and approaches. *This requires a new generation of
-> scientists and technologists trained in the discipline of data
-> science* \[4 [@shapiro2006]\] (1--2; emphases and citations added).
+> The emerging confluence of new technologies and approaches to science has produced a new Data-Sensor-Computing-Model synergism. This has been driven by numerous developments, including the information explosion, the development of dynamic intelligent sensor networks \..., the acceleration in high performance computing (HPC) power, and advances in algorithms, models, and theories. *Among these, the most extreme is the growth in new data*. The acquisition of data in all scientific disciplines is rapidly accelerating and causing a nearly insurmountable data avalanche \[3 [@bell2007]\]. Computing power doubles every 18 months (Moore's Law), corresponding to a factor of 100 in ten years. The I/O bandwidth (into and out of our systems, including data systems) increases by 10% each year---a factor 3 in ten years. By comparison, data volumes appear to double every year (a factor of 1,000 in ten years). Consequently, as growth in data volume accelerates, especially in the natural sciences (where funding certainly does not grow commensurate with data volumes), we will fall further and further behind in our ability to access, analyze, assimilate, and assemble knowledge from our data collections---unless we develop and apply increasingly more powerful algorithms, methodologies, and approaches. *This requires a new generation of scientists and technologists trained in the discipline of data science* \[4 [@shapiro2006]\] (1--2; emphases and citations added).
 
 The inclusion of data mining in this conception is clear:
 
-> We see the data flood in all sciences (e.g., numerical simulations,
-> high-energy physics, bioinformatics, geosciences, climate monitoring
-> and modeling) and outside of the sciences (e.g., banking, healthcare,
-> homeland security, drug discovery, medical research, retail marketing,
-> e-mail). *The application of data mining, knowledge discovery, and
-> e-discovery tools to these growing data repositories is essential* to
-> the success of our social, financial, medical, government, and
-> scientific enterprises. (2; emphasis added)
+> We see the data flood in all sciences (e.g., numerical simulations, high-energy physics, bioinformatics, geosciences, climate monitoring and modeling) and outside of the sciences (e.g., banking, healthcare, homeland security, drug discovery, medical research, retail marketing, e-mail). *The application of data mining, knowledge discovery, and e-discovery tools to these growing data repositories is essential* to the success of our social, financial, medical, government, and scientific enterprises. (2; emphasis added)
 
-Although Cleveland's action plan was cited in this report, as evidence
-that "data science is becoming a recognized academic discipline" (3), it
-is clear his definition of data science was not adopted. Instead, a
-conception of data science that included data mining and which would
-play a central role in the scientific enterprise was more reflective of
-the view expressed in Microsoft's contemporary and influential
-publication, *The Fourth Paradigm: Data-Intensive Scientific Discovery
-[@hey2009]*. Although the various authors did not use the term "data
-science" at all, the role played by data, data technologies, and
-specifically data mining, were highlighted throughout. To anticipate
-what follows, the fourth paradigm concept would later become one of the
-dominant, competing definitions of data science once the term is
-popularized after 2008.
+Although Cleveland's action plan was cited in this report, as evidence that "data science is becoming a recognized academic discipline" (3), it is clear his definition of data science was not adopted. Instead, a conception of data science that included data mining and which would play a central role in the scientific enterprise was more reflective of the view expressed in Microsoft's contemporary and influential publication, *The Fourth Paradigm: Data-Intensive Scientific Discovery [@hey2009]*. Although the various authors did not use the term "data science" at all, the role played by data, data technologies, and specifically data mining, were highlighted throughout. To anticipate what follows, the fourth paradigm concept would later become one of the dominant, competing definitions of data science once the term is popularized after 2008.
 
-If Microsoft's report did not use the term, other organizations cited
-within the report did. For example, what was then known as the Joint
-Information Systems Committee (JISC), established in the UK in 1993 to
-provide guidance to networking and information services to the entire
-kingdom's higher education sector, sponsored a report "to examine and
-make recommendations on the role and career development of data
-scientists and the associated supply of specialist data curation skills
-to the research community" [@swan2008: 1]. Aware of the semantic
-confusion surrounding the term by this time, the report offered this
-helpful clarification of roles:
+If Microsoft's report did not use the term, other organizations cited within the report did. For example, what was then known as the Joint Information Systems Committee (JISC), established in the UK in 1993 to provide guidance to networking and information services to the entire kingdom's higher education sector, sponsored a report "to examine and make recommendations on the role and career development of data scientists and the associated supply of specialist data curation skills to the research community" [@swan2008: 1]. Aware of the semantic confusion surrounding the term by this time, the report offered this helpful clarification of roles:
 
-> The nomenclature that currently prevails is inexact and can lead to
-> misunderstanding about the different data-related roles that exist.
-> ... We distinguish four roles: data creator, data scientist, data
-> manager and data librarian. We define them in brief as follows:
+> The nomenclature that currently prevails is inexact and can lead to misunderstanding about the different data-related roles that exist. ... We distinguish four roles: data creator, data scientist, data manager and data librarian. We define them in brief as follows:
 >
-> -   Data creator: researchers with domain expertise who produce data.
->     These people may have a high level of expertise in handling,
->     manipulating and using data
+> -   Data creator: researchers with domain expertise who produce data. These people may have a high level of expertise in handling, manipulating and using data
 >
-> -   Data scientist: people who work where the research is carried
->     out---or, in the case of data centre personnel, in close
->     collaboration with the creators of the data---and may be involved
->     in creative enquiry and analysis, enabling others to work with
->     digital data, and developments in data base technology
+> -   Data scientist: people who work where the research is carried out---or, in the case of data centre personnel, in close collaboration with the creators of the data---and may be involved in creative enquiry and analysis, enabling others to work with digital data, and developments in data base technology
 >
-> -   Data manager: computer scientists, information technologists or
->     information scientists and who take responsibility for computing
->     facilities, storage, continuing access and preservation of data
+> -   Data manager: computer scientists, information technologists or information scientists and who take responsibility for computing facilities, storage, continuing access and preservation of data
 >
-> -   Data librarian: people originating from the library community,
->     trained and specialising in the curation, preservation and
->     archiving of data
+> -   Data librarian: people originating from the library community, trained and specialising in the curation, preservation and archiving of data
 >
-> In practice, there is not yet an exact use of such terms in the data
-> community, and the demarcation between roles may be blurred. It will
-> take time for a clear terminology to become general currency.
+> In practice, there is not yet an exact use of such terms in the data community, and the demarcation between roles may be blurred. It will take time for a clear terminology to become general currency.
 >
-> Data science is now a topic of attention internationally. In the USA,
-> Canada, Australia, the UK and Europe, developments are occurring. It
-> is notable that the vision in all these places is that data science
-> should be organised and developed on a national pattern rather than
-> relying on piecemeal approaches to the issues (1).
+> Data science is now a topic of attention internationally. In the USA, Canada, Australia, the UK and Europe, developments are occurring. It is notable that the vision in all these places is that data science should be organised and developed on a national pattern rather than relying on piecemeal approaches to the issues (1).
 
-These definitions, which expand our scope to include the wider division
-of labor within which data work took place, are illuminating. They show
-that even as late as 2008, at precisely the time when a new usage of
-data scientist emerged from Silicon Valley, the role was still more
-closely associated with the classical definition than with the
-definitions proposed by the Tokyo school, Wu, and Cleveland. Again, the
-salient difference concerns the role of the data scientist (or
-specialist) relative to the liminal site of data creation at the heart
-of empirical science: the distinguishing features of the definition
-given above are that the data scientist works in "close collaboration
-with the creators of the data," "where the research is carried out," and
-"may be involved in creative enquiry and analysis." Indeed, the two
-roles, of researcher and data scientist, may be combined in one person.
-We may be sure that "creative enquiry" here refers to more than the kind
-of data modeling performed by Breiman's data modeling culture. To make
-the separation between statistician and data scientist clearer, consider
-the following remark, made in reference to one perspective on whether
-data science should be taught at the undergraduate level: "data skills
-should be viewed as a fundamental part of the education of
-undergraduates in the same way as basic statistics, laboratory practices
-and methods of recording findings are" (24).
+These definitions, which expand our scope to include the wider division of labor within which data work took place, are illuminating. They show that even as late as 2008, at precisely the time when a new usage of data scientist emerged from Silicon Valley, the role was still more closely associated with the classical definition than with the definitions proposed by the Tokyo school, Wu, and Cleveland. Again, the salient difference concerns the role of the data scientist (or specialist) relative to the liminal site of data creation at the heart of empirical science: the distinguishing features of the definition given above are that the data scientist works in "close collaboration with the creators of the data," "where the research is carried out," and "may be involved in creative enquiry and analysis." Indeed, the two roles, of researcher and data scientist, may be combined in one person. We may be sure that "creative enquiry" here refers to more than the kind of data modeling performed by Breiman's data modeling culture. To make the separation between statistician and data scientist clearer, consider the following remark, made in reference to one perspective on whether data science should be taught at the undergraduate level: "data skills should be viewed as a fundamental part of the education of undergraduates in the same way as basic statistics, laboratory practices and methods of recording findings are" (24).
 
-It is worth noting the curious appearance of the term "dataology" as
-this time, spelled differently than Naur's "datology," in the work of
-Zhu, et al. as a synonym for data science. Apparently unaware of Naur,
-these authors proposed a new science of data in response to data
-impedance ("data explosion") that would focus on what they termed "data
-nature":
+It is worth noting the curious appearance of the term "dataology" as this time, spelled differently than Naur's "datology," in the work of Zhu, et al. as a synonym for data science. Apparently unaware of Naur, these authors proposed a new science of data in response to data impedance ("data explosion") that would focus on what they termed "data nature":
 
-> The essence of computer applications is to store things in the real
-> world into computer systems in the form of data, i.e., *it is a
-> process of producing data*. Some data are the records related to
-> culture and society, and others are the descriptions of phenomena of
-> universe and life. The large scale of data is rapidly generated and
-> stored in computer systems, which is called *data explosion*. *Data
-> explosion* forms *data nature* in computer systems. To explore data
-> nature, new theories and methods are required. In this paper, we
-> present the concept of data nature and introduce the problems arising
-> from data nature, and then we define a new discipline named
-> *dataology* (also called *data science* or *science of data*), which
-> is an umbrella of theories, methods and technologies for studying data
-> nature. The research issues and framework of *dataology* are proposed
-> [@zhu2009: abstract; emphases in original].
+> The essence of computer applications is to store things in the real world into computer systems in the form of data, i.e., *it is a process of producing data*. Some data are the records related to culture and society, and others are the descriptions of phenomena of universe and life. The large scale of data is rapidly generated and stored in computer systems, which is called *data explosion*. *Data explosion* forms *data nature* in computer systems. To explore data nature, new theories and methods are required. In this paper, we present the concept of data nature and introduce the problems arising from data nature, and then we define a new discipline named *dataology* (also called *data science* or *science of data*), which is an umbrella of theories, methods and technologies for studying data nature. The research issues and framework of *dataology* are proposed [@zhu2009: abstract; emphases in original].
 
-This definition was consistent with the classical definition and indeed
-echoed the concerns of the US Department of Defense to define data
-decades earlier, as a prerequisite to developing technologies to process
-and manage it. It is also worth noting the change in understanding of
-data impedance at this juncture; whereas originally the focus was on the
-overproduction of data by sources ranging from scholarly communication
-to satellite signals, in relation to machinery to process it, by this
-time it referred to vast amounts of data collected in databases---the
-machinery developed to manage data. This parallels the shift in focus we
-saw in the Tokyo school, from raw data to data in databases. As the
-locus of impedance changed, so too did the focus of data science (in
-this usage). For Zhu, et al., data nature referred explicitly to data in
-databases and computer systems, and their concern was to understand the
-relationship between data nature and real nature. Again, this shift is
-consistent with the classical definition as well as Naur's; the focus is
-on the epistemological dimensions of data, data as a form of
-representation, as found in computational machinery. In contrast to Nau,
-however, the relationship between data and the world is considered
-central. From this perspective, data mining is regarded as a kind of
-data science:
+This definition was consistent with the classical definition and indeed echoed the concerns of the US Department of Defense to define data decades earlier, as a prerequisite to developing technologies to process and manage it. It is also worth noting the change in understanding of data impedance at this juncture; whereas originally the focus was on the overproduction of data by sources ranging from scholarly communication to satellite signals, in relation to machinery to process it, by this time it referred to vast amounts of data collected in databases---the machinery developed to manage data. This parallels the shift in focus we saw in the Tokyo school, from raw data to data in databases. As the locus of impedance changed, so too did the focus of data science (in this usage). For Zhu, et al., data nature referred explicitly to data in databases and computer systems, and their concern was to understand the relationship between data nature and real nature. Again, this shift is consistent with the classical definition as well as Naur's; the focus is on the epistemological dimensions of data, data as a form of representation, as found in computational machinery. In contrast to Nau, however, the relationship between data and the world is considered central. From this perspective, data mining is regarded as a kind of data science:
 
-> The appearance of data mining technology ... means that people began
-> to study the laws aiming at data in computer systems. In the field of
-> Internet, more and more researches focus on network behavior, network
-> community, network search, and network culture. Because of the
-> accumulation of data, newly disciplines, such as bioinformatics and
-> brain informatics, are also typical dataology centric research areas.
-> For instance, DNA data in bioinformatics are the data that describe
-> natural structures of life, based on which we can study life using
-> computers (153).
+> The appearance of data mining technology ... means that people began to study the laws aiming at data in computer systems. In the field of Internet, more and more researches focus on network behavior, network community, network search, and network culture. Because of the accumulation of data, newly disciplines, such as bioinformatics and brain informatics, are also typical dataology centric research areas. For instance, DNA data in bioinformatics are the data that describe natural structures of life, based on which we can study life using computers (153).
 
-In other words, not only is data mining consistent with data science in
-this view, it is central to it. More recently, the authors situate this
-definition within the array of definitions that currently characterize
-the ambiguous nature of the field and which motivate the current essay
-[@zhu2015]. Consistent with their focus on data as it exists in
-databases, the authors focus on the role of the Internet and social
-media in constituting the field of data science. This is a perspective
-we will revisit.
+In other words, not only is data mining consistent with data science in this view, it is central to it. More recently, the authors situate this definition within the array of definitions that currently characterize the ambiguous nature of the field and which motivate the current essay [@zhu2015]. Consistent with their focus on data as it exists in databases, the authors focus on the role of the Internet and social media in constituting the field of data science. This is a perspective we will revisit.
 
-During the first two decades following Berners-Lee's invention of the
-Web, the term data science emerged from the long tail of usage, where it
-had resided essentially since Naur, to become the sign of new kind of
-statistics. This new statistics would overcome the limitations of a
-field that had lost its way amidst the rise of computational data
-processing technologies and of what would eventually be called "big
-data," a term that we may take to be a synonym for the condition of data
-impedance associated with the use of the term data science since the
-1960s. Ironically, big data was the product of what we might call the
-first wave response to data impedance; database technologies were
-developed to contain and manage the oft mentioned "data deluge," and
-these in turned produced another flood, of software and enormous caches
-of aggregated data. In addition, they produced a nemesis to
-statistics---the field of data mining.
+During the first two decades following Berners-Lee's invention of the Web, the term data science emerged from the long tail of usage, where it had resided essentially since Naur, to become the sign of new kind of statistics. This new statistics would overcome the limitations of a field that had lost its way amidst the rise of computational data processing technologies and of what would eventually be called "big data," a term that we may take to be a synonym for the condition of data impedance associated with the use of the term data science since the 1960s. Ironically, big data was the product of what we might call the first wave response to data impedance; database technologies were developed to contain and manage the oft mentioned "data deluge," and these in turned produced another flood, of software and enormous caches of aggregated data. In addition, they produced a nemesis to statistics---the field of data mining.
 
-Yet throughout out this period, classical data science persists and
-paradoxically becomes stronger, perhaps in response to the use of the
-term among statisticians. We see that even up to the eve of the next
-milestone, data science was widely understood to refer to work
-associated with data processing, the theory and practice associated with
-data, especially in the context of scientific research data. This was
-the understanding of data science implied by CODATA's journal. We also
-note that the classical definition, when it was articulated, was
-consistently inclusive of the work of data miners. For their part, these
-new workers did not appear to need the term; the phrase "knowledge
-discovery (in databases)," referring to the framing context of activity,
-was sufficient to capture their understanding of their work
-[@fayyad1996].
+Yet throughout out this period, classical data science persists and paradoxically becomes stronger, perhaps in response to the use of the term among statisticians. We see that even up to the eve of the next milestone, data science was widely understood to refer to work associated with data processing, the theory and practice associated with data, especially in the context of scientific research data. This was the understanding of data science implied by CODATA's journal. We also note that the classical definition, when it was articulated, was consistently inclusive of the work of data miners. For their part, these new workers did not appear to need the term; the phrase "knowledge discovery (in databases)," referring to the framing context of activity, was sufficient to capture their understanding of their work [@fayyad1996].
 
+```{=html}
 <!--#
 May want to change the following to say "re-emerged"; depends on
 discussion of the 1980s.
 -->
-
-Notably, during this period the term "data scientist" emerged as well,
-in both statistical and classical contexts. Its appearance reflected a
-concern for data science as an emerging profession, complete with
-educational requirements. In the statistician's usage, this position was
-ambivalently placed within the general division of labor, as either a
-synthetic "new man" figure that would encompass data analysis, or else
-as a "data specialist," an adjunct to the more primary work of the data
-analyst. In any case, the appearance of this grammatical variant
-indicates a transformation in the social context of usage: data science
-had moved from being an abstract concern to a widely distributed and
-embedded activity.
+```
+Notably, during this period the term "data scientist" emerged as well, in both statistical and classical contexts. Its appearance reflected a concern for data science as an emerging profession, complete with educational requirements. In the statistician's usage, this position was ambivalently placed within the general division of labor, as either a synthetic "new man" figure that would encompass data analysis, or else as a "data specialist," an adjunct to the more primary work of the data analyst. In any case, the appearance of this grammatical variant indicates a transformation in the social context of usage: data science had moved from being an abstract concern to a widely distributed and embedded activity.

@@ -290,7 +290,8 @@ process it in order to extract value.
 [^02-history-1960s-5]: Preceding the usage of data deluge and in a wider
     context is "information explosion." Both expressions conjure images
     of disaster and have been remarkably persistent up to the present
-    era. Only with the coining of "big dat
+    era. Only with the coining of "big data" have they been displaced by
+    a more positive term.
 
 Further evidence of this concern for what might be called the
 information crisis in scientific research---and for the idea that the
@@ -361,6 +362,8 @@ and value of data science.
 
 ## The 1970s
 
+### Data Science ...
+
 It is clear that by the early 1970s the term data science had been in
 circulation in several contexts and referred to ideas and tools relating
 to computational data processing. Importantly, these usages were not
@@ -371,19 +374,18 @@ come into contact with the term. Similarly, IBM and UNIVAC, the sources
 of the founders of two self-proclaimed data science companies, were the
 two largest computer manufacturers at the time.[^02-history-1960s-6]
 
-[^02-history-1960s-6]: a" have they been displaced by a more positive
-    term.
-
-    This is the very same General Doolittle of Doolittle's Raid.
-
-    peared in a 1964 issue of the British weekly *Nature*:
+[^02-history-1960s-6]: As evidence for the visibility of the AFCRL as
+    this time, here is an add that appeared in a 1964 issue of the
+    British weekly *Nature*:
 
     A SYMPOSIUM on "Models for the Perception of Speech and Visual
     Form", sponsored by the Data Sciences Laboratory of the Air Force
     Cambridge Research Laboratory, will be held in Boston during
     November 11-14. Further information can be obtained from Mr. G. A.
     Cushman, Wentworth Institute, 550 Huntington Avenue, Boston,
-    Massachusetts 02115 ("Announcements" 1964) ("Announcements" 1964).
+    Massachusetts 02115 [@announce1964].
+
+### Naur's *Datalogi*
 
 Although the AFCRL closed the Data Sciences Lab by
 1970,[^02-history-1960s-7] the term continued to be used, most notably
@@ -401,13 +403,14 @@ explicit definition of data science:
 
 [^02-history-1960s-7]: Altshuler writes that the lab was "abolished" in
     June 1972 "in response to a large reduction in manpower
-    authorizations" (Altshuler 2013: 27). However, the unit is not
-    mentioned in the July 1970 to June 1972 research report (AFCRL
-    1973). The lab's closure may have been a consequence of the passing
-    of the Mansfield Amendment in 1969, which prohibited the military
-    from carrying out "any research project or study unless such project
-    or study has a direct and apparent relationship to a specific
-    military function" (U. S. C. H. C. on Appropriations 1970: 348).
+    authorizations" [@altshuler2013: 27]. However, the unit is not
+    mentioned in the July 1970 to June 1972 research report
+    [@afcrl1973]. The lab's closure may have been a consequence of the
+    passing of the Mansfield Amendment in 1969, which prohibited the
+    military from carrying out "any research project or study unless
+    such project or study has a direct and apparent relationship to a
+    specific military function" [@appropriations1970: 348].
+    <!-- (U. S. C. H. C. on Appropriations 1970: 348). -->
 
 > The starting point is the concept of *data*, as defined in \[0.7\]:
 > DATA: *A representation of facts or ideas in a formalized manner
@@ -475,6 +478,18 @@ XML [@codd1970 @goldfarb1970]. This focus on the human context of data
 processing is reflected in his later work; a volume of selections of his
 writing from 1951 to 1990, which includes his essay on data science, is
 entitled "Computing: A Human Activity" [@naur1992].
+
+### Other Uses
+
+-   [@computer1975] Computers in Education, Proceedings of the IFIP
+    World Conference
+
+    -   "The case is easily obscured, alas, by an instinct to confuse
+        mathematics and data science" (p. 756)
+
+    -   "Recommending data science and data technology as areas of
+        intellectual endeavor, and data studies as a subject for school
+        learning;" (p. 758)
 
 ## The 1980s
 

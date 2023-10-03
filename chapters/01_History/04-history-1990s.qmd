@@ -1,29 +1,37 @@
+---
+editor: 
+  markdown: 
+    wrap: 72
+---
+
 # The 1990s: Statistical Data Science
 
 Interestingly, in 1977 a prefixed variant of the term appeared in the
 title of the technical report, "Non-Parametric Statistical Data Science:
 A Unified Approach Based on Density Estimation and Testing for 'White
 Noise'" [@parzen1977]. However, Parzen later published a version of this
-work as "Nonparametric Statistical Data Modeling" [@parzen1979],
-which indicates that his original word choice was mistaken. Yet the original
-choice may not have been entirely unmotivated: Parzen's work attempted to
-unify parametric and non-parametric methods under one umbrella. Given
+work as "Nonparametric Statistical Data Modeling" [@parzen1979], which
+indicates that his original word choice was mistaken. Yet the original
+choice may not have been entirely unmotivated: Parzen's work attempted
+to unify parametric and non-parametric methods under one umbrella. Given
 the natural inclination of mathematical statistics for the former and
 data analysis for the latter, his choice of the term data science may
 have signaled an attempt to encompass both approaches to data. It is
 also worth noting that he later used to the term to introduce a "new
 culture of statistical science called LP MIXED DATA SCIENCE"
-[@parzen2013], after the term became popular.[^ds-from-1963-to-2012-11]
+[@parzen2013], after the term became popular.[^04-history-1990s-1]
 Whether or not this unifying goal was his motivation, statisticians
 later became quite interested in the term for precisely this reason.
 
-[^ds-from-1963-to-2012-11]: Parzen's use of the term "culture" here
-    echoes his comments on Breiman's famous essay on two cultures of
+[^04-history-1990s-1]: Parzen's use of the term "culture" here echoes
+    his comments on Breiman's famous essay on two cultures of
     statistical models, where he suggested that there are in fact
     several cultures, including his own, to which he devoted the
     majority of his response (Breiman 2001: 224--226).
 
 ## 1994: The Tokyo School
+
+### Ohsumi and Meta-Stat
 
 In the early 1990s, the term resurfaced in the context of statistics. It
 appeared in the title of a 1994 essay by the Japanese statistician
@@ -31,18 +39,18 @@ Noburu Ohsumi on the application of hypermedia to the problem of
 organizing data, "New Data and New Tools: A Hypermedia Environment for
 Navigating Statistical Knowledge in Data Science," an elaboration of an
 essay published two years earlier [@ohsumi1992;
-@ohsumi1994].[^ds-from-1963-to-2012-12] In these essays, Ohsumi
-described the by now familiar litany of problems associated with data
-impedance, although this time the focus was on the production of data
-resulting from its analysis and storage, not its consumption in
-so-called raw form:
+@ohsumi1994].[^04-history-1990s-2] In these essays, Ohsumi described the
+by now familiar litany of problems associated with data impedance,
+although this time the focus was on the production of data resulting
+from its analysis and storage, not its consumption in so-called raw
+form:
 
-[^ds-from-1963-to-2012-12]: According to Ohsumi, "the term 'data
-    science' appeared for the first time" in 1992, at a research
-    exchange meeting between French and Japanese data analysts
-    (so-called) at Montpelier University II in France [@ohsumi2000:
-    331]. He also claims to have "argued the urgency of the need to
-    grasp the concept 'data science'" in 1992 (329).
+[^04-history-1990s-2]: According to Ohsumi, "the term 'data science'
+    appeared for the first time" in 1992, at a research exchange meeting
+    between French and Japanese data analysts (so-called) at Montpelier
+    University II in France [@ohsumi2000: 331]. He also claims to have
+    "argued the urgency of the need to grasp the concept 'data science'"
+    in 1992 (329).
 
 > In research organizations handling statistical information, the volume
 > of stored information resources, including research results,
@@ -95,11 +103,45 @@ prolifically data-generating sciences and the computational environment
 in which these data were made available. Data science, in this view, is
 *meta-statistics*, an encompassing concern for understanding data,
 understood as a universal medium, and its relationship to knowledge.
-This perspective would be adopted by Ohsumi's senior compatriot and
-fellow statistician, Chikio Hayashi, whom Ohsumi described as "the
-pioneer and founder of data science" [@ohsumi2004: 1].
 
-In 1993, at a roundtable discussion during the fourth conference of the
+This perspective was shared by Ohsumi's senior compatriot and fellow
+statistician, Chikio Hayashi, whom Ohsumi described as "the pioneer and
+founder of data science" [@ohsumi2004: 1].[^04-history-1990s-3]
+
+[^04-history-1990s-3]: In his eulogy for Professor Hayashi, Ohsumi
+    explained in some detail the motivation for his mentor's first usage
+    of data science:
+
+    > In the last ten years of his life, Professor Hayashi asserted the
+    > importance of "data science as a theory of scientific methods."
+    > The starting point was the meaning of the words "data science;"
+    > this arose in 1992, when the professor was discussing the titles
+    > and introductions of a collection of papers to be published at the
+    > 2nd Japanese-French Scientific Seminar. *The professor used a
+    > Japanese phrase that translates as "data science" and for the rest
+    > of his life explored the concept behind this phrase.* When the
+    > papers at the seminar were published, it was proposed for the
+    > first time that the term referring to quantification be
+    > standardized as "quantification method" and the subsequent English
+    > terms were standardized as such. I can recall the professor
+    > reprimanding us with the words "you are talking about different
+    > concepts" when we referred to "deta kagaku" while another group
+    > called it "deta no kagaku" (data science).
+    >
+    > The basis of data science is an extremely straightforward concept;
+    > the fact that it needed to be expressed is an indication of the
+    > chaos that exists today in statistical data analysis and the
+    > deteriorating research environment. I am certain that the
+    > professor had intended to lead the way in achieving a breakthrough
+    > on these problems [@ohsumi2002: 5; emphasis added].
+
+    #### 
+
+### Hayashi's Usage
+
+#### 1993
+
+In 1993, at a round table discussion during the fourth conference of the
 International Federation of Classification Societies held in Paris
 (IFCS-93), Hayashi uttered the phrase "Data Science" and was then asked
 to explain it. At the next conference (IFCS-96), he presented an answer,
@@ -228,28 +270,30 @@ the one conceptual, the other practical. This should not be viewed as
 contradictory.
 :::
 
+### A Canary the has Forgotten to Sing
+
 Following the IFCS meetings, as well as two meetings of the Japan
 Statistical Society that held "special sessions on data science,''
 Ohsumi developed Hayashi's definition as well as its rationale
-[@ohsumi2000: 331]. At this point, we shall call this the Tokyo school
-of data science, given the association of both Hayashi and Ohsumi with
-the Institute of Statistical Mathematics in Tokyo, Japan. In a paper
-that explicitly addressed the relationship between data analysis and
-data science, and which is perhaps the first of several to claim the
-flag of data science for statistics, Ohsumi declared that because of its
-privileging of"mathematical methodologies" over an engagement with data
-acquisition, data analysis had become "a canary that has forgotten to
-sing," referring to a Japanese children's song that contemplates a
-silent bird's fate (332).[^ds-from-1963-to-2012-13] Amplifying Hayashi,
-he asserted that "\[h\]ow data are gathered is the key to defining the
-relevant information and making it easy to understand and analyze"
-(331). In making this point, Ohsumi referred to a new figure on the
-scene, one that contradicted the principles he proposed:
+[@ohsumi2000: 331]. We call this the Tokyo school of data science, given
+the association of both Hayashi and Ohsumi with the Institute of
+Statistical Mathematics in Tokyo, Japan. In a paper that explicitly
+addressed the relationship between data analysis and data science, and
+which is perhaps the first of several to claim the flag of data science
+for statistics, Ohsumi declared that because of its privileging
+of"mathematical methodologies" over an engagement with data acquisition,
+data analysis had become "a canary that has forgotten to sing,"
+referring to a Japanese children's song that contemplates a silent
+bird's fate (332).[^04-history-1990s-4] Amplifying Hayashi, he asserted
+that "\[h\]ow data are gathered is the key to defining the relevant
+information and making it easy to understand and analyze" (331). In
+making this point, Ohsumi referred to a new figure on the scene, one
+that contradicted the principles he proposed:
 
-[^ds-from-1963-to-2012-13]: The specific reference is to a poem, later
-    set to music, written by the Japanese poet Saijoo Yaso (西条八十),
-    who lived from 1892 to 1970. According to Miriam Davis, "The moral
-    of the song is that if the canary loses its song it is not worth its
+[^04-history-1990s-4]: The specific reference is to a poem, later set to
+    music, written by the Japanese poet Saijoo Yaso (西条八十), who
+    lived from 1892 to 1970. According to Miriam Davis, "The moral of
+    the song is that if the canary loses its song it is not worth its
     existence so it should make the most of the gift of song it has been
     given." [@davis]
 
@@ -265,7 +309,7 @@ science, since many today would consider the two synonymous.
 
 ## Data Mining and Knowledge Discovery
 
-The paradox is instructive: the name "data mining," as used here, makes
+The paradox is instructive: the name "data mining," as used here, made
 its appearance in the late 1980s and early 1990s as a rubric that
 included a set of practices motivated by precisely the same conditions
 that led the Tokyo school to propose the field of data science in the
@@ -284,11 +328,11 @@ to the data found in databases in various contexts, from science to
 industry (such as point-of-sale records generated as by-product of
 computerized cash registers and credit card use). The relationship
 between machine learning and data mining was also mutually
-beneficial---data miners supplied machine learning with the large sets
-of data required for this class of algorithms to perform well. This
-relationship was greatly reinforced with the rise and development of the
-Web and social media platforms, which generated enormous amounts of
-behavioral data.
+beneficial---data miners supplied machine learning projects with the
+large sets of data required for this class of algorithms to perform
+well. This relationship was greatly reinforced with the rise and
+development of the Web and social media platforms, which generated
+enormous amounts of behavioral data.
 
 Although the two fields---for simplicity, let's call them data analysis
 and data mining---were responding to the same conditions of data surplus
@@ -298,16 +342,17 @@ data *provenance*, the source and conditions under which data are
 produced. For the data miner, data provenance is largely irrelevant to
 the possibility of converting data into value. Data are data, regardless
 of how they are generated, and the same methods may be applied to them
-regardless of source, so long as their structure is understood (e.g.
-time series). (Indeed, for the data miner data exists much as natural
-resources do, as a given part of the environment, which helps explain
-the success of the metaphor of *mining* over competing variants, such as
-*harvesting*, which implies intentional creation.) For the data analyst,
-as Hayashi and Ohsumi took such pains to emphasize, provenance is, or
-should be, everything, echoing the statistician's orthodox preference
-for experimental over observational data.
+regardless of source, so long as their structure is understood. Indeed,
+for the data miner data exists much as natural resources do, as a given
+part of the environment, which helps explain the success of the metaphor
+of *mining* over competing variants, such as *harvesting*, which implies
+intentional creation. For the data analyst, as Hayashi and Ohsumi took
+such pains to emphasize, provenance is, or should be, everything,
+echoing the statistician's orthodox preference for experimental over
+observational data.
 
-In defining data science in opposition to data mining, Ohsumi explains:
+This difference was expressed by Ohsumi in his definition of data
+science in opposition to data mining:
 
 > Owing to the qualitative and quantitative changes in data \[produced
 > by the conditions described above\], it is, indeed, becoming
@@ -317,7 +362,7 @@ In defining data science in opposition to data mining, Ohsumi explains:
 > potential of these methods to solve any of these problems is
 > questionable (332).
 
-Ohsumi goes on to characterize the way data has changed by listing the
+Ohsumi went on to characterize the way data has changed by listing the
 new kinds of data with which the statistician is confronted. These
 include prominently data sets found in databases as by-products of
 various processes, such as passive accumulation (e.g. from point-of-sale
@@ -348,7 +393,328 @@ place. Given some of the issues that classifiers have encountered with
 respect to racial bias, for example, he cannot be said to have been
 wrong.
 
-## 1997: The US 
+## A Note on the IFCS
+
+### Highlights
+
+-   Founded in 1985.
+    -   Grew out of the German Classification Society, formed in 1977
+        --- see [@bock2001].
+-   In 1996 "first scientific society to use the now trendy term Data
+    Science as a title of a conference" IFCS Newsletter 52, October
+    2015, p.2
+    -   Adopted the term "data science" from Hayashi.
+-   In 2015 "GfKl decided to add Data Science Society to the name of the
+    Society" [IFCS Newsletter 52: October
+    2015](https://ifcs.boku.ac.at/site/lib/exe/fetch.php?media=newsletter_archive:ifcs-newsletter-52.pdf) p.
+    7
+-   Usage persists into current era [@rizzi2013; @windham2001;
+    @baier2006; @schader2012]
+    -   Programs at the University of
+        [GÖTTINGEN](https://www.uni-goettingen.de/), host of German
+        Classification Society Meetings.
+        -   Summer School "Data
+            Science"<https://www.uni-goettingen.de/en/data+science+2019/611949.html>
+        -   Mathematical Data Science
+            (B.Sc.)<https://www.uni-goettingen.de/en/582230.html> ---
+            Fit for the digital era: In the degree programme
+            "Mathematical Data Science", students learn modern
+            mathematical and statistical methods of data analysis and
+            recognition of structures, and acquire tools from computer
+            science to transform these methods into algorithms.
+            Graduates will be able to deal scientifically with large
+            quantities of data and thus gain access to attractive career
+            opportunities.
+        -   Applied Data Science
+            (B.Sc.)<https://www.uni-goettingen.de/en/640719.html> ---The
+            field of data science includes aspects of mathematics,
+            computer science and statistics. Data science deals with
+            data analysis and the knowledge gained from data, as well as
+            the techniques required for processing large and partially
+            unstructured data volume. In the Bachelor's degree programme
+            "Applied Data Science", detailed knowledge of data analysis
+            is taught on the basis of computer science and mathematics.
+            In an application subject, students are also introduced to
+            the practical application of the data analysis methods they
+            have learned. The data analysis courses include aspects of
+            machine learning, statistics, pattern recognition and the
+            infrastructures required for effective analyses. Students
+            may choose economics, biology, digital humanities, medical
+            computer science, breeding informatics or physical modeling
+            and data analysis as application subjects. ... Anyone
+            choosing Applied Data Science as their study subject should
+            be interested in formal mathematics as well as
+            application-related practical work. The ability to work in a
+            team is a vital prerequisite for daily professional work
+            later on. English language skills are required. Special
+            subject-related knowledge, especially in programming, is not
+            required.
+-   Conferences refer to "statistics under one umbrella," echoing the
+    theme of unification seen in Parzen 1977, the Tokyo School, and the
+    US.
+-   
+
+### Narrative
+
+In the January 1999 issue of the *IFCS Newsletter*, the Japanese
+Classification Society (JCS) reports that "a special seminar about 'Data
+mining in Data Science' will be held at March 1999" at the JCS Annual
+Meeting [@deboeck1999: 2].
+
+Hayashi, then president of the IFCS, wrote in the Sept 1999 Newsletter
+column "From the President":
+
+> The potential energy of the IFCS is increasing over the years, and it
+> keeps increasing since the last conference. We can say with firm
+> confidence that the results of data science (including statistics,
+> data analysis, classification and related methods in different
+> respects) really contribute to the development of science and more in
+> general to our civilization and global environment.
+>
+> Further, I expect that new approaches, and new methodologies and
+> methods in data science will be developed for the coming 21st century,
+> and that the presentations of IFCS meetings will reflect these new
+> ideas. I believe that signs of new movements will be found in the
+> Namur conference in 2000.
+
+IFCS Newsletter Number 23 June 2002. News from the JCS 2002:
+
+> \(4\) Statistics, Data Analysis, Classification and Data Science
+> Chikio Hayashi (The Institute of Statistical Mathematics)
+>
+> Data design, data collection and data quality evaluation are crucial
+> to data analysis if we are to draw out useful relevant information.
+> Analysis of low-information data never bears fruit; however, data
+> analytic methods can be refined. In spite of the importance of this
+> issue in actual data mining and data analysis, *I am forced to ask why
+> these problems cannot be discussed at its most essential level*.
+> Perhaps it is a matter of the laborious practical work involved or the
+> otherwise plodding pace of research. Indeed, *these problems are
+> rarely addressed because in academic circles it is regarded as
+> unsophisticated*. In the present talk, I dare to touch these problems
+> with the fundamental concept of data science.
+
+2002, the GfKl
+
+> The German Classification Society (GfKl) will hold its 26th Annual
+> Conference at the University of Mannheim, July 22--24, 2002 under the
+> title "Between Data Science an Everyday Web Practice". This meeting
+> will take place immediately after the 8th IFCS-Conference at Krakow.
+
+In 2004, the president wrote:
+
+> ... the society should foremost be a forum on what has rightly been
+> dubbed "Data Science", dealing with *all aspects of collecting and
+> analyzing data*. This not only covers classical mainstream statistics,
+> but also statistically informal approaches such as Cluster Analysis,
+> Multidimensional Scaling and *Data Mining*. The IFCS is an outstanding
+> platform for dealing with *data analysis techniques that are
+> traditionally ignored in mainstream statistics*. With its broad view
+> on Data Science, *all approaches to data analysis are welcome*, and
+> hence new approaches and classic approaches can be confronted but also
+> synthesized, in an effort to create the best of both worlds. *The IFCS
+> could and should play a leading role in these new developments in Data
+> Science*. An important aspect here is that IFCS should foster the
+> development of techniques with a keen mind on the applications for
+> which the techniques are mentioned. In particular, *techniques must be
+> made usable for the researcher who collects the data (not only for the
+> statistician or classification expert)*. Therefore, *techniques should
+> be user-friendly and transparent, ensuring that the researcher who
+> analyzes the data keeps a clear idea on what the analysis does and
+> what the results display, and the interpretation of results should be
+> crystal clear*. This implies, last but by all means not least, that
+> IFCS should pay attention to how to teach our techniques to students
+> and other prospective users. Thus, IFCS should promote an integrative
+> view on developments in research and teaching of Data Science. One
+> step in this direction is the round table session on this topic,
+> organized by Helena Bacelar at IFCS2004. Other steps will be the
+> organization of further IFCS sponsored courses on classification and
+> data analysis.
+
+Note the definition embraced "data mining" and the emphases on practices
+that go beyond what is perceived to be the more narrow purview of
+"mainstream statistics."
+
+#### Conferences / Newsletters
+
+-   IFCS-2006: Data Science and Classification. July 25-29, 2006.
+    University of Ljubljana, Faculty of Social Sciences, Ljubljana,
+    Slovenia. 10^th^ meeting.
+-   32^nd^ GfKl Annual Conference, "Advances in Data Analysis, Data
+    Handling, and Business Intelligence" at the
+    Helmut-Schmidt-University of Hamburg (Germany) from July 16 --
+    18, 2008. Section on Data Science and Innovative Tools.
+-   The 2013 Joint Conference of the German Classification Society
+    (GfKl) and the French Classification Society (SFC) will take place
+    in July 10-13, in Luxembourg. The title of the conference will be
+    "European Conference on Data Analysis". Section on Data Science,
+    including Data Pre-Processing, Text and Web Mining, Information
+    Extraction and Retrieval, Personalization and Intelligent Agents.
+-   IFCS Newsletter 29
+    -   Issue 29 (2006) describes on a conference in Germany ... "30th
+        GfKl Annual Conference The German Classification Society GfKl
+        (Gesellschaft für Klassifikation) will hold its 30th Annual
+        Conference at the Free University of Berlin (Germany), March 8
+        -- 10, 2006. The conference is titled 'Advances in Data
+        Analysis' and focuses on data analysis, learning of latent
+        structures in datasets, and unscrambling of knowledge."
+
+    -   Session on Data Science and Innovative Tools:
+
+        > Data Science and Innovative Tools:\
+        > Data Cleaning and Pre-Processing; Data, Text and Web Mining;
+        > Information Extraction and Retrieval; Personalization and
+        > Intelligent Agents; Tools for Intelligent Data Analysis; New
+        > Challenges in Data Science.\
+        > Applications: Subject Indexing and Library Science; Marketing
+        > and Management Science; e-commerce, Recommender Systems and
+        > Business Intelligence; Banking and Finance; Production,
+        > Controlling and OR; Biostatistics and Bioinformatics; Genome
+        > and DNA Analysis; Medical and Health Sciences; Archaeology and
+        > Geography; Engineering and Environment; Administrative Record
+        > Census; Linguistics and Statistical Musicology; Image and
+        > Signal Processing.
+
+    -   The earmarks: broad definition to include the gamut of
+        processing and an ambivalent attitude toward data mining
+-   [IFCS Newsletter
+    49](https://ifcs.boku.ac.at/site/lib/exe/fetch.php?media=newsletter_archive:ifcs-newsletter-49.pdf)
+    -   Paolo Giudici is (full) Professor of Statistics in the
+        Department of Economics and Management at the University of
+        Pavia in Italy. He currently teaches courses in statistics
+        (undergraduate level), financial risk management (Master's
+        level), and data science (PhD level). .
+    -   The next CLADAG meeting will be held at the Flamingo Hotel in
+        Santa Margherita di Pula, Cagliari, on October 8-10, 2015. The
+        meeting will take place under the auspices of the IFCS and of
+        the Italian Statistical Society (SIS). The chosen location will
+        facilitate exchange of ideas and networking, as well as an
+        easier access for young researchers. Includes the theme Data
+        Science under the category Multivariate Data Analysis.
+    -   News from GfKl. Brief report on 50th Anniversary Celebration
+        Meeting Classification Society, Wednesday, July 9, 2014.
+        FirstSite, Colchester, hosted by British Classification Society
+        (BCS) and Department of Mathematical Sciences, University of
+        Essex in cooperation with: Big Data and Science Week hosted by
+        Faculty of Science & Health, University of Essex; Gesellschaft
+        für Klassifikation (GfKl); and European Conference on Data
+        Analysis (ECDA2014). Scientific programme included:
+        -   Fionn Murtagh, De Montfort University, Leicester, UK: "Data
+            science in psychoanalysis: a short review of Matte Blanco's
+            bi-logic, based on metric space and ultrametric or
+            hierarchical topology."
+        -   David Wishart, Hans-Hermann Bock, David Hand, Maurizio
+            Vichi, Peter Flach, Sabine Krolak-Schwerdt, and Berthold
+            Lausen: "50th Anniversary resume, outlook and discussion:
+            Classification society and data science."
+-   [IFCS Newsletter 52: October
+    2015](https://ifcs.boku.ac.at/site/lib/exe/fetch.php?media=newsletter_archive:ifcs-newsletter-52.pdf)
+    -   "The Federation, in Kobe in 1996 and, again, Rome in 1998, was
+        the first scientific society to use the now trendy term Data
+        Science as a title of a conference." (2)
+    -   "The European Conference on Data Analysis 2015 (ECDA2015),
+        co-hosted by the British Classification Society (BCS),
+        Gesellschaft für Klassifikation e.V. (GfKl) and Sekcja
+        Klasyfikacji i Analizy Danych (SKAD) and held at the University
+        of Essex, Colchester, UK from 1st to 4th September 2015
+        (conference webpage www.ecda2015.eu).
+        -   "Data Science Society GfKl", "Gesellschaft für
+            Klassifikation (GfKl) Data Science Society"
+        -   "Sponsors of the ECDA2015 were the data science company
+            Profusion Ltd, London and the Institute for Analytics and
+            Data Science, University of Essex." (7)
+        -   "At the general annual meeting the members of GfKl decided
+            to add Data Science Society to the name of the Society."
+    -   "GfKl Data Science Society will celebrate its 40th Annual
+        Meeting at the Fourth Joint Statistical Meeting of the Deutsche
+        Arbeitsgemeinschaft Statistik 'Statistics under one Umbrella'
+        14 - 18 March 2016 at the Georg-August University Göttingen
+        (DAGStat2016) in Göttingen, DAGStat 2016 includes the 40th
+        Annual Meeting of GfKl, 62. Kolloquium of the German Region of
+        the International Biometric Society and the Pfingsttagung of the
+        German Statistical Society." (7)
+    -   "In spring 2017 we will celebrate 40 years Gesellschaft für
+        Klassifikation Data Science Society (founded February 1977 in
+        Frankfurt am Main).
+    -   "GfKl Data Science Society 40th Annual Meeting, March 14-18, at
+        the Fourth Joint Statistical Meeting of the Deutsche
+        Arbeitsgemeinschaft Statistik 'Statistics under one Umbrella',
+        Georg-August University Göttingen (DAGStat2016).
+        http://www.unigoettingen.de/de/485701.html"
+-   [IFCS Newsletter 53: March
+    2016](https://ifcs.boku.ac.at/site/lib/exe/fetch.php?media=newsletter_archive:ifcs-newsletter-53.pdf)
+    -   Foundation of the "European Association for Data Science
+        (EuADS)"
+-   [IFCS-2022: Classification and Data Science in the Digital
+    Age](https://ifcs2022.fep.up.pt/)
+
+### The German Classification Society
+
+-   Founded in Frankfurt on 12 February 1977 by "by scientists and
+    practitioners stemming from various fields of knowledge"
+
+> This event, even if realized on a national basis, has to be seen in
+> the context of a quite general and worldwide development: In fact,
+> during the sixties of the 20th century there was a great interest and
+> intensive research in problems of classification, data analysis, and
+> systems for ordering knowledge. Not only in statistics, but also in
+> many other domains of science and practice, e.g., 
+>
+> -   in *library science* with topics such as subject indexing and
+>     cataloguing, indexing languages, and broad systems of ordering; 
+> -   in *documentation* with the development of data bases, thesauri
+>     construction, and information retrieval systems; 
+> -   in *linguistics and terminology* with language analysis, concept
+>     formation, automatic translation, dialectometry; 
+> -   in *biology* with problems in taxonomy, systematics, phylogeny,
+>     and bacteria classication; 
+> -   in *technology* with pattern recognition systems, network
+>     optimization, and cybernetics; 
+> -   in *industry* with product and patent classification, systematics
+>     of commodities, and the segmentation of transport networks; and
+>     finally 
+> -   in *economy and marketing* when searching for market segments and
+>     consumer groups, product positioning strategies, and corresponding
+>     data evaluation techniques.
+
+The work of classification is broadened to include ordering of knowledge
+... \[DESIGN\]
+
+## Tanaka and the JSCS
+
+See @tanaka2018
+
+-   JJSCS --\> JJSD in 2018
+    -   Official journal of JFSSA
+-   JSCS est 1986
+
+Tanaka describes the role of editor of the JJSCS between 1986 and 1990:
+
+> The major purpose of establishing JSCS was to make a progress in
+> computational statistics in Japan by providing a forum for people
+> working in various aspects of computational statistics, e.g.,
+> *statisticians* engaged in the research and application of statistical
+> theory and methods, *computer scientists/engineers* engaged in the
+> development of statistical software, and *statisticians/data analysts*
+> engaged in the analysis of data obtained with surveys, experiments or
+> other means, and provide them opportunities for exchanging information
+> and ideas and, if possible, for finding seeds for joint works among
+> them (75; emphases added).
+
+Tanaka points out that the term is not new:
+
+> By the way, the opportunities to meet the term "Data Science"
+> increased rapidly in recent years, but, it was not a new term for
+> statisticians. It was used at the 2nd Japanese-French Scientific
+> Seminar (organized by Yves Escoufier, Chikio Hayashi, and others) held
+> in Montpellier. The title of the Seminar and the Proceedings published
+> later by Academic Press in 1995 was "Data Science and Its
+> Applications". This term was used for "new science with data at its
+> core". The meaning is essentially the same to that currently used,
+> though types of data to be analyzed have changed in a quarter century
+> (76).
+
+## 1997: The US
 
 In the late 1990s and early 2000s, a series of papers and presentations
 by academic statisticians in the US echoed the theme of malaise
@@ -605,7 +971,7 @@ choice of term was motivated by marketing; as Higgins wrote:
 > negative connotation that it might be wise to rename our departments
 > something like "Department of Data Science" or "Department of
 > Information and Data Science." In this vein, I have suggested the term
-> "data specialist" [@higgins1999].[^ds-from-1963-to-2012-14]
+> "data specialist" [@higgins1999].[^04-history-1990s-5]
 
-[^ds-from-1963-to-2012-14]: Higgins here referred to a quote from
-    Guttman found in a paper by Kettenring (Kettenring 1997a).
+[^04-history-1990s-5]: Higgins here referred to a quote from Guttman
+    found in a paper by Kettenring (Kettenring 1997a).
