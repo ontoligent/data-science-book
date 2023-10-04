@@ -3,15 +3,14 @@ project:
   output-dir: docs  
 
 book:
-  title: "Essays on Data Science"
+  title: "The History and Structure of Data Science"
   author: "Rafael C. Alvarado"
-  #reader-mode: true
   page-navigation: true  
   date: "9/20/2023"
   
   chapters:
   - index.qmd
-  - part: "The History of Data Science"
+  - part: "History"
     chapters: 
     - chapters/01_History/00-history-abstract.qmd       # Abstract
     - chapters/01_History/00-synopsis.qmd               # Synopsis
@@ -24,7 +23,7 @@ book:
     - chapters/01_History/08-history-interpretation.qmd # Conclusion
     appendices:
     - chapters/01_History/history-method.qmd
-  - part: "The 4+1 Model of Data Science"
+  - part: "Structure"
     chapters: 
     - chapters/02_Structure/01-structure-the-model.qmd
     - chapters/02_Structure/02-structure-ds-and-ai.qmd
